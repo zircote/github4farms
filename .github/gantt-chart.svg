@@ -215,7 +215,7 @@
   <g id="epic-014">
     <text x="190" y="975" font-family="-apple-system, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">EPIC-014</text>
     <rect x="618" y="960" width="616" height="16" fill="url(#phase4-light)" rx="3"/>
-    <text x="926" y="971" font-family="-apple-system, 'Segoe UI', Arial, sans-serif" font-size="8" fill="#cbd5e1">Assessment & Evaluation (Ongoing)</text>
+    <text x="926" y="971" font-family="-apple-system, 'Segoe UI', Arial, sans-serif" font-size="8" fill="#cbd5e1">Assessment &amp; Evaluation (Ongoing)</text>
   </g>
 
   <!-- Milestones (Diamond markers) -->
