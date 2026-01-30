@@ -80,29 +80,29 @@
 
 ### Epic EPIC-003: Sessions 1-3 Prototype (Part 1)
 
-- [ ] **STORY-009** — Develop Session 1: Introduction to GitHub & Repositories ⊘ EPIC-002
-  - [ ] Create 20-25 slide deck with farm analogies
-  - [ ] Develop "Explore a farm repository" lab exercise
-  - [ ] Write terminology cheat sheet (15+ terms)
-  - [ ] Create facilitation script with timing
-  - [ ] Apply accessibility features (alt text, contrast, fonts)
-  - [ ] ✓ All materials in `sessions/session-01/`
-  - [ ] ✓ Accessibility checklist passed
+- [x] **STORY-009** — Develop Session 1: Introduction to GitHub & Repositories ⊘ EPIC-002
+  - [x] Create 20-25 slide deck with farm analogies
+  - [x] Develop "Explore a farm repository" lab exercise
+  - [x] Write terminology cheat sheet (15+ terms)
+  - [x] Create facilitation script with timing
+  - [x] Apply accessibility features (alt text, contrast, fonts)
+  - [x] ✓ All materials in `sessions/session-01/`
+  - [x] ✓ Accessibility checklist passed
 
-- [ ] **STORY-010** — Develop Session 2: GitHub Issues ⊘ EPIC-002
-  - [ ] Create slide deck with farm task examples
-  - [ ] Develop "Broken fence repair" lab exercise
-  - [ ] Write "Issue Creation Step-by-Step" guide
-  - [ ] Create facilitation script; apply accessibility
-  - [ ] ✓ All materials in `sessions/session-02/`
-  - [ ] ✓ Lab includes photo upload tested across devices
+- [x] **STORY-010** — Develop Session 2: GitHub Issues ⊘ EPIC-002
+  - [x] Create slide deck with farm task examples
+  - [x] Develop "Broken fence repair" lab exercise
+  - [x] Write "Issue Creation Step-by-Step" guide
+  - [x] Create facilitation script; apply accessibility
+  - [x] ✓ All materials in `sessions/session-02/`
+  - [x] ✓ Lab includes photo upload tested across devices
 
 ### Epic EPIC-009: Accessibility (Start)
 
-- [ ] **STORY-015** — Create Accessibility Testing Workflow ⊘ EPIC-002
-  - [ ] Document 6-step testing process
-  - [ ] Create testing log template
-  - [ ] ✓ Workflow and template ready for use
+- [x] **STORY-015** — Create Accessibility Testing Workflow ⊘ EPIC-002
+  - [x] Document 6-step testing process
+  - [x] Create testing log template
+  - [x] ✓ Workflow and template ready for use
 
 **Sprint Gate:** Sessions 1-2 developed; accessibility workflow established
 
