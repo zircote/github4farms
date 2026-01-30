@@ -33,7 +33,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 #### Sprint 4 — EPIC-003: Session 3 Prototype (Part 2)
 - **[Session 3]**: Complete session materials for "GitHub Projects for Planning" — 23-slide deck with Board/Table/Timeline view demos, "Spring planting project board" lab exercise with 3 scenario options, "Project Board Setup Checklist" quick-reference guide, full facilitation script with L2 observation checklist (`sessions/session-03/`)
 
+#### Sprint 4 — EPIC-009: Accessibility Audit + Pilot Test
+- **[Accessibility]**: Accessibility testing logs for Sessions 1-3 — 27-checkpoint WCAG 2.2 AA audit per session, contrast ratio calculations, font size analysis, structural review, content/cognitive assessment. All sessions achieved 100% pass rate (of applicable checkpoints) with justified exceptions for data-dense visual demo slides (`sessions/session-0{1,2,3}/accessibility-testing-log.md`)
+- **[Pilot Test]**: Simulated pilot test report for Sessions 1-3 — clarity/pacing/relevance/cognitive load scoring, cross-session issue analysis, farmer persona walkthroughs, prioritized remediation recommendations. Overall readiness: 87% (`sessions/pilot-test-report.md`)
+
 ### Fixed
+- **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
+- **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"
+- **[Content]**: Converted Session 3 project-board-checklist.md workflow steps from bullet points to numbered steps for accessibility compliance (D5: sequential instructions)
 - **[PPTX]**: Converted all HTML `<table>` elements to `<div>`-based grid layouts across Sessions 1-3 (6 slides total) — html2pptx does not render `<table>` elements, resulting in empty slides in PowerPoint
 
 ### Fixed

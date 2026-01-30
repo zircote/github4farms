@@ -82,7 +82,7 @@ You already know how to create Issues. Projects let you **see them all at once**
 **GitHub Projects has 3 views — pick the one that fits your need.**
 
 - **Board View** — Columns like a whiteboard. Drag tasks between "To Do," "In Progress," and "Done."
-- **Table View** — Rows and columns like a spreadsheet. Sort, filter, and add custom fields.
+- **Table View** — Rows and columns like a spreadsheet. Sort, filter, and add custom fields (extra columns you create yourself, like "Due Date").
 - **Timeline View** — A calendar showing when tasks start and end. See your whole season at a glance.
 
 You can switch between views anytime — same data, different way to look at it.
@@ -115,7 +115,7 @@ Each row is one Issue. Columns show details:
 - Status
 - Assignee
 - Labels
-- Due date (custom field)
+- Due date (a custom field — one you add yourself)
 
 You can **sort** by any column and **filter** to show only certain tasks.
 

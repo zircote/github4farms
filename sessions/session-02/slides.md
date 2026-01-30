@@ -169,7 +169,7 @@ A good description answers:
 
 You can also:
 - Upload **photos** (click the image icon or drag a photo in)
-- Add a **checklist** (use `- [ ]` for each item)
+- Add a **checklist** (type `- [ ]` to create a checkbox for each item)
 - Include **links** to other information
 
 ---

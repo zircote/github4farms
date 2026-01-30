@@ -7,12 +7,12 @@
 
 ## Creating a New Project Board
 
-- [ ] Go to your repository
-- [ ] Click the **"Projects"** tab
-- [ ] Click **"New project"**
-- [ ] Choose a layout: **Board** (recommended to start), Table, or Timeline
-- [ ] Give it a clear name (e.g., "Spring Planting 2026")
-- [ ] Click **"Create"**
+1. Go to your repository
+2. Click the **"Projects"** tab
+3. Click **"New project"**
+4. Choose a layout: **Board** (recommended to start), Table, or Timeline
+5. Give it a clear name (e.g., "Spring Planting 2026")
+6. Click **"Create"**
 
 ---
 

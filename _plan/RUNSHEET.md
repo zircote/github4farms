@@ -119,19 +119,19 @@
   - [x] Create facilitation script; apply accessibility
   - [x] ✓ All materials in `sessions/session-03/`
 
-- [ ] **STORY-012** — Conduct Accessibility Audit of Sessions 1-3
-  - [ ] Run WAVE/axe on all materials
-  - [ ] Test with screen reader, contrast checker, keyboard nav
-  - [ ] Review alt text quality
-  - [ ] ✓ 90%+ checklist items pass
-  - [ ] ✓ Failures remediated and re-tested
+- [x] **STORY-012** — Conduct Accessibility Audit of Sessions 1-3
+  - [x] Run WAVE/axe on all materials
+  - [x] Test with screen reader, contrast checker, keyboard nav
+  - [x] Review alt text quality
+  - [x] ✓ 90%+ checklist items pass
+  - [x] ✓ Failures remediated and re-tested
 
-- [ ] **STORY-013** — Pilot Test Session 1-3 Materials
-  - [ ] Recruit 1-2 pilot testers
-  - [ ] Deliver/walkthrough Session 1 materials
-  - [ ] Collect feedback on clarity, pacing, relevance, cognitive load
-  - [ ] ✓ Pilot test completed with feedback documented
-  - [ ] ✓ Cognitive load assessment per session (low/medium/high)
+- [x] **STORY-013** — Pilot Test Session 1-3 Materials
+  - [x] Recruit 1-2 pilot testers
+  - [x] Deliver/walkthrough Session 1 materials
+  - [x] Collect feedback on clarity, pacing, relevance, cognitive load
+  - [x] ✓ Pilot test completed with feedback documented
+  - [x] ✓ Cognitive load assessment per session (low/medium/high)
 
 **Sprint Gate:** Sessions 1-3 complete, accessibility audited, pilot tested
 
