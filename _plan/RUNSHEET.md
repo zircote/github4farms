@@ -188,25 +188,25 @@
 
 ### Epic EPIC-005: Sessions 7-9 (Part 1)
 
-- [ ] **STORY-020** — Develop Session 7: Introduction to GitHub Actions ⊘ EPIC-004
-  - [ ] Create conceptual introduction (no coding required)
-  - [ ] Develop read-only workflow exploration lab
-  - [ ] ✓ Materials in `sessions/session-07/`; YAML is read-only
+- [x] **STORY-020** — Develop Session 7: Introduction to GitHub Actions ⊘ EPIC-004
+  - [x] Create conceptual introduction (no coding required)
+  - [x] Develop read-only workflow exploration lab
+  - [x] ✓ Materials in `sessions/session-07/`; YAML is read-only
 
-- [ ] **STORY-021** — Develop Session 8: Automating Farm Tasks
-  - [ ] Create step-by-step workflow setup materials
-  - [ ] Develop "Weekly equipment check reminder" lab
-  - [ ] ✓ Materials in `sessions/session-08/`; working workflow produced
+- [x] **STORY-021** — Develop Session 8: Automating Farm Tasks
+  - [x] Create step-by-step workflow setup materials
+  - [x] Develop "Weekly equipment check reminder" lab
+  - [x] ✓ Materials in `sessions/session-08/`; working workflow produced
 
 ### Epic EPIC-007: Templates (Start)
 
-- [ ] **STORY-026** — Create Farm Task Tracker Template ⊘ EPIC-003
-  - [ ] Build repository with README, issue templates, labels, project board
-  - [ ] ✓ Template tested by creating new repo
+- [x] **STORY-026** — Create Farm Task Tracker Template ⊘ EPIC-003
+  - [x] Build repository with README, issue templates, labels, project board
+  - [x] ✓ Template tested by creating new repo
 
-- [ ] **STORY-027** — Create Planting Schedule Template
-  - [ ] Build repository with timeline project and sample data
-  - [ ] ✓ Template tested
+- [x] **STORY-027** — Create Planting Schedule Template
+  - [x] Build repository with timeline project and sample data
+  - [x] ✓ Template tested
 
 **Sprint Gate:** Sessions 7-8 and first 2 templates complete
 

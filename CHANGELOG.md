@@ -56,6 +56,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Session 5]**: Complete session materials for "Notifications & Team Communication" — 25-slide deck covering Watch settings, @mentions, GitHub Discussions, and notification management. Lab exercise with real-time peer @mention exchange, Discussion posting, and notification inbox management. "Notification & Communication Settings" quick-reference guide, full facilitation script with L2 checklist. Farm analogy: "text alerts / tap on the shoulder / bulletin board" (`sessions/session-05/`)
 - **[Session 6]**: Complete session materials for "Basic Workflows & Templates" — 26-slide deck covering Issue Templates, Saved Replies, and Project Templates preview. Lab exercise creating 3+ custom Issue Templates and 3+ Saved Replies with farm scenarios (equipment, crops, livestock, safety, seasonal, supply). "Template Design Guide" quick-reference with Markdown formatting help. Full facilitation script with L2 checklist. Farm analogy: "pre-printed work order form / rubber stamp" (`sessions/session-06/`)
 
+#### Sprint 7 — EPIC-005: Sessions 7-8 Content Development
+- **[Session 7]**: Complete session materials for "Introduction to GitHub Actions" — slide deck introducing automation concepts (no coding), read-only YAML exploration lab, "Actions Overview" quick-reference guide, full facilitation script with L2 checklist. Farm analogy: "automatic farm helpers / hired hand who follows written instructions." Trigger types: schedule (alarm clock), event (motion-sensor light), manual (push a button) (`sessions/session-07/`)
+- **[Session 8]**: Complete session materials for "Automating Farm Tasks" — slide deck with step-by-step workflow setup, lab creating a "Weekly Equipment Check Reminder" automated workflow, cron schedule customization, workflow troubleshooting. "Workflow Setup Guide" quick-reference with cron cheat sheet. Full facilitation script with L2 checklist (`sessions/session-08/`)
+
+#### Sprint 7 — EPIC-007: Farm Repository Templates
+- **[Template]**: Farm Task Tracker repository template with README, 4 Issue Templates (equipment repair, livestock health, field inspection, general task), 10 color-coded labels, project board specification, setup instructions at grade 8 reading level (`templates/farm-task-tracker/`)
+- **[Template]**: Planting Schedule repository template with README, 2 Issue Templates (planting task, field season summary), crop type and field labels, custom fields specification for Timeline view, sample planting data for diversified farm, seasonal workflow guide (`templates/planting-schedule/`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"
