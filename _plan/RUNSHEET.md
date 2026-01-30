@@ -280,17 +280,17 @@
 
 ### Epic EPIC-010: Training Delivery Infrastructure
 
-- [ ] **STORY-034** — Set Up Demo GitHub Environment
-  - [ ] Create demo organization with 3+ sample repositories
-  - [ ] ✓ Demo environment ready
+- [x] **STORY-034** — Set Up Demo GitHub Environment
+  - [x] Create demo organization with 3+ sample repositories
+  - [x] ✓ Demo environment spec in `delivery/demo-environment-spec.md`
 
-- [ ] **STORY-035** — Prepare Delivery Equipment & Logistics
-  - [ ] Test projector, arrange seating, print handouts, set up backup internet
-  - [ ] ✓ Logistics checklist complete
+- [x] **STORY-035** — Prepare Delivery Equipment & Logistics
+  - [x] Test projector, arrange seating, print handouts, set up backup internet
+  - [x] ✓ Logistics checklist in `delivery/logistics-checklist.md`
 
-- [ ] **STORY-036** — Create Feedback Survey Forms
-  - [ ] Create L1, L2, L3, L4 evaluation instruments
-  - [ ] ✓ All instruments in `delivery/evaluation/`
+- [x] **STORY-036** — Create Feedback Survey Forms
+  - [x] Create L1, L2, L3, L4 evaluation instruments
+  - [x] ✓ All instruments in `delivery/evaluation/`
 
 **Sprint Gate:** Ready to deliver Session 1
 

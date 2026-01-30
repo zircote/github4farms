@@ -98,6 +98,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 #### Sprint 9 — EPIC-009: Final Accessibility Audit
 - **[Accessibility]**: Final WCAG 2.2 AA compliance audit across all 48 curriculum artifacts (12 sessions × 3 files + 4 guides + 4 templates + CSS/HTML sampling). 9 criteria evaluated: font sizes, color contrast, alt text, structure, color-not-sole-indicator, UDL notes, accessible tables, plain language, multiple formats. Result: 100% compliance (exceeds 90% threshold). No remediation required.
 
+#### Sprint 10 — EPIC-010: Training Delivery Infrastructure
+- **[Delivery]**: Demo GitHub environment specification — 4 repositories (`demo-farm`, `sunrise-acres-example`, `template-starter`, `instructor-notes`), organization setup, pre-created Issues/Labels/Projects/Discussions, session-by-session setup checklist, learner account procedures, reset protocols between cohorts (`delivery/demo-environment-spec.md`)
+- **[Delivery]**: Logistics checklist — venue setup, technology prep, per-session print matrix (all 12 sessions mapped to handouts), instructor preparation steps, day-of procedures, emergency fallbacks (internet/projector/GitHub outage/device failure), post-session procedures (`delivery/logistics-checklist.md`)
+- **[Evaluation]**: L1 Reaction survey — 8-question post-session feedback form with 5-point Likert scales, pacing assessment, open-ended questions, scoring guide with flag thresholds (`delivery/evaluation/l1-session-feedback.md`)
+- **[Evaluation]**: L2 Learning checklist — 46-skill master observation checklist across all 12 sessions, per-learner tracking sheet, cohort summary template, mastery rate calculations (`delivery/evaluation/l2-observation-checklist.md`)
+- **[Evaluation]**: L3 Behavior survey — 30/60/90-day follow-up with usage frequency, feature adoption, knowledge transfer, barrier identification, NPS scoring, response tracking protocol (`delivery/evaluation/l3-behavior-followup.md`)
+- **[Evaluation]**: L4 Results tracker — 6/12-month farm outcome tracking with GitHub activity metrics, time savings estimation, ROI calculation framework (example: 281% ROI), cohort summary template, qualitative impact coding scheme (`delivery/evaluation/l4-results-tracker.md`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"
