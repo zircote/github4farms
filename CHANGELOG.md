@@ -95,6 +95,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Session 11 PPTX]**: PowerPoint deck for "GitHub Spark & Copilot Agents" — Spark app builder, agent capabilities, human oversight, guardrails slides (`sessions/session-11/slides.pptx`)
 - **[Session 12 PPTX]**: PowerPoint deck for "Capstone & Train-the-Trainer" — capstone checklist, rubric, 4-step teaching method, learning journey summary slides (`sessions/session-12/slides.pptx`)
 
+#### Sprint 9 — EPIC-009: Final Accessibility Audit
+- **[Accessibility]**: Final WCAG 2.2 AA compliance audit across all 48 curriculum artifacts (12 sessions × 3 files + 4 guides + 4 templates + CSS/HTML sampling). 9 criteria evaluated: font sizes, color contrast, alt text, structure, color-not-sole-indicator, UDL notes, accessible tables, plain language, multiple formats. Result: 100% compliance (exceeds 90% threshold). No remediation required.
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"
