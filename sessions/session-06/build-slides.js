@@ -718,8 +718,12 @@ function buildSlides(pptx) {
     },
     { text: "", options: { fontSize: 3 } },
     {
-      text: "3.  Checklist — ☐ Photos attached  ☐ Parts identified  ☐ Assigned",
+      text: "3.  Checklist:",
       options: { fontSize: 14, color: COLORS.charcoal },
+    },
+    {
+      text: "     ☐ Photos attached\n     ☐ Parts identified\n     ☐ Assigned",
+      options: { fontSize: 13, color: COLORS.charcoal },
     },
     { text: "", options: { fontSize: 6 } },
     {
