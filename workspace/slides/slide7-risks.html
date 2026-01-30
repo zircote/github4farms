@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Risks & Mitigation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .header {
+      padding: 40px 60px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36pt;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 60px;
+    }
+    .risk-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .risk-item {
+      background: white;
+      border-left: 6px solid #ef4444;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+    .risk-item.medium {
+      border-left-color: #f59e0b;
+    }
+    .risk-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .risk-header h3 {
+      margin: 0;
+      font-size: 16pt;
+      color: #1e293b;
+    }
+    .risk-score {
+      background: #dc2626;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12pt;
+      font-weight: bold;
+    }
+    .risk-score.medium {
+      background: #f59e0b;
+    }
+    .risk-mitigation {
+      font-size: 13pt;
+      color: #475569;
+      line-height: 1.4;
+    }
+    .risk-mitigation strong {
+      color: #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Top 5 Risks & Mitigation Strategies</h1>
+  </div>
+  <div class="content">
+    <ul class="risk-list">
+      <li class="risk-item">
+        <div class="risk-header">
+          <h3>R-001: Technology Anxiety & Learner Resistance</h3>
+          <div class="risk-score">HIGH (9)</div>
+        </div>
+        <div class="risk-mitigation">
+          <strong>Mitigation:</strong> Use agricultural analogies, celebrate small wins, normalize mistakes, share peer testimonials, apply adult learning principles (Andragogy)
+        </div>
+      </li>
+      <li class="risk-item medium">
+        <div class="risk-header">
+          <h3>R-002: Seasonal Availability Conflicts</h3>
+          <div class="risk-score medium">MEDIUM (8)</div>
+        </div>
+        <div class="risk-mitigation">
+          <strong>Mitigation:</strong> Modular curriculum design, schedule around planting/harvest seasons, provide recap sessions after gaps, offer asynchronous video resources
+        </div>
+      </li>
+      <li class="risk-item medium">
+        <div class="risk-header">
+          <h3>R-003: Accessibility Compliance Failures</h3>
+          <div class="risk-score medium">MEDIUM (8)</div>
+        </div>
+        <div class="risk-mitigation">
+          <strong>Mitigation:</strong> Implement UDL from start, use accessibility checkers (WAVE, axe DevTools), test with assistive technologies, target 90% WCAG 2.2 AA compliance
+        </div>
+      </li>
+      <li class="risk-item medium">
+        <div class="risk-header">
+          <h3>R-004: Single Point of Failure (Instructor Unavailability)</h3>
+          <div class="risk-score medium">MEDIUM (8)</div>
+        </div>
+        <div class="risk-mitigation">
+          <strong>Mitigation:</strong> Develop comprehensive facilitator guides, record all sessions for asynchronous access, build buffer time in schedule, identify backup facilitator
+        </div>
+      </li>
+      <li class="risk-item medium">
+        <div class="risk-header">
+          <h3>R-005: Cognitive Overload (Content Too Complex)</h3>
+          <div class="risk-score medium">MEDIUM (6)</div>
+        </div>
+        <div class="risk-mitigation">
+          <strong>Mitigation:</strong> Chunk content into 3-5 key concepts per session, slow pacing, use visual aids and job aids, apply Cognitive Load Theory principles
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

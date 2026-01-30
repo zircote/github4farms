@@ -1,0 +1,15 @@
+{
+  "name": "github-training-farmers-workspace",
+  "version": "1.0.0",
+  "description": "Build tools for GitHub Training for Farmers executive briefing deck and visual assets",
+  "private": true,
+  "scripts": {
+    "generate-assets": "node generate-assets.js",
+    "build-deck": "node build-deck.js",
+    "build": "npm run generate-assets && npm run build-deck"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0",
+    "sharp": "^0.33.0"
+  }
+}

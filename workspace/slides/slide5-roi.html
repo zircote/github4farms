@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROI & Financial Impact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .header {
+      padding: 40px 60px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36pt;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 60px;
+    }
+    .roi-summary {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .roi-box {
+      flex: 1;
+      padding: 24px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .roi-box.investment {
+      background: #fef2f2;
+      border: 3px solid #ef4444;
+    }
+    .roi-box.value {
+      background: #f0fdf4;
+      border: 3px solid #10b981;
+    }
+    .roi-box h3 {
+      margin: 0 0 12px 0;
+      font-size: 18pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .roi-box .amount {
+      font-size: 42pt;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .roi-box.investment .amount {
+      color: #dc2626;
+    }
+    .roi-box.value .amount {
+      color: #059669;
+    }
+    .roi-box .note {
+      font-size: 12pt;
+      color: #64748b;
+    }
+    .chart-placeholder {
+      background: white;
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16pt;
+      color: #64748b;
+      font-style: italic;
+    }
+    .footer-note {
+      margin-top: 20px;
+      font-size: 11pt;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>ROI & Financial Impact</h1>
+  </div>
+  <div class="content">
+    <div class="roi-summary">
+      <div class="roi-box investment">
+        <h3>Investment</h3>
+        <div class="amount">$0</div>
+        <div class="note">Volunteer-led, zero budget<br>~180 hours instructor time</div>
+      </div>
+      <div class="roi-box value">
+        <h3>3-Year Value</h3>
+        <div class="amount">Infinite</div>
+        <div class="note">Qualitative ROI: Time savings, collaboration, compliance, digital literacy empowerment</div>
+      </div>
+    </div>
+    <div class="chart-placeholder">
+      ROI Chart: Qualitative Impact Over Time<br>
+      (Programmatically generated in build-deck.js)
+    </div>
+    <div class="footer-note">
+      <strong>Value Drivers:</strong> Volunteer model (no cost), GitHub Free tier (enterprise-grade tools), train-the-trainer multiplier effect, transferable digital skills
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current State - The Problem</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .header {
+      padding: 40px 60px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36pt;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 60px;
+    }
+    .problem-list {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+    .problem-list li {
+      font-size: 16pt;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .problem-list li:before {
+      content: "⚠️";
+      position: absolute;
+      left: 0;
+      font-size: 20pt;
+    }
+    .stat-box {
+      background: #fef2f2;
+      border-left: 6px solid #ef4444;
+      padding: 20px 30px;
+      margin: 30px 0;
+      font-size: 14pt;
+      color: #991b1b;
+    }
+    .stat-box strong {
+      font-size: 18pt;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Current State: The Problem</h1>
+  </div>
+  <div class="content">
+    <ul class="problem-list">
+      <li><strong>Digital Literacy Gap:</strong> Farmers lack GitHub and version control experience; many lack basic technical skills</li>
+      <li><strong>Technology Anxiety:</strong> Non-technical learners resist or feel intimidated by developer tooling</li>
+      <li><strong>Seasonal Availability:</strong> Planting and harvest seasons create training attendance gaps and knowledge decay</li>
+      <li><strong>Mixed Device Access:</strong> Learners use varied devices (laptops, tablets, phones) with inconsistent internet</li>
+    </ul>
+    <div class="stat-box">
+      <strong>65-70% of farmers cite lack of technical skills</strong>
+      as primary barrier to digital tool adoption (Industry Research)
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Metrics</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .header {
+      padding: 40px 60px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36pt;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 60px;
+    }
+    .framework {
+      font-size: 14pt;
+      margin-bottom: 30px;
+      color: #475569;
+    }
+    .framework strong {
+      color: #1e293b;
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .metric-card {
+      background: white;
+      border-left: 6px solid #3b82f6;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .metric-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 16pt;
+      color: #1e293b;
+    }
+    .metric-card .level {
+      font-size: 10pt;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .metric-card .target {
+      font-size: 28pt;
+      font-weight: bold;
+      color: #3b82f6;
+      margin-bottom: 8px;
+    }
+    .metric-card .baseline {
+      font-size: 11pt;
+      color: #64748b;
+    }
+    .metric-card.level1 { border-left-color: #3b82f6; }
+    .metric-card.level1 .target { color: #3b82f6; }
+    .metric-card.level2 { border-left-color: #10b981; }
+    .metric-card.level2 .target { color: #10b981; }
+    .metric-card.level3 { border-left-color: #f59e0b; }
+    .metric-card.level3 .target { color: #f59e0b; }
+    .metric-card.level4 { border-left-color: #8b5cf6; }
+    .metric-card.level4 .target { color: #8b5cf6; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Success Metrics (Kirkpatrick Model)</h1>
+  </div>
+  <div class="content">
+    <div class="framework">
+      <strong>Evaluation Framework:</strong> Kirkpatrick 4-Level Model (Reaction, Learning, Behavior, Results)
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card level1">
+        <h3>Session Satisfaction (NPS)</h3>
+        <div class="level">Kirkpatrick Level 1 - Reaction</div>
+        <div class="target">+60</div>
+        <div class="baseline">Target: Net Promoter Score +60 or higher (exceptional learner satisfaction)</div>
+      </div>
+      <div class="metric-card level2">
+        <h3>Skill Demonstration Pass Rate</h3>
+        <div class="level">Kirkpatrick Level 2 - Learning</div>
+        <div class="target">80%</div>
+        <div class="baseline">Target: 80% of learners pass hands-on demonstrations across all sessions</div>
+      </div>
+      <div class="metric-card level3">
+        <h3>60-Day GitHub Usage Rate</h3>
+        <div class="level">Kirkpatrick Level 3 - Behavior</div>
+        <div class="target">60%</div>
+        <div class="baseline">Target: 60% of learners actively using GitHub 60 days post-training (vs. 30-45% typical adoption)</div>
+      </div>
+      <div class="metric-card level4">
+        <h3>Farm Productivity Impact</h3>
+        <div class="level">Kirkpatrick Level 4 - Results</div>
+        <div class="target">3+</div>
+        <div class="baseline">Target: 3+ documented farm operational improvements at 6 months (time savings, collaboration, compliance)</div>
+      </div>
+      <div class="metric-card level1">
+        <h3>Learner Completion Rate</h3>
+        <div class="level">Kirkpatrick Level 1 - Engagement</div>
+        <div class="target">75%</div>
+        <div class="baseline">Target: 75% complete 8+ sessions (vs. 45-60% typical completion for technical training)</div>
+      </div>
+      <div class="metric-card level2">
+        <h3>Accessibility Compliance</h3>
+        <div class="level">UDL / WCAG 2.2 Level AA</div>
+        <div class="target">90%+</div>
+        <div class="baseline">Target: 90%+ materials meet accessibility standards (vs. 40-55% industry avg)</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

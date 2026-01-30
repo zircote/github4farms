@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After Comparison</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      color: #0f172a;
+    }
+    .header {
+      padding: 40px 60px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 36pt;
+      font-weight: bold;
+    }
+    .content {
+      display: flex;
+      padding: 40px 60px;
+      gap: 40px;
+      align-items: center;
+    }
+    .column {
+      flex: 1;
+      padding: 30px;
+      border-radius: 12px;
+      min-height: 400px;
+    }
+    .before {
+      background: #fef2f2;
+      border: 3px solid #ef4444;
+    }
+    .after {
+      background: #f0fdf4;
+      border: 3px solid #10b981;
+    }
+    .column h2 {
+      margin: 0 0 20px 0;
+      font-size: 24pt;
+      text-align: center;
+    }
+    .before h2 {
+      color: #dc2626;
+    }
+    .after h2 {
+      color: #059669;
+    }
+    .column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .column li {
+      font-size: 14pt;
+      margin-bottom: 16px;
+      padding-left: 30px;
+      position: relative;
+      line-height: 1.3;
+    }
+    .before li:before {
+      content: "❌";
+      position: absolute;
+      left: 0;
+    }
+    .after li:before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+    .arrow {
+      font-size: 48pt;
+      color: #10b981;
+      text-align: center;
+      width: 60px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Before & After: Transformation</h1>
+  </div>
+  <div class="content">
+    <div class="column before">
+      <h2>Before Training</h2>
+      <ul>
+        <li>No structured record-keeping; lost data on paper, email, memory</li>
+        <li>Collaboration failures: missed tasks, duplicate work, miscommunication</li>
+        <li>Manual grant/compliance documentation; incomplete audit trails</li>
+        <li>Technology anxiety prevents adoption of any digital tools</li>
+        <li>0% GitHub usage among farmers</li>
+      </ul>
+    </div>
+    <div class="arrow">→</div>
+    <div class="column after">
+      <h2>After Training</h2>
+      <ul>
+        <li>Centralized GitHub repositories for farm projects and records</li>
+        <li>Issues and project boards enable transparent task tracking</li>
+        <li>Commit history creates automatic compliance documentation</li>
+        <li>Farmers confident with technology; digital literacy foundation established</li>
+        <li><strong>60% active GitHub usage</strong> at 60 days post-training</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1543 @@
+[
+  {
+    "id": "STORY-001",
+    "epic_id": "EPIC-001",
+    "epic_title": "Project Initiation & Research",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Conduct Learner Needs Assessment",
+    "description": "As a curriculum developer, I want to understand farmers' technology access, skill levels, and availability, so that I can design training that meets their actual needs and constraints",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 1,
+    "story_points": 5,
+    "blocked_by": [],
+    "tasks": [
+      "Create survey questions (device access, tech experience, seasonal availability, learning preferences, accessibility needs)",
+      "Distribute survey to 5+ farmers or conduct proxy analysis with extension educators",
+      "Analyze responses and identify patterns (device types, skill levels, seasonal blackouts, anxiety indicators)",
+      "Document findings in curriculum/learner-profile.md"
+    ],
+    "acceptance_criteria": [
+      "Survey completed by 5+ farmers or proxy analysis completed",
+      "Learner profile includes technology access breakdown, skill level distribution, seasonal availability map",
+      "Key insights documented"
+    ],
+    "context_files": ["PROJECT-CONTEXT.md"]
+  },
+  {
+    "id": "STORY-002",
+    "epic_id": "EPIC-001",
+    "epic_title": "Project Initiation & Research",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Research Existing GitHub Training Resources",
+    "description": "As a curriculum developer, I want to review existing GitHub training materials, so that I can identify gaps for agricultural audiences and reuse applicable content",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 1,
+    "story_points": 3,
+    "blocked_by": [],
+    "tasks": [
+      "Review GitHub Learning Pathways, Microsoft Learn GitHub modules, GitHub Skills",
+      "Review ../github repository documentation and templates",
+      "Analyze existing materials for agricultural relevance",
+      "Identify reusable resources (terminology, screenshots, exercise patterns)",
+      "Write curriculum/gap-analysis.md"
+    ],
+    "acceptance_criteria": [
+      "Gap analysis document created comparing existing materials to farmer needs",
+      "List of reusable resources compiled",
+      "Recommendation documented: Build custom curriculum"
+    ],
+    "context_files": ["PROJECT-CONTEXT.md"]
+  },
+  {
+    "id": "STORY-003",
+    "epic_id": "EPIC-001",
+    "epic_title": "Project Initiation & Research",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Build Farm Use Case Library",
+    "description": "As a curriculum developer, I want to identify 10+ farming scenarios where GitHub solves real problems, so that I can make every training exercise relevant and practical",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 1,
+    "story_points": 5,
+    "blocked_by": [],
+    "tasks": [
+      "Brainstorm farm management challenges across categories (task tracking, record-keeping, coordination, compliance, equipment, livestock, scheduling)",
+      "Map GitHub features to farm scenarios (repos for field data, issues for repairs, projects for planting)",
+      "Document 10+ use cases with farm problem, GitHub feature, expected outcome, difficulty level",
+      "Validate use cases with agricultural extension expert if available"
+    ],
+    "acceptance_criteria": [
+      "Farm use case library includes 10+ scenarios",
+      "Each use case includes farm problem, GitHub feature, expected outcome, difficulty level",
+      "Use cases cover diverse farm types (crops, livestock, equipment, compliance)"
+    ],
+    "context_files": ["PROJECT-CONTEXT.md"]
+  },
+  {
+    "id": "STORY-004",
+    "epic_id": "EPIC-001",
+    "epic_title": "Project Initiation & Research",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Create Project Planning Artifacts",
+    "description": "As a curriculum developer, I want to publish planning documents so that the project has clear scope, timeline, and risk management",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 1,
+    "story_points": 13,
+    "blocked_by": [],
+    "tasks": [
+      "Review and finalize PROJECT-PLAN.md",
+      "Review and finalize JIRA-STRUCTURE.md",
+      "Review and finalize RISK-REGISTER.md",
+      "Review and finalize DEPENDENCY-ANALYSIS.md",
+      "Review and finalize RACI-CHART.md",
+      "Fix broken links to BEST-PRACTICES.md and _research/DOMAIN-RESEARCH.md"
+    ],
+    "acceptance_criteria": [
+      "All planning artifacts published to repository root",
+      "Cross-references between documents are accurate",
+      "Planning artifacts include Mermaid diagrams, tables, and cross-links"
+    ],
+    "context_files": [
+      "PROJECT-PLAN.md",
+      "JIRA-STRUCTURE.md",
+      "RISK-REGISTER.md",
+      "DEPENDENCY-ANALYSIS.md",
+      "RACI-CHART.md"
+    ]
+  },
+  {
+    "id": "STORY-005",
+    "epic_id": "EPIC-002",
+    "epic_title": "Curriculum Design & Planning",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Define Learning Objectives for All Sessions",
+    "description": "As a curriculum developer, I want to write measurable learning objectives for each of 8-12 sessions, so that learners know what they'll achieve and I can assess skill acquisition",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 2,
+    "story_points": 8,
+    "blocked_by": ["STORY-001", "STORY-003"],
+    "tasks": [
+      "Map curriculum to Bloom's Taxonomy progression (Sessions 1-2: Remember/Understand; 3-6: Apply/Analyze; 7-12: Evaluate/Create)",
+      "Write 3-5 learning objectives per session using Bloom's action verbs",
+      "Ensure objectives are measurable via hands-on demonstrations",
+      "Validate progression: each session builds on previous skills",
+      "Write curriculum/learning-objectives.md"
+    ],
+    "acceptance_criteria": [
+      "Learning objectives document includes 3-5 objectives per session (24-60 total)",
+      "Objectives use Bloom's Taxonomy verbs appropriate to cognitive level",
+      "Progression validated: Session 1 is foundational, Session 12 requires cumulative skills"
+    ],
+    "context_files": [
+      "curriculum/learner-profile.md",
+      "curriculum/farm-use-cases.md",
+      "PROJECT-CONTEXT.md"
+    ]
+  },
+  {
+    "id": "STORY-006",
+    "epic_id": "EPIC-002",
+    "epic_title": "Curriculum Design & Planning",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Create Session Outline Template",
+    "description": "As a curriculum developer, I want a reusable session structure following Kolb's Experiential Learning Cycle, so that every session follows a consistent, research-backed format",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 2,
+    "story_points": 5,
+    "blocked_by": ["STORY-001"],
+    "tasks": [
+      "Design template with Kolb's Cycle sections: Learning Objectives, Farm Context, Instructor Demo, Guided Practice, Concept Explanation, Independent Practice, Reflection, Application Assignment, Feedback Survey",
+      "Include timing for 2.5-hour sessions with breaks",
+      "Add accessibility features checklist",
+      "Include 'I do, we do, you do' facilitation script sections",
+      "Write curriculum/session-template.md"
+    ],
+    "acceptance_criteria": [
+      "Session outline template document created",
+      "Template includes all Kolb's Cycle stages",
+      "Timing allocates 60-70% to hands-on practice",
+      "Accessibility checklist integrated"
+    ],
+    "context_files": [
+      "curriculum/learning-objectives.md",
+      "RUNBOOK-TEMPLATE.md"
+    ]
+  },
+  {
+    "id": "STORY-007",
+    "epic_id": "EPIC-002",
+    "epic_title": "Curriculum Design & Planning",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Plan Seasonal Scheduling with Blackout Periods",
+    "description": "As a curriculum developer, I want to create a delivery calendar that avoids planting and harvest seasons, so that farmers can attend without conflicts",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 2,
+    "story_points": 3,
+    "blocked_by": ["STORY-001"],
+    "tasks": [
+      "Define planting (May-June) and harvest (Sept-Oct) blackout periods",
+      "Design 3 training blocks: Block 1 (March-April), Block 2 (July-Aug), Block 3 (Nov-Dec)",
+      "Plan recap sessions after each seasonal gap",
+      "Plan asynchronous resources for gaps (videos, refresher one-pager, GitHub Discussions)",
+      "Write curriculum/seasonal-schedule.md"
+    ],
+    "acceptance_criteria": [
+      "Seasonal scheduling calendar created showing 3 blocks",
+      "Blackout periods documented; sessions scheduled around them",
+      "Recap session plans created",
+      "Asynchronous resource plan documented"
+    ],
+    "context_files": ["curriculum/learner-profile.md", "PROJECT-CONTEXT.md"]
+  },
+  {
+    "id": "STORY-008",
+    "epic_id": "EPIC-002",
+    "epic_title": "Curriculum Design & Planning",
+    "phase": 1,
+    "phase_name": "Preparation & Analysis",
+    "story_title": "Design Accessibility Compliance Checklist",
+    "description": "As a curriculum developer, I want a comprehensive checklist of WCAG 2.2 Level AA and Section 508 requirements, so that every material I create meets accessibility standards",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 2,
+    "story_points": 5,
+    "blocked_by": [],
+    "tasks": [
+      "Research WCAG 2.2 Level AA success criteria for training materials",
+      "Document Section 508 requirements by material type",
+      "Create checklist with 20+ checkpoints: Visual, Auditory, Navigation, Content, Structure",
+      "Identify testing tools: WAVE, axe DevTools, WebAIM Contrast Checker, NVDA/JAWS",
+      "Write curriculum/accessibility-checklist.md"
+    ],
+    "acceptance_criteria": [
+      "Accessibility checklist created with 20+ checkpoints",
+      "Checklist covers all material types (slides, videos, documents, exercises)",
+      "Testing tools identified with instructions",
+      "Checklist integrated into session template"
+    ],
+    "context_files": ["RUNBOOK-TEMPLATE.md"]
+  },
+  {
+    "id": "STORY-009",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Develop Session 1 — Introduction to GitHub & Repositories",
+    "description": "As a curriculum developer, I want to create Session 1 materials teaching farmers what GitHub is and how to navigate repositories, so that learners build foundational knowledge and confidence",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 3,
+    "story_points": 13,
+    "blocked_by": ["STORY-005", "STORY-006", "STORY-008"],
+    "tasks": [
+      "Create 20-25 slide deck: What is GitHub? (farm analogies), Repository tour, navigating files, account creation",
+      "Develop hands-on lab: Explore sample farm repository (find planting schedule, read equipment log)",
+      "Write quick-reference guide: GitHub Terminology Cheat Sheet (15+ terms with farm analogies)",
+      "Create facilitation script with 'I do, we do, you do' progression and timing",
+      "Apply accessibility: alt text, high-contrast, 18pt+ fonts, keyboard navigation"
+    ],
+    "acceptance_criteria": [
+      "Slide deck follows session template structure",
+      "Lab exercise uses farming scenario from use case library",
+      "Quick-reference guide is 1-2 pages, printer-friendly",
+      "Facilitation script includes timing, talking points, troubleshooting",
+      "Materials pass accessibility checklist (alt text, contrast 4.5:1+, 18pt+ fonts)"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md",
+      "curriculum/farm-use-cases.md",
+      "curriculum/accessibility-checklist.md"
+    ]
+  },
+  {
+    "id": "STORY-010",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Develop Session 2 — GitHub Issues for Task Tracking",
+    "description": "As a curriculum developer, I want to teach farmers how to create, manage, and comment on Issues, so that they can use GitHub for farm task tracking",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 3,
+    "story_points": 13,
+    "blocked_by": ["STORY-005", "STORY-006", "STORY-008"],
+    "tasks": [
+      "Create slide deck: What are Issues? Creating, labeling, assigning, commenting, closing",
+      "Develop hands-on lab: Create broken fence repair issue with photo, assign, comment, close",
+      "Write quick-reference guide: Issue Creation Step-by-Step with screenshots",
+      "Create facilitation script; apply accessibility features"
+    ],
+    "acceptance_criteria": [
+      "Slide deck uses farm examples (equipment repairs, livestock alerts, planting tasks)",
+      "Lab exercise includes photo upload tested across devices",
+      "Quick-reference guide includes screenshots with callouts",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md",
+      "curriculum/farm-use-cases.md"
+    ]
+  },
+  {
+    "id": "STORY-011",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Develop Session 3 — GitHub Projects for Planning",
+    "description": "As a curriculum developer, I want to teach farmers how to use GitHub Projects for farm planning, so that they can organize tasks visually and track progress",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 4,
+    "story_points": 13,
+    "blocked_by": ["STORY-005", "STORY-006", "STORY-008"],
+    "tasks": [
+      "Create slide deck: What are Projects? Board vs Table vs Timeline, adding issues, organizing",
+      "Develop hands-on lab: Create spring planting project board with issues per field",
+      "Write quick-reference guide: Project Board Setup Checklist",
+      "Create facilitation script; apply accessibility features"
+    ],
+    "acceptance_criteria": [
+      "Slide deck demonstrates Board, Table, and Timeline views",
+      "Lab exercise produces functional project board",
+      "Quick-reference guide includes when to use each view type",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md",
+      "curriculum/farm-use-cases.md"
+    ]
+  },
+  {
+    "id": "STORY-012",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Conduct Accessibility Audit of Sessions 1-3",
+    "description": "As a curriculum developer, I want to test Session 1-3 materials with accessibility tools, so that I confirm WCAG 2.2 Level AA compliance",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 4,
+    "story_points": 5,
+    "blocked_by": ["STORY-009", "STORY-010", "STORY-011"],
+    "tasks": [
+      "Run WAVE accessibility checker on slide decks (export as PDF)",
+      "Test with screen reader (NVDA or VoiceOver)",
+      "Check color contrast ratios (WebAIM, target 4.5:1+)",
+      "Test keyboard navigation for interactive elements",
+      "Review alt text quality and completeness",
+      "Write curriculum/accessibility-audit-sessions-1-3.md"
+    ],
+    "acceptance_criteria": [
+      "Accessibility audit report documents findings and fixes",
+      "90%+ checklist items pass",
+      "Failures remediated and re-tested",
+      "Audit report includes screenshots"
+    ],
+    "context_files": [
+      "curriculum/accessibility-checklist.md",
+      "sessions/session-01/",
+      "sessions/session-02/",
+      "sessions/session-03/"
+    ]
+  },
+  {
+    "id": "STORY-013",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Pilot Test Session 1-3 Materials",
+    "description": "As a curriculum developer, I want to test prototype materials with 1-2 farmers or agricultural educators, so that I validate approach and assess cognitive load",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 4,
+    "story_points": 8,
+    "blocked_by": ["STORY-012"],
+    "tasks": [
+      "Recruit 1-2 pilot testers (farmers or extension educators)",
+      "Deliver Session 1 materials to testers",
+      "Collect feedback: clarity, pacing, relevance, overwhelming?",
+      "Observe cognitive load: concept struggles, too many terms?",
+      "Write curriculum/pilot-test-report.md with revision priority list"
+    ],
+    "acceptance_criteria": [
+      "Pilot testing completed with 1-2 testers",
+      "Feedback collected via survey or interview",
+      "Cognitive load assessment documented (low/medium/high per session)",
+      "Revision list created with priority rankings"
+    ],
+    "context_files": [
+      "sessions/session-01/",
+      "sessions/session-02/",
+      "sessions/session-03/",
+      "curriculum/learner-profile.md"
+    ]
+  },
+  {
+    "id": "STORY-014",
+    "epic_id": "EPIC-003",
+    "epic_title": "Sessions 1-3 Content Development (Prototype)",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Iterate Session 1-3 Based on Pilot Feedback",
+    "description": "As a curriculum developer, I want to revise prototype materials based on pilot testing findings, so that materials are refined before replicating to Sessions 4-12",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 5,
+    "story_points": 5,
+    "blocked_by": ["STORY-013"],
+    "tasks": [
+      "Review pilot feedback and cognitive load observations",
+      "Revise slides to simplify complex sections",
+      "Adjust lab exercises (add scaffolding or stretch challenges)",
+      "Update facilitation scripts with troubleshooting notes",
+      "Re-run accessibility audit on revised materials",
+      "Update session template with lessons learned"
+    ],
+    "acceptance_criteria": [
+      "All high-priority revisions implemented",
+      "Revised materials re-tested if major changes",
+      "Session template updated with lessons learned",
+      "Final Session 1-3 materials ready for delivery"
+    ],
+    "context_files": [
+      "curriculum/pilot-test-report.md",
+      "sessions/session-01/",
+      "sessions/session-02/",
+      "sessions/session-03/"
+    ]
+  },
+  {
+    "id": "STORY-015",
+    "epic_id": "EPIC-009",
+    "epic_title": "Accessibility Compliance & Testing",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Create Accessibility Testing Workflow",
+    "description": "As a curriculum developer, I want a repeatable process for testing accessibility, so that every material is evaluated consistently",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 3,
+    "story_points": 3,
+    "blocked_by": ["STORY-008"],
+    "tasks": [
+      "Document 6-step testing workflow: WAVE/axe, screen reader, contrast, captions, keyboard nav, log results",
+      "Create testing log template with columns: Material, Date, Tool, Pass/Fail, Issues, Remediation",
+      "List remediation resources (WCAG reference, alt text guide, caption tools)",
+      "Schedule testing checkpoints after each session development"
+    ],
+    "acceptance_criteria": [
+      "Accessibility testing workflow document created",
+      "Testing log template ready for use",
+      "Workflow integrated into session development tasks"
+    ],
+    "context_files": ["curriculum/accessibility-checklist.md"]
+  },
+  {
+    "id": "STORY-016",
+    "epic_id": "EPIC-009",
+    "epic_title": "Accessibility Compliance & Testing",
+    "phase": 2,
+    "phase_name": "Iterative Design",
+    "story_title": "Implement Universal Design for Learning (UDL) Features",
+    "description": "As a curriculum developer, I want to provide multiple means of representation, action, and engagement, so that learners with diverse needs can all succeed",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 5,
+    "story_points": 8,
+    "blocked_by": ["STORY-014"],
+    "tasks": [
+      "Add visual + verbal + hands-on components to every session",
+      "Provide choice in practice scenarios (crops vs livestock vs equipment)",
+      "Design multi-method assessments (verbal, written, hands-on)",
+      "Create motivational 'Why this matters for YOUR farm' openings",
+      "Develop peer pairing strategy for varied skill levels",
+      "Write curriculum/udl-implementation-guide.md"
+    ],
+    "acceptance_criteria": [
+      "Every session includes at least 3 representation modes",
+      "Learners have choice in 2+ aspects per session",
+      "UDL principles checklist completed for all materials"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/accessibility-checklist.md"
+    ]
+  },
+  {
+    "id": "STORY-017",
+    "epic_id": "EPIC-004",
+    "epic_title": "Sessions 4-6 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 4 — Collaboration & Pull Requests (Simplified)",
+    "description": "As a curriculum developer, I want to teach farmers simplified collaboration using GitHub web UI only",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 6,
+    "story_points": 13,
+    "blocked_by": ["STORY-014"],
+    "tasks": [
+      "Create slide deck: collaboration, forking (web UI), editing files, creating PRs, merging",
+      "Develop hands-on lab: fork farm repo, edit planting schedule, submit PR",
+      "Write quick-reference guide: Collaboration Basics",
+      "Create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Slide deck avoids CLI — web UI only",
+      "Lab demonstrates fork → edit → PR workflow",
+      "Materials consistent with Sessions 1-3 structure",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-018",
+    "epic_id": "EPIC-004",
+    "epic_title": "Sessions 4-6 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 5 — Notifications & Team Communication",
+    "description": "As a curriculum developer, I want to teach farmers how to manage GitHub notifications and communicate with team members",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 6,
+    "story_points": 8,
+    "blocked_by": ["STORY-014"],
+    "tasks": [
+      "Create slide deck: watching repos, notification settings, @mentions, Discussions",
+      "Develop hands-on lab: watch repo, @mention peer in issue comment, check notifications",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Materials cover notification management and @mentions",
+      "Lab involves peer interaction",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-019",
+    "epic_id": "EPIC-004",
+    "epic_title": "Sessions 4-6 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 6 — Basic Workflows & Templates",
+    "description": "As a curriculum developer, I want to teach farmers how to use issue templates, saved replies, and project templates",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 6,
+    "story_points": 8,
+    "blocked_by": ["STORY-014"],
+    "tasks": [
+      "Create slide deck: issue templates, saved replies, project templates, repo templates",
+      "Develop hands-on lab: create equipment maintenance issue template",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Materials cover issue templates, saved replies, project templates",
+      "Lab produces reusable issue template",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-020",
+    "epic_id": "EPIC-005",
+    "epic_title": "Sessions 7-9 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 7 — Introduction to GitHub Actions",
+    "description": "As a curriculum developer, I want to introduce farmers to GitHub Actions automation concepts",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 7,
+    "story_points": 13,
+    "blocked_by": ["STORY-017"],
+    "tasks": [
+      "Create slide deck: What are Actions (farm analogy), when to automate, viewing workflow runs, YAML basics (conceptual)",
+      "Develop hands-on lab: view pre-built overdue issue reminder workflow (read-only)",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Actions introduced conceptually without coding",
+      "Lab is read-only exploration of existing workflow",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-021",
+    "epic_id": "EPIC-005",
+    "epic_title": "Sessions 7-9 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 8 — Automating Farm Tasks",
+    "description": "As a curriculum developer, I want to teach farmers how to set up simple automated workflows",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 7,
+    "story_points": 13,
+    "blocked_by": ["STORY-017"],
+    "tasks": [
+      "Create slide deck: automated reminders, starter workflows, customizing simple Actions",
+      "Develop hands-on lab: enable weekly equipment check reminder workflow",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Lab results in working automated workflow",
+      "Instructions require no coding knowledge",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-022",
+    "epic_id": "EPIC-005",
+    "epic_title": "Sessions 7-9 Content Development",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 9 — Advanced Projects & Roadmaps",
+    "description": "As a curriculum developer, I want to teach advanced GitHub Projects features",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 8,
+    "story_points": 8,
+    "blocked_by": ["STORY-017"],
+    "tasks": [
+      "Create slide deck: custom fields, iterations, roadmap view, linking to repos",
+      "Develop hands-on lab: build seasonal farm roadmap with timeline and custom fields",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Covers custom fields, iterations, roadmap view",
+      "Lab produces seasonal roadmap",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-023",
+    "epic_id": "EPIC-006",
+    "epic_title": "Sessions 10-12 Advanced Content",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 10 — GitHub Copilot Basics",
+    "description": "As a curriculum developer, I want to introduce farmers to GitHub Copilot for AI-assisted work",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 8,
+    "story_points": 8,
+    "blocked_by": ["STORY-020"],
+    "tasks": [
+      "Create slide deck: What is Copilot, how to enable, AI-assisted issue creation, prompting best practices",
+      "Develop hands-on lab: use Copilot to draft spring planting task issue",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Copilot presented as helpful assistant",
+      "Lab demonstrates practical AI assistance for farm tasks",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-024",
+    "epic_id": "EPIC-006",
+    "epic_title": "Sessions 10-12 Advanced Content",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 11 — GitHub Spark & Agents",
+    "description": "As a curriculum developer, I want to introduce GitHub Spark and Agents features",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 9,
+    "story_points": 8,
+    "blocked_by": ["STORY-020"],
+    "tasks": [
+      "Create slide deck: What is Spark, creating simple apps, GitHub Agents intro",
+      "Develop hands-on lab: use Spark to create farm weather checklist app",
+      "Write quick-reference guide; create facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Spark and Agents introduced conceptually",
+      "Lab produces working Spark app",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-025",
+    "epic_id": "EPIC-006",
+    "epic_title": "Sessions 10-12 Advanced Content",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Develop Session 12 — Capstone Project & Train-the-Trainer",
+    "description": "As a curriculum developer, I want learners to build a complete farm project and practice teaching peers",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 9,
+    "story_points": 13,
+    "blocked_by": ["STORY-020"],
+    "tasks": [
+      "Create capstone project brief: complete farm management system in GitHub",
+      "Create capstone rubric aligned with Bloom's Create level",
+      "Design peer teaching exercise (5-10 min each)",
+      "Create train-the-trainer coaching outline",
+      "Write facilitation script; apply accessibility"
+    ],
+    "acceptance_criteria": [
+      "Capstone brief and rubric created",
+      "Peer teaching exercise designed",
+      "Train-the-trainer coaching outline documented",
+      "Materials pass accessibility checklist"
+    ],
+    "context_files": [
+      "curriculum/session-template.md",
+      "curriculum/learning-objectives.md"
+    ]
+  },
+  {
+    "id": "STORY-026",
+    "epic_id": "EPIC-007",
+    "epic_title": "Farming Project Templates",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Farm Task Tracker Template",
+    "description": "As a curriculum developer, I want a ready-to-use GitHub template for farm task tracking",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 7,
+    "story_points": 8,
+    "blocked_by": ["STORY-003"],
+    "tasks": [
+      "Create repo with README, issue templates (equipment, livestock, crops, maintenance), labels, project board",
+      "Write setup instructions at grade 8 reading level",
+      "Test by creating new repository from template"
+    ],
+    "acceptance_criteria": [
+      "Template contains README, issue templates, labels, project board",
+      "Template tested by creating new repo",
+      "Setup instructions written at accessible reading level"
+    ],
+    "context_files": ["curriculum/farm-use-cases.md"]
+  },
+  {
+    "id": "STORY-027",
+    "epic_id": "EPIC-007",
+    "epic_title": "Farming Project Templates",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Planting Schedule Template",
+    "description": "As a curriculum developer, I want a GitHub template for tracking planting schedules",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 7,
+    "story_points": 8,
+    "blocked_by": ["STORY-003"],
+    "tasks": [
+      "Create repo with README, timeline project, issues with custom fields (planting date, harvest, status), sample data",
+      "Write setup instructions; test template"
+    ],
+    "acceptance_criteria": [
+      "Template uses timeline view with date-based custom fields",
+      "Sample data demonstrates realistic planting schedule",
+      "Template tested successfully"
+    ],
+    "context_files": ["curriculum/farm-use-cases.md"]
+  },
+  {
+    "id": "STORY-028",
+    "epic_id": "EPIC-007",
+    "epic_title": "Farming Project Templates",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Equipment Maintenance Log Template",
+    "description": "As a curriculum developer, I want a GitHub template for equipment maintenance tracking",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 8,
+    "story_points": 5,
+    "blocked_by": ["STORY-003"],
+    "tasks": [
+      "Create repo with README, maintenance issue templates, equipment labels, photo upload guidance",
+      "Write setup instructions; test template"
+    ],
+    "acceptance_criteria": [
+      "Template includes photo upload guidance",
+      "Labels cover common equipment categories",
+      "Template tested"
+    ],
+    "context_files": ["curriculum/farm-use-cases.md"]
+  },
+  {
+    "id": "STORY-029",
+    "epic_id": "EPIC-007",
+    "epic_title": "Farming Project Templates",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Grant Compliance Tracker Template",
+    "description": "As a curriculum developer, I want a GitHub template for grant compliance tracking",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 8,
+    "story_points": 5,
+    "blocked_by": ["STORY-003"],
+    "tasks": [
+      "Create repo with README (audit trail explanation), compliance milestone issues, deliverable project board, commit history guidance",
+      "Write setup instructions; test template"
+    ],
+    "acceptance_criteria": [
+      "Template demonstrates audit trail via commit history",
+      "Issues represent realistic grant milestones",
+      "Template tested"
+    ],
+    "context_files": ["curriculum/farm-use-cases.md"]
+  },
+  {
+    "id": "STORY-030",
+    "epic_id": "EPIC-008",
+    "epic_title": "Quick-Reference Guides & Job Aids",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create GitHub Terminology Glossary",
+    "description": "As a curriculum developer, I want a plain-language glossary with farm analogies for all GitHub terms",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 9,
+    "story_points": 5,
+    "blocked_by": ["STORY-025"],
+    "tasks": [
+      "Define 30+ terms in plain language with farm analogies",
+      "Include annotated screenshots for key terms",
+      "Format for screen reading and printing (PDF-friendly)"
+    ],
+    "acceptance_criteria": [
+      "Glossary includes 30+ terms with farm analogies",
+      "Screenshots included",
+      "Printer-friendly format"
+    ],
+    "context_files": []
+  },
+  {
+    "id": "STORY-031",
+    "epic_id": "EPIC-008",
+    "epic_title": "Quick-Reference Guides & Job Aids",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Common Tasks Cheat Sheet",
+    "description": "As a curriculum developer, I want a printable quick-reference for common GitHub tasks",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 9,
+    "story_points": 5,
+    "blocked_by": ["STORY-025"],
+    "tasks": [
+      "Create 1-2 page cheat sheet covering 7+ common tasks with numbered steps and screenshots",
+      "Format as printable PDF (high contrast, large text)"
+    ],
+    "acceptance_criteria": [
+      "Covers 7+ common tasks",
+      "Numbered steps with screenshots",
+      "Fits on 1-2 printed pages"
+    ],
+    "context_files": []
+  },
+  {
+    "id": "STORY-032",
+    "epic_id": "EPIC-008",
+    "epic_title": "Quick-Reference Guides & Job Aids",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Troubleshooting Guide",
+    "description": "As a curriculum developer, I want a FAQ-style guide for common GitHub problems",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 9,
+    "story_points": 5,
+    "blocked_by": ["STORY-025"],
+    "tasks": [
+      "Document 10+ common problems with step-by-step solutions and screenshots",
+      "Format as FAQ-style document"
+    ],
+    "acceptance_criteria": [
+      "Covers 10+ common problems",
+      "Solutions include screenshots",
+      "Written at accessible reading level"
+    ],
+    "context_files": []
+  },
+  {
+    "id": "STORY-033",
+    "epic_id": "EPIC-008",
+    "epic_title": "Quick-Reference Guides & Job Aids",
+    "phase": 3,
+    "phase_name": "Iterative Development",
+    "story_title": "Create Device-Specific Guides",
+    "description": "As a curriculum developer, I want annotated guides showing GitHub tasks on different device types",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 9,
+    "story_points": 8,
+    "blocked_by": ["STORY-025"],
+    "tasks": [
+      "Create annotated screenshot guides for laptop, tablet, and phone",
+      "Highlight device-specific differences and limitations",
+      "Format as 2-4 page printable guides"
+    ],
+    "acceptance_criteria": [
+      "Guides for laptop, tablet, and phone created",
+      "Screenshots annotated with callouts",
+      "Device limitations noted"
+    ],
+    "context_files": []
+  },
+  {
+    "id": "STORY-034",
+    "epic_id": "EPIC-010",
+    "epic_title": "Training Delivery Infrastructure",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Set Up Demo GitHub Environment",
+    "description": "As a curriculum developer, I want a demo GitHub organization with sample farm repositories for live demonstrations",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 10,
+    "story_points": 5,
+    "blocked_by": ["STORY-025"],
+    "tasks": [
+      "Create GitHub organization (e.g., github4farms-training)",
+      "Populate with sample farm repositories (task tracker, planting schedule, equipment log)",
+      "Create demo issues and projects for live demonstrations",
+      "Document setup in delivery/demo-environment-setup.md"
+    ],
+    "acceptance_criteria": [
+      "Demo organization created with 3+ sample repositories",
+      "Sample data is realistic farming scenarios",
+      "Account creation process documented"
+    ],
+    "context_files": ["templates/"]
+  },
+  {
+    "id": "STORY-035",
+    "epic_id": "EPIC-010",
+    "epic_title": "Training Delivery Infrastructure",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Prepare Delivery Equipment & Logistics",
+    "description": "As a curriculum developer, I want training room logistics ready for in-person delivery",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 10,
+    "story_points": 3,
+    "blocked_by": [],
+    "tasks": [
+      "Test projector with slide decks (readability, contrast, font size)",
+      "Arrange seating for pair work with power outlets",
+      "Print handouts (cheat sheets, glossary, troubleshooting guide)",
+      "Set up backup mobile hotspot and test capacity",
+      "Prepare sign-in sheets, name tags, feedback forms"
+    ],
+    "acceptance_criteria": [
+      "Projector tested",
+      "Seating arranged for pairs",
+      "Handouts printed",
+      "Backup internet available"
+    ],
+    "context_files": ["delivery/logistics-checklist.md"]
+  },
+  {
+    "id": "STORY-036",
+    "epic_id": "EPIC-010",
+    "epic_title": "Training Delivery Infrastructure",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Create Feedback Survey Forms",
+    "description": "As a curriculum developer, I want Kirkpatrick evaluation instruments ready for data collection",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 10,
+    "story_points": 5,
+    "blocked_by": [],
+    "tasks": [
+      "Design L1 post-session survey (satisfaction, relevance, pacing, confidence, NPS, open feedback)",
+      "Create L2 instructor assessment rubric (per-session skill checklists)",
+      "Set up L3 tracking plan (GitHub activity at 30/60/180 days, follow-up survey)",
+      "Draft L4 interview protocol (semi-structured 20-30 min for 6-month follow-up)",
+      "Create paper + digital versions"
+    ],
+    "acceptance_criteria": [
+      "L1 survey in accessible format (paper + digital)",
+      "L2 rubric with per-session checklists",
+      "L3 tracking plan documented",
+      "L4 interview protocol drafted"
+    ],
+    "context_files": ["SUCCESS-METRICS.md"]
+  },
+  {
+    "id": "STORY-037",
+    "epic_id": "EPIC-011",
+    "epic_title": "Session Delivery Block 1 (Sessions 1-4)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 1 — Introduction to GitHub & Repositories",
+    "description": "Deliver the first training session in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 11,
+    "story_points": 5,
+    "blocked_by": ["STORY-034", "STORY-035", "STORY-036"],
+    "tasks": [
+      "Set up room (projector, seating, handouts, sign-in, backup internet)",
+      "Deliver session following facilitation script",
+      "Monitor cognitive load and pacing",
+      "Collect L1 feedback survey",
+      "Conduct L2 assessment during practice",
+      "Write delivery/session-01-debrief.md"
+    ],
+    "acceptance_criteria": [
+      "Session delivered following script",
+      "Attendance recorded",
+      "L1 feedback from 80%+ attendees",
+      "L2 data recorded",
+      "Debrief documented"
+    ],
+    "context_files": ["sessions/session-01/"]
+  },
+  {
+    "id": "STORY-038",
+    "epic_id": "EPIC-011",
+    "epic_title": "Session Delivery Block 1 (Sessions 1-4)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 2 — GitHub Issues",
+    "description": "Deliver Session 2 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 11,
+    "story_points": 5,
+    "blocked_by": ["STORY-037"],
+    "tasks": [
+      "Set up room, deliver session, monitor cognitive load",
+      "Collect L1 feedback; conduct L2 assessment",
+      "Write delivery/session-02-debrief.md"
+    ],
+    "acceptance_criteria": [
+      "Session delivered; attendance recorded; L1/L2 data collected; debrief documented"
+    ],
+    "context_files": ["sessions/session-02/"]
+  },
+  {
+    "id": "STORY-039",
+    "epic_id": "EPIC-011",
+    "epic_title": "Session Delivery Block 1 (Sessions 1-4)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 3 — GitHub Projects",
+    "description": "Deliver Session 3 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 12,
+    "story_points": 5,
+    "blocked_by": ["STORY-038"],
+    "tasks": [
+      "Set up room, deliver session, monitor cognitive load",
+      "Collect L1 feedback; conduct L2 assessment",
+      "Write delivery/session-03-debrief.md"
+    ],
+    "acceptance_criteria": [
+      "Session delivered; attendance recorded; L1/L2 data collected; debrief documented"
+    ],
+    "context_files": ["sessions/session-03/"]
+  },
+  {
+    "id": "STORY-040",
+    "epic_id": "EPIC-011",
+    "epic_title": "Session Delivery Block 1 (Sessions 1-4)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 4 — Collaboration",
+    "description": "Deliver Session 4 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 12,
+    "story_points": 5,
+    "blocked_by": ["STORY-039"],
+    "tasks": [
+      "Set up room, deliver session, monitor cognitive load",
+      "Collect L1 feedback; conduct L2 assessment",
+      "Write delivery/session-04-debrief.md"
+    ],
+    "acceptance_criteria": [
+      "Session delivered; attendance recorded; L1/L2 data collected; debrief documented"
+    ],
+    "context_files": ["sessions/session-04/"]
+  },
+  {
+    "id": "STORY-041",
+    "epic_id": "EPIC-012",
+    "epic_title": "Session Delivery Block 2 (Sessions 5-8)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Recap Session Post-Planting Break",
+    "description": "Deliver 30-minute recap covering Sessions 1-4 after planting season break",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 15,
+    "story_points": 3,
+    "blocked_by": ["STORY-040"],
+    "tasks": [
+      "Prepare 30-min recap of Sessions 1-4 key concepts",
+      "Create quick hands-on refresher exercises",
+      "Conduct Q&A on break-period GitHub usage",
+      "Assess knowledge retention informally",
+      "Write delivery/recap-post-planting-debrief.md"
+    ],
+    "acceptance_criteria": [
+      "Recap delivered covering Sessions 1-4",
+      "Knowledge retention informally assessed",
+      "Debrief documented"
+    ],
+    "context_files": [
+      "sessions/session-01/",
+      "sessions/session-02/",
+      "sessions/session-03/",
+      "sessions/session-04/"
+    ]
+  },
+  {
+    "id": "STORY-042",
+    "epic_id": "EPIC-012",
+    "epic_title": "Session Delivery Block 2 (Sessions 5-8)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 5 — Notifications",
+    "description": "Deliver Session 5 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 15,
+    "story_points": 5,
+    "blocked_by": ["STORY-041"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": [
+      "Session delivered; 70%+ attendance; feedback collected"
+    ],
+    "context_files": ["sessions/session-05/"]
+  },
+  {
+    "id": "STORY-043",
+    "epic_id": "EPIC-012",
+    "epic_title": "Session Delivery Block 2 (Sessions 5-8)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 6 — Workflows & Templates",
+    "description": "Deliver Session 6 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 16,
+    "story_points": 5,
+    "blocked_by": ["STORY-042"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-06/"]
+  },
+  {
+    "id": "STORY-044",
+    "epic_id": "EPIC-012",
+    "epic_title": "Session Delivery Block 2 (Sessions 5-8)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 7 — Intro to Actions",
+    "description": "Deliver Session 7 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 17,
+    "story_points": 5,
+    "blocked_by": ["STORY-043"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-07/"]
+  },
+  {
+    "id": "STORY-045",
+    "epic_id": "EPIC-012",
+    "epic_title": "Session Delivery Block 2 (Sessions 5-8)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 8 — Automating Farm Tasks",
+    "description": "Deliver Session 8 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 17,
+    "story_points": 5,
+    "blocked_by": ["STORY-044"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-08/"]
+  },
+  {
+    "id": "STORY-046",
+    "epic_id": "EPIC-013",
+    "epic_title": "Session Delivery Block 3 (Sessions 9-12)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Recap Session Post-Harvest Break",
+    "description": "Deliver 30-minute recap covering Sessions 5-8 after harvest season break",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 19,
+    "story_points": 3,
+    "blocked_by": ["STORY-045"],
+    "tasks": [
+      "Prepare 30-min recap of Sessions 5-8",
+      "Create refresher exercises; assess retention; write debrief"
+    ],
+    "acceptance_criteria": [
+      "Recap delivered; knowledge retention assessed; debrief documented"
+    ],
+    "context_files": [
+      "sessions/session-05/",
+      "sessions/session-06/",
+      "sessions/session-07/",
+      "sessions/session-08/"
+    ]
+  },
+  {
+    "id": "STORY-047",
+    "epic_id": "EPIC-013",
+    "epic_title": "Session Delivery Block 3 (Sessions 9-12)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 9 — Advanced Projects",
+    "description": "Deliver Session 9 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 19,
+    "story_points": 5,
+    "blocked_by": ["STORY-046"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-09/"]
+  },
+  {
+    "id": "STORY-048",
+    "epic_id": "EPIC-013",
+    "epic_title": "Session Delivery Block 3 (Sessions 9-12)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 10 — Copilot Basics",
+    "description": "Deliver Session 10 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 20,
+    "story_points": 5,
+    "blocked_by": ["STORY-047"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-10/"]
+  },
+  {
+    "id": "STORY-049",
+    "epic_id": "EPIC-013",
+    "epic_title": "Session Delivery Block 3 (Sessions 9-12)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 11 — Spark & Agents",
+    "description": "Deliver Session 11 in-person",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 21,
+    "story_points": 5,
+    "blocked_by": ["STORY-048"],
+    "tasks": ["Deliver session; collect L1/L2 data; write debrief"],
+    "acceptance_criteria": ["Session delivered; feedback collected"],
+    "context_files": ["sessions/session-11/"]
+  },
+  {
+    "id": "STORY-050",
+    "epic_id": "EPIC-013",
+    "epic_title": "Session Delivery Block 3 (Sessions 9-12)",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Deliver Session 12 — Capstone & Train-the-Trainer",
+    "description": "Deliver Session 12 with capstone project and peer teaching exercise",
+    "owner": "Curriculum Developer",
+    "priority": "P1",
+    "sprint": 21,
+    "story_points": 8,
+    "blocked_by": ["STORY-049"],
+    "tasks": [
+      "Deliver capstone project session",
+      "Facilitate peer teaching exercise",
+      "Identify train-the-trainer candidates",
+      "Collect L1/L2 data; write debrief with capstone completion rate and TTT notes"
+    ],
+    "acceptance_criteria": [
+      "Capstone projects completed by learners",
+      "Peer teaching exercise conducted",
+      "Train-the-trainer candidates noted"
+    ],
+    "context_files": ["sessions/session-12/"]
+  },
+  {
+    "id": "STORY-051",
+    "epic_id": "EPIC-014",
+    "epic_title": "Assessment & Evaluation",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Collect Kirkpatrick Level 1 (Reaction) Data",
+    "description": "Compile and analyze L1 feedback survey data from all sessions",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 14,
+    "story_points": 5,
+    "blocked_by": ["STORY-037"],
+    "tasks": [
+      "Distribute L1 feedback survey after each session",
+      "Compile responses into tracking spreadsheet",
+      "Analyze satisfaction and engagement trends",
+      "Document common themes (pacing, relevance, confidence, NPS)",
+      "Write evaluation/kirkpatrick-L1-report.md"
+    ],
+    "acceptance_criteria": [
+      "L1 data from 80%+ of learners across all sessions",
+      "Trend analysis documented",
+      "Common feedback themes identified"
+    ],
+    "context_files": ["delivery/evaluation/"]
+  },
+  {
+    "id": "STORY-052",
+    "epic_id": "EPIC-014",
+    "epic_title": "Assessment & Evaluation",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Conduct Kirkpatrick Level 2 (Learning) Assessments",
+    "description": "Track hands-on skill demonstration pass rates across all sessions",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 14,
+    "story_points": 8,
+    "blocked_by": ["STORY-037"],
+    "tasks": [
+      "Use observation checklists during each session",
+      "Track pass rates per learning objective per session",
+      "Identify struggling learners; offer additional support",
+      "Write evaluation/kirkpatrick-L2-report.md"
+    ],
+    "acceptance_criteria": [
+      "L2 data for all sessions",
+      "Pass rates per session and per objective documented",
+      "Struggling learners identified and supported"
+    ],
+    "context_files": ["delivery/evaluation/"]
+  },
+  {
+    "id": "STORY-053",
+    "epic_id": "EPIC-014",
+    "epic_title": "Assessment & Evaluation",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Track Kirkpatrick Level 3 (Behavior) Post-Training",
+    "description": "Monitor GitHub usage at 30, 60, 180 days post-training",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 22,
+    "story_points": 8,
+    "blocked_by": ["STORY-050"],
+    "tasks": [
+      "Monitor GitHub activity at 30, 60, 180 days (repos, issues, projects, comments)",
+      "Distribute 60-day usage survey",
+      "Interview learners about GitHub integration into farm operations",
+      "Document usage patterns and barriers",
+      "Write evaluation/kirkpatrick-L3-report.md"
+    ],
+    "acceptance_criteria": [
+      "Activity tracked at 30, 60, 180 days",
+      "60-day survey distributed and responses collected",
+      "Usage patterns and barriers documented"
+    ],
+    "context_files": ["delivery/evaluation/", "SUCCESS-METRICS.md"]
+  },
+  {
+    "id": "STORY-054",
+    "epic_id": "EPIC-014",
+    "epic_title": "Assessment & Evaluation",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Measure Kirkpatrick Level 4 (Results) Farm Outcomes",
+    "description": "Conduct 6-month interviews to document farm productivity improvements",
+    "owner": "Curriculum Developer",
+    "priority": "P0",
+    "sprint": 22,
+    "story_points": 8,
+    "blocked_by": ["STORY-050"],
+    "tasks": [
+      "Conduct 6-month follow-up interviews using protocol",
+      "Collect farm productivity improvement stories",
+      "Quantify outcomes where possible",
+      "Write 3+ case studies",
+      "Write evaluation/kirkpatrick-L4-report.md"
+    ],
+    "acceptance_criteria": [
+      "Interviews conducted with available learners",
+      "3+ documented farm productivity improvements",
+      "Case studies with farmer quotes and outcomes"
+    ],
+    "context_files": ["delivery/evaluation/", "SUCCESS-METRICS.md"]
+  },
+  {
+    "id": "STORY-055",
+    "epic_id": "EPIC-015",
+    "epic_title": "Iteration & Train-the-Trainer",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Analyze Evaluation Data and Document Lessons Learned",
+    "description": "Synthesize all evaluation data into actionable insights for next cohort",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 22,
+    "story_points": 5,
+    "blocked_by": ["STORY-051", "STORY-052"],
+    "tasks": [
+      "Synthesize L1-L4 data into insights",
+      "Identify what worked well and what to improve",
+      "Prioritize revisions (must-fix, should-fix, nice-to-have)",
+      "Write evaluation/lessons-learned.md"
+    ],
+    "acceptance_criteria": [
+      "Lessons learned document with data-driven insights",
+      "Wins and improvement areas identified",
+      "Revision priorities ranked"
+    ],
+    "context_files": [
+      "evaluation/kirkpatrick-L1-report.md",
+      "evaluation/kirkpatrick-L2-report.md"
+    ]
+  },
+  {
+    "id": "STORY-056",
+    "epic_id": "EPIC-015",
+    "epic_title": "Iteration & Train-the-Trainer",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Revise Curriculum for Next Cohort",
+    "description": "Apply lessons learned to improve materials for second cohort",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 22,
+    "story_points": 13,
+    "blocked_by": ["STORY-055"],
+    "tasks": [
+      "Simplify complex sessions based on L1 pacing and L2 pass rate data",
+      "Add scaffolding to challenging concepts",
+      "Update farm scenarios based on learner feedback",
+      "Refresh screenshots for GitHub UI changes",
+      "Re-run accessibility audit on revised materials",
+      "Update CHANGELOG.md"
+    ],
+    "acceptance_criteria": [
+      "High-priority revisions implemented",
+      "Accessibility audit confirms 90%+ compliance",
+      "CHANGELOG.md updated"
+    ],
+    "context_files": ["evaluation/lessons-learned.md", "sessions/"]
+  },
+  {
+    "id": "STORY-057",
+    "epic_id": "EPIC-015",
+    "epic_title": "Iteration & Train-the-Trainer",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Identify Train-the-Trainer Candidates",
+    "description": "Select high-performing learners for potential trainer role",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 22,
+    "story_points": 3,
+    "blocked_by": ["STORY-050"],
+    "tasks": [
+      "Review L2 data for top performers (90%+ pass rates)",
+      "Assess communication and leadership skills from peer exercises",
+      "Approach candidates about interest in teaching next cohort",
+      "Write evaluation/train-the-trainer-candidates.md"
+    ],
+    "acceptance_criteria": [
+      "1+ candidate identified based on performance data",
+      "Candidate expressed interest",
+      "Candidate profile documented"
+    ],
+    "context_files": ["evaluation/kirkpatrick-L2-report.md"]
+  },
+  {
+    "id": "STORY-058",
+    "epic_id": "EPIC-015",
+    "epic_title": "Iteration & Train-the-Trainer",
+    "phase": 4,
+    "phase_name": "Implementation & Evaluation",
+    "story_title": "Coach Train-the-Trainer Candidates",
+    "description": "Prepare identified candidates to co-deliver future training sessions",
+    "owner": "Curriculum Developer",
+    "priority": "P2",
+    "sprint": 22,
+    "story_points": 13,
+    "blocked_by": ["STORY-057"],
+    "tasks": [
+      "Provide facilitator guides and scripts to candidates",
+      "Walk through session preparation process",
+      "Conduct practice teaching session (15-30 min) with feedback",
+      "Support candidate co-delivering 1+ sessions with observation",
+      "Write evaluation/train-the-trainer-coaching-log.md"
+    ],
+    "acceptance_criteria": [
+      "Facilitator guides provided",
+      "Practice teaching completed with feedback",
+      "Candidate ready to co-deliver at least 1 session"
+    ],
+    "context_files": ["sessions/session-01/", "sessions/session-02/"]
+  }
+]
