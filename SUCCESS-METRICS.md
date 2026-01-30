@@ -596,4 +596,4 @@ The GitHub Training Curriculum project is considered successfully closed when th
 - [PROJECT-PLAN.md](./PROJECT-PLAN.md) - Project goals, phases, ROI
 - [BEST-PRACTICES.md](./_research/BEST-PRACTICES.md) - Framework applications (Kirkpatrick, ADDIE, Andragogy, UDL)
 - [DOMAIN-RESEARCH.md](./_research/DOMAIN-RESEARCH.md) - Industry benchmarks and evaluation standards
-- [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md) - Epic-005: Assessment & Evaluation user stories
+- [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md) - Epic-005: Assessment & Evaluation user stories

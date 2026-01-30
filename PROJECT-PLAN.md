@@ -250,7 +250,7 @@ The project is organized into **15 epics** across 4 phases, decomposed into **60
 - EPIC-014: Assessment & Evaluation
 - EPIC-015: Iteration & Train-the-Trainer
 
-See [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md) for complete epic/story breakdown, sprint planning, and team assignments.
+See [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md) for complete epic/story breakdown, sprint planning, and team assignments.
 
 ---
 
@@ -365,7 +365,7 @@ See [RISK-REGISTER.md](./RISK-REGISTER.md) for detailed risk profiles, contingen
 |----------|-------------|
 | [PROJECT-CONTEXT.md](./PROJECT-CONTEXT.md) | Problem statement, stakeholders, constraints, desired outcomes |
 | [PROJECT-PLAN.md](./PROJECT-PLAN.md) | This document - executive summary, phases, timeline, ROI, risks |
-| [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md) | Epic hierarchy, user stories, sprint planning, story points |
+| [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md) | Epic hierarchy, user stories, sprint planning, story points |
 | [GANTT-CHART.md](./GANTT-CHART.md) | Visual timeline, critical path, dependency matrix, milestones |
 | [DEPENDENCY-ANALYSIS.md](./DEPENDENCY-ANALYSIS.md) | Critical path analysis, dependency graph, bottleneck identification |
 | [RACI-CHART.md](./RACI-CHART.md) | Responsibility matrix, role definitions, decision authority |

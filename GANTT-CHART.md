@@ -268,7 +268,7 @@ Training sessions must accommodate agricultural seasons when farmers are unavail
 
 This Gantt chart is synchronized with:
 - [PROJECT-PLAN.md](./PROJECT-PLAN.md) - Phase descriptions, objectives, ROI
-- [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md) - Epic definitions, stories, acceptance criteria
+- [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md) - Epic definitions, stories, acceptance criteria
 - [DEPENDENCY-ANALYSIS.md](./DEPENDENCY-ANALYSIS.md) - Critical path analysis, bottlenecks, parallel tracks
 - [RISK-REGISTER.md](./RISK-REGISTER.md) - Risk mitigation strategies affecting timeline
 - [SUCCESS-METRICS.md](./SUCCESS-METRICS.md) - Milestone success criteria and KPIs

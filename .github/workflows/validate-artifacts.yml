@@ -71,7 +71,7 @@ jobs:
           for f in *.md; do
             while IFS= read -r link; do
               target=$(echo "$link" | sed 's/.*](//' | sed 's/).*//')
-              if [[ "$target" != http* ]] && [[ "$target" != "#"* ]] && [ ! -f "$target" ]; then
+              if [[ "$target" != http* ]] && [[ "$target" != "#"* ]] && [ ! -e "$target" ]; then
                 echo "BROKEN LINK in $f: $target"
                 broken=$((broken + 1))
               fi

@@ -1052,4 +1052,4 @@ Some learners genuinely believe "I'm not good with technology." This is a mindse
 - [PROJECT-PLAN.md](./PROJECT-PLAN.md) - Project phases and timeline
 - [SUCCESS-METRICS.md](./SUCCESS-METRICS.md) - Kirkpatrick evaluation framework and measurement instruments
 - [BEST-PRACTICES.md](./_research/BEST-PRACTICES.md) - Framework applications (Kolb, Andragogy, UDL, Agricultural Extension)
-- [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md) - Epic-010: Training Delivery Infrastructure
+- [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md) - Epic-010: Training Delivery Infrastructure

@@ -126,7 +126,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 #### Core Planning Documents
 - [PROJECT-CONTEXT.md](./PROJECT-CONTEXT.md): Problem statement, stakeholder analysis, constraints, and desired outcomes for GitHub training curriculum targeting farmers with zero technical background
 - [PROJECT-PLAN.md](./PROJECT-PLAN.md): Comprehensive 4-phase project plan with current state analysis, goals, timeline (47 weeks), JIRA overview, RACI summary, ROI model, and risk management summary
-- [JIRA-STRUCTURE.md](./JIRA-STRUCTURE.md): Complete work breakdown structure with 15 epics, 58 user stories, acceptance criteria, sprint planning (~240 story points), and team assignments
+- [JIRA-STRUCTURE.md](./_plan/JIRA-STRUCTURE.md): Complete work breakdown structure with 15 epics, 58 user stories, acceptance criteria, sprint planning (~240 story points), and team assignments
 - [DEPENDENCY-ANALYSIS.md](./DEPENDENCY-ANALYSIS.md): Critical path analysis, dependency graph, bottleneck identification, parallel work tracks, and risk-adjusted scheduling
 
 #### Governance & Risk Management
@@ -150,14 +150,14 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [CHANGELOG.md](./CHANGELOG.md): This document - version history of all planning artifacts
 
 #### Executive Materials
-- [workspace/slides/01-cover.html](./workspace/slides/01-cover.html): Executive briefing cover slide with project title and tagline
-- [workspace/slides/02-problem.html](./workspace/slides/02-problem.html): Problem statement slide with current state metrics table
-- [workspace/slides/03-approach.html](./workspace/slides/03-approach.html): Solution approach slide with 4-phase overview and instructional design frameworks
-- [workspace/slides/04-timeline.html](./workspace/slides/04-timeline.html): Timeline slide with 47-week Gantt visualization and critical milestones
-- [workspace/slides/05-governance.html](./workspace/slides/05-governance.html): Governance slide with RACI summary and top 5 risks
-- [workspace/slides/06-metrics.html](./workspace/slides/06-metrics.html): Success metrics slide with Kirkpatrick 4-level KPIs and dashboard preview
-- [workspace/slides/07-outcomes.html](./workspace/slides/07-outcomes.html): Expected outcomes slide with ROI model and 3-year impact projection
-- [workspace/slides/08-next-steps.html](./workspace/slides/08-next-steps.html): Next steps slide with immediate action items and contact information
+- [workspace/slides/slide1-title.html](./workspace/slides/slide1-title.html): Executive briefing cover slide with project title and tagline
+- [workspace/slides/slide2-problem.html](./workspace/slides/slide2-problem.html): Problem statement slide with current state metrics table
+- [workspace/slides/slide3-before-after.html](./workspace/slides/slide3-before-after.html): Solution approach slide with before/after comparison
+- [workspace/slides/slide4-phases.html](./workspace/slides/slide4-phases.html): Timeline slide with 4-phase overview and milestones
+- [workspace/slides/slide5-roi.html](./workspace/slides/slide5-roi.html): ROI model and financial impact projection
+- [workspace/slides/slide6-metrics.html](./workspace/slides/slide6-metrics.html): Success metrics slide with Kirkpatrick 4-level KPIs
+- [workspace/slides/slide7-risks.html](./workspace/slides/slide7-risks.html): Risk summary slide with top risks and mitigation
+- [workspace/slides/slide8-next-steps.html](./workspace/slides/slide8-next-steps.html): Next steps slide with immediate action items
 
 #### Build Infrastructure
 - [workspace/package.json](./workspace/package.json): NPM dependencies for asset generation (Puppeteer for PNG screenshots, PptxGenJS for PowerPoint deck)
