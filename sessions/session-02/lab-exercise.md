@@ -16,7 +16,7 @@
 
 ---
 
-## Part 1: Create Your First Issue (10 minutes)
+## Part 1: Create Your First Issue (12 minutes)
 
 **Instructions:**
 
@@ -46,7 +46,7 @@
   - What service is needed
   - When it's due
 
-5. Upload a photo: Click the **paperclip icon** at the bottom of the description box and select a sample photo (provided by instructor) OR use any photo from your device
+5. Upload a photo: Click the **paperclip icon** at the bottom of the description box and select a sample photo (provided by instructor) OR use any photo from your device. **Can't find a photo?** Check your Downloads folder, or skip this step for now — you can add a photo later by editing the Issue.
 6. Click **"Submit new issue"**
 
 **Checkpoint:** Your Issue should appear with a number (like #5 or #12).
@@ -60,7 +60,7 @@
 
 **Instructions:**
 
-7. On your Issue page, look at the right sidebar
+7. On your Issue page, look at the right side of the page
 8. Click **"Labels"** and select the label that fits:
 
 | Scenario | Recommended Labels |
@@ -73,12 +73,12 @@
 
 **Checkpoint:** Your Issue should show colored label badges and your name as assignee.
 
-- **Question 2:** What color is your label?
+- **Question 2:** What is the name of the label you added? (e.g., equipment, crops)
 - Answer: _____
 
 ---
 
-## Part 3: Create Two More Issues (10 minutes)
+## Part 3: Create Two More Issues (13 minutes)
 
 **Instructions:**
 
@@ -89,7 +89,11 @@
 **Option B suggestions:** "Deworm calves before turnout", "Check water trough heating element"
 **Option C suggestions:** "Fix broken fence post — north pasture", "Replace irrigation nozzle in Field 2"
 
-12. Create **Issue #3** — choose any farm task you want! This one should be from your real farm if possible.
+12. Create **Issue #3** — choose any farm task you want! This one should be from your real farm if possible. **Need an idea?** Try one of these:
+    - "Clean chicken coop before new chicks arrive"
+    - "Replace worn belts on combine before harvest"
+    - "Repair gate latch on south field"
+    - "Test well water quality this month"
 
 13. Add a label to each new Issue.
 
@@ -97,7 +101,7 @@
 
 ---
 
-## Part 4: Comment and Close (10 minutes)
+## Part 4: Comment and Close (5 minutes)
 
 **Instructions:**
 
@@ -169,7 +173,9 @@ You have completed this exercise when:
 | Can't find the Issues tab | It's in the tab bar near the top of the repository page, between "Code" and "Pull requests" |
 | "New issue" button is grayed out | Make sure you're logged in. Check that you have access to this repository. |
 | Photo won't upload | Check file size (must be under 10MB). Try a different photo format (JPG, PNG work best). |
-| Can't find labels | After creating the Issue, look at the right sidebar. Click "Labels" to see the list. |
+| Can't find labels | After creating the Issue, look at the right side of the page. Click "Labels" to see the list. |
+| Can't find my photo to upload | Check your Downloads folder or Pictures folder. On a phone, try the camera icon to take a new photo. |
+| Made a typo in the title | Click the three-dot menu (...) next to the Issue title, then click "Edit" to fix it. |
 | Accidentally closed an Issue | Click "Reopen issue" at the bottom of the Issue page. |
 | Can't see other people's Issues | Make sure you're on the Issues tab and "Open" is selected. |
 
@@ -181,7 +187,7 @@ You have completed this exercise when:
 |--------|-------|
 | **Laptop/Desktop** | Best experience. All features work as described. |
 | **Tablet** | Works well. Photo upload via camera or photo library. Sidebar may require scrolling. |
-| **Smartphone** | Issues tab may be in a menu (tap the hamburger icon ☰). Photo upload works from camera. Labels may require scrolling right sidebar. |
+| **Smartphone** | Issues tab may be in a menu (tap the hamburger icon ☰). Photo upload works from camera. Labels may require scrolling right side of the page. |
 
 ---
 

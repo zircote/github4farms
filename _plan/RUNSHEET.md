@@ -141,23 +141,23 @@
 
 ### Epic EPIC-003: Iteration
 
-- [ ] **STORY-014** — Iterate Sessions 1-3 Based on Pilot Feedback
-  - [ ] Implement all must-fix revisions
-  - [ ] Simplify complex sections; adjust exercise difficulty
-  - [ ] Update facilitation scripts with pilot observations
-  - [ ] Re-run accessibility audit on revised materials
-  - [ ] Update session template with lessons learned
-  - [ ] ✓ All high-priority revisions implemented
-  - [ ] ✓ Session template updated (v2.0)
+- [x] **STORY-014** — Iterate Sessions 1-3 Based on Pilot Feedback
+  - [x] Implement all must-fix revisions
+  - [x] Simplify complex sections; adjust exercise difficulty
+  - [x] Update facilitation scripts with pilot observations
+  - [x] Re-run accessibility audit on revised materials
+  - [x] Update session template with lessons learned
+  - [x] ✓ All high-priority revisions implemented
+  - [x] ✓ Session template updated (v2.0)
 
 ### Epic EPIC-009: UDL Implementation
 
-- [ ] **STORY-016** — Implement Universal Design for Learning Features
-  - [ ] Add 3+ representation modes per session
-  - [ ] Provide choice in practice scenarios
-  - [ ] Design multi-method assessments
-  - [ ] Create "Why this matters for YOUR farm" openings
-  - [ ] ✓ UDL principles applied across all prototype materials
+- [x] **STORY-016** — Implement Universal Design for Learning Features
+  - [x] Add 3+ representation modes per session
+  - [x] Provide choice in practice scenarios
+  - [x] Design multi-method assessments
+  - [x] Create "Why this matters for YOUR farm" openings
+  - [x] ✓ UDL principles applied across all prototype materials
 
 **Sprint Gate:** Validated session template ready for replication; UDL implemented
 

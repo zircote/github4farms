@@ -71,9 +71,9 @@
 
 | Farm Type | Suggested Columns |
 |-----------|------------------|
-| **Crops** | To Do, In Progress, Waiting on Weather, Done |
-| **Livestock** | To Do, Waiting on Vet, In Progress, Done |
-| **Equipment** | To Do, Waiting on Parts, In Progress, Done |
+| **Crops** | Todo, In Progress, Waiting on Weather, Done |
+| **Livestock** | Todo, Waiting on Vet, In Progress, Done |
+| **Equipment** | Todo, Waiting on Parts, In Progress, Done |
 | **General** | This Week, In Progress, Blocked, Done |
 
 ---
@@ -83,7 +83,7 @@
 | Term | Meaning | Farm Analogy |
 |------|---------|-------------|
 | **Project** | A planning board for organizing Issues | Your farm whiteboard |
-| **Board View** | Column layout (To Do → Done) | Sticky notes on a whiteboard |
+| **Board View** | Column layout (Todo → Done) | Sticky notes on a whiteboard |
 | **Table View** | Spreadsheet layout | A detailed task spreadsheet |
 | **Timeline View** | Calendar layout | Your planting calendar |
 | **Card** | An Issue shown on a project board | A sticky note |

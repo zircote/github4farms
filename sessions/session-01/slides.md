@@ -2,7 +2,7 @@
 
 ## Slide Deck
 
-> **Duration:** 150 minutes (2.5 hours)
+> **Duration:** 165 minutes (2 hours 45 minutes; includes 15-minute buffer)
 > **Bloom's Level:** Remember / Understand
 > **Format:** Presenter-led with projected slides. All slides use 24pt+ headers, 18pt+ body text, high-contrast colors, and descriptive alt text.
 
@@ -71,24 +71,24 @@ Think of it as a **digital barn** for your farm:
 - Accessible from any device
 - You can always see what changed and when
 
-It's free. It works on any device with a browser.
+It's free. It works on any device with a browser. And your information can be **private** — only people you invite can see it.
 
-> Instructor note: Emphasize "website" — not software to install. Open github.com on the projector.
+> Instructor note: Emphasize "website" — not software to install. Mention privacy early to reduce anxiety. Open github.com on the projector.
 
 ---
 
 ### Slide 6 — Who Uses GitHub?
 
-**40+ million people use GitHub.**
+**Farmers, teachers, researchers, and writers all use GitHub.**
 
-Originally built for software developers, but now used by:
+Originally built for software developers, but now used by all kinds of people:
 - Researchers documenting experiments
 - Writers collaborating on books
 - Teachers sharing lesson plans
 - Governments publishing public data
-- **And soon — farmers managing farm operations!**
+- **And now — farmers managing farm operations!**
 
-You're joining a massive community.
+Over 40 million people use it — and you're joining them.
 
 ---
 
@@ -372,3 +372,23 @@ Your feedback helps me make this training better for you.
 - **Images:** All with descriptive alt text (to be added when visual assets are created)
 - **New concepts introduced:** 4 (repository, README, file, folder)
 - **Practice time:** ~65 minutes (guided practice + account creation + independent practice)
+
+## UDL Implementation Notes
+
+### Representation (3+ modes)
+1. **Visual:** Projected slides with high-contrast text and table layouts
+2. **Verbal:** Instructor narration with farm analogies for every concept
+3. **Written:** Printed terminology cheat sheet (take-home reference)
+4. **Kinesthetic:** Hands-on navigation of a real repository during guided/independent practice
+
+### Engagement (learner choice)
+- **Three scenario options** in lab exercise (crops, livestock, equipment) — learners choose based on their farm
+- **Optional stretch challenges** for fast finishers
+- **Partner work** throughout — learners choose when to collaborate vs. work independently
+- **"Why This Matters for YOUR Farm"** opening connects content to personal experience
+
+### Action & Expression (multi-method assessment)
+- **L1 (Reaction):** Paper feedback survey with Likert scale + open-ended questions
+- **L2 (Observation):** Instructor circulates and records skill demonstration using checklist (navigate repo, open folder, read file, navigate back, create account)
+- **Written reflection:** Lab exercise Part 4 asks learners to apply concepts to their own farm in writing
+- **Verbal sharing:** Partner discussion + volunteer whole-group sharing during reflection phase

@@ -1,6 +1,6 @@
 # Facilitation Script: Session 3 — GitHub Projects for Planning
 
-> **Duration:** 150 minutes (2.5 hours)
+> **Duration:** 165 minutes (2 hours 45 minutes; includes 15-minute buffer)
 > **Bloom's Level:** Apply
 > **Practice Time:** 95 minutes (63%)
 > **Prerequisites:** Sessions 1-2 completed (GitHub account, Issues)
@@ -76,7 +76,7 @@
 
 **[Slide 7: Board View]**
 
-> "Board View is the one most people start with. It looks like columns on a whiteboard. You have 'To Do' on the left, 'In Progress' in the middle, and 'Done' on the right. When you start a task, you drag its card from 'To Do' to 'In Progress.' When it's finished, drag it to 'Done.' Simple as that."
+> "Board View is the one most people start with. It looks like columns on a whiteboard. You have 'Todo' on the left, 'In Progress' in the middle, and 'Done' on the right. When you start a task, you drag its card from 'Todo' to 'In Progress.' When it's finished, drag it to 'Done.' Simple as that."
 
 *Show the Board View on the projector. Point to each column.*
 
@@ -91,6 +91,12 @@
 **[Slide 10: When to Use Each View]**
 
 > "Here's the simple version: Board for daily work. Table for details and sorting. Timeline for seasonal planning. And the great part — you can have all three views of the same Project. Same data, different angles."
+
+**Turn and Talk (2 minutes):**
+
+> "Before we move on, turn to your partner. Which of these three views — Board, Table, or Timeline — would be most useful on your farm? Why? You have 2 minutes."
+
+*Let pairs discuss. Ask 1-2 volunteers to share. This breaks up the concept-heavy section and re-engages learners.*
 
 *Check for understanding:* "Quick check — if you wanted to see all tasks assigned to one person, which view would you use?" (Table — sort by Assignee)
 
@@ -114,8 +120,14 @@
 
    *Add 3-4 Issues. Name each one aloud.*
 
-3. **Drag a card:**
-   > "Let's say I started working on the corn field. I click and hold this card... and drag it to 'In Progress.' See how it moved? That's all it takes."
+3. **Move a card (two methods):**
+   > "Let's say I started working on the corn field. There are two ways to move it.
+   >
+   > **Method 1 — Dropdown:** I click the card, then find the Status dropdown on the right side of the page, and change it to 'In Progress.' This always works, even on touchpads.
+   >
+   > **Method 2 — Drag:** I can also click and hold the card... and drag it to the 'In Progress' column. See how it moved? Same result, just a different way."
+
+   *Show the dropdown method FIRST — it's the reliable fallback. Then show drag-and-drop as the quicker option.*
 
 4. **Add custom column:**
    > "What if I need a column for tasks that are waiting on weather? Click the '+' next to the last column... type 'Waiting on Weather'... and I can drag a card there."
@@ -190,7 +202,8 @@
 
 **Common support needs:**
 - Some learners will finish quickly → Encourage them to try Timeline View or help their partner
-- Some will struggle with drag-and-drop → Show them the dropdown menu alternative (click the card → change status)
+- Some will struggle with drag-and-drop → Remind them of the dropdown method (click the card → Status dropdown on the right side → change column). This was taught during the demo.
+- Learner finishes early → Encourage them to try Timeline View, help their partner, or explore filtering by label
 - Some may not know what Issues to create → Suggest titles from the scenario table
 
 **L2 Observation Checklist (note during walkabout):**
@@ -246,7 +259,7 @@
 
 **Internet goes down:**
 - Use printed screenshots of each view type to continue the concept introduction
-- Have learners sketch their project board on paper (columns: To Do, In Progress, Done)
+- Have learners sketch their project board on paper (columns: Todo, In Progress, Done)
 - Continue with vocabulary and reflection using printed materials
 
 **Projector fails:**

@@ -46,7 +46,12 @@ Click the **paperclip icon** at the bottom of the description box.
 
 Select a photo from your device. Wait for it to upload.
 
-*Tip: Take a photo with your phone and email it to yourself, or use your phone's browser to create the Issue directly.*
+**Where are my photos?**
+- **Phone:** Use the camera icon to take a photo directly, or browse your photo library
+- **Laptop:** Check your Downloads folder or Pictures folder
+- **Emailed yourself a photo?** Save it to Downloads first, then upload
+
+*Tip: On mobile, you can take a photo directly from within GitHub using the camera icon.*
 
 ---
 
@@ -62,7 +67,7 @@ Your Issue now has a number (like #1, #2, etc.) and is visible to everyone with 
 
 ### Adding Labels
 
-1. On the Issue page, look at the **right sidebar**
+1. On the Issue page, look at the **right side of the page**
 2. Click **"Labels"**
 3. Select one or more labels from the list
 4. Click outside the menu to close it
@@ -83,7 +88,7 @@ Your Issue now has a number (like #1, #2, etc.) and is visible to everyone with 
 
 ### Assigning to Someone
 
-1. On the right sidebar, click **"Assignees"**
+1. On the right side of the page, click **"Assignees"**
 2. Select a name from the list (or assign to yourself)
 3. Click outside to close
 
@@ -141,6 +146,7 @@ On the Issues tab:
 | Comment before closing | Record what was done so there's a complete history |
 | Use labels consistently | Makes filtering and searching much easier |
 | One task per Issue | Don't combine multiple tasks — create separate Issues |
+| Made a mistake? Edit it! | Click the **...** menu on the Issue and select "Edit" to fix the title or description |
 
 ---
 

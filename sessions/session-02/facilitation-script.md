@@ -1,6 +1,6 @@
 # Facilitation Script — Session 2: GitHub Issues for Task Tracking
 
-> **Total Duration:** 150 minutes
+> **Total Duration:** 165 minutes (includes 15-minute buffer)
 > **Prerequisites:** Session 1 complete (GitHub account, repository navigation)
 > **Setup Required:** Projector, Wi-Fi, sample photos for upload exercise, printed lab exercises and guides
 > **Key Goal:** Every learner creates at least 1 Issue with a photo, label, and comment; closes at least 1 Issue.
@@ -12,9 +12,9 @@
 - [ ] Test projector and Wi-Fi
 - [ ] Open demo farm repository on projector browser, logged into instructor account
 - [ ] Pre-create 2-3 sample labels in the demo repository if not already present (equipment, livestock, crops, maintenance, urgent, routine, compliance)
-- [ ] Prepare sample photos for learners who don't have their own (3-5 farm-related images: fence, tractor, field, animal, equipment)
+- [ ] Prepare sample photos for learners who don't have their own (fence.jpg, tractor.jpg, field.jpg, calf.jpg, equipment.jpg — on USB drive in `session-02-samples` folder)
 - [ ] Place at each seat: lab exercise, issue creation guide, feedback survey, pen
-- [ ] Have USB drive or shared folder with sample photos accessible
+- [ ] Have USB drive with sample photos at the front table AND a shared link on the whiteboard
 - [ ] Set up sign-in sheet
 - [ ] Write on whiteboard: Wi-Fi password, demo repository URL
 
@@ -124,7 +124,7 @@
 
 **[Celebrate: "Look at that! You just created your first work order on GitHub!"]**
 
-> "Now let's add a label. On the right side, click 'Labels' and pick one that sounds interesting."
+> "Great! One quick tip — if you made a typo, you can edit your Issue anytime. Click the three dots next to the title and choose Edit. Now let's add a label. On the right side of the page, click 'Labels' and pick one that sounds interesting."
 
 **[Wait.]**
 
@@ -144,8 +144,9 @@
 |-------|----------|
 | "I can't find the Issues tab" | "It's in the row of tabs near the top: Code, Issues, Pull requests... Click 'Issues.'" |
 | "New issue button doesn't work" | "Are you logged in? Click your profile icon in the top right — if it says 'Sign in,' you need to log in first." |
-| "I don't see labels on the right" | "After submitting the Issue, look at the right sidebar. It might require scrolling on smaller screens." |
-| "My photo won't upload" | "Check file size — under 10MB. Try JPG or PNG format. If using phone, try taking a new photo." |
+| "I don't see labels on the right" | "After submitting the Issue, look at the right side of the page. It might require scrolling on smaller screens." |
+| "My photo won't upload" | "Check file size — under 10MB. Try JPG or PNG format. On a phone, try the camera icon. If it's still not working, skip the photo for now — you can add it later." |
+| "I made a typo in my title" | "No problem! Click the three-dot menu (...) next to the title and choose Edit." |
 
 ---
 

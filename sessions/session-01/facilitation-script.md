@@ -1,6 +1,6 @@
 # Facilitation Script — Session 1: Introduction to GitHub & Repositories
 
-> **Total Duration:** 150 minutes
+> **Total Duration:** 165 minutes (includes 15-minute buffer)
 > **Learners:** 1–25 farmers with no technical background
 > **Setup Required:** Projector, Wi-Fi, loaner laptops if needed, printed lab exercises and cheat sheets
 > **Key Goal:** Every learner leaves having successfully navigated a repository and created a GitHub account. No one fails Session 1.
@@ -57,7 +57,7 @@
 
 **[Open github.com on projector]**
 
-> "This is GitHub's website. Over 40 million people use it. It was originally built for software developers, but now all kinds of people use it — researchers, writers, teachers, and today — farmers."
+> "This is GitHub's website. Farmers, teachers, researchers, and writers all use it — over 40 million people. It was originally built for software developers, but now all kinds of people use it, and today — farmers."
 
 **[Navigate to demo farm repository]**
 
@@ -82,6 +82,10 @@
 **[Click back. Pause.]**
 
 > "That's it. That's navigating a repository. Click a folder, click a file, click the name to go back. Three actions."
+
+**After the demo, address privacy:**
+
+> "One question I get a lot: 'Can other people see my stuff?' The answer is — only if you want them to. Your repositories can be **private**, meaning only you can see them. You're in control."
 
 ### Key Points
 - Narrate every single click: "I'm clicking here... now I see this..."

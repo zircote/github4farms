@@ -37,6 +37,20 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Accessibility]**: Accessibility testing logs for Sessions 1-3 — 27-checkpoint WCAG 2.2 AA audit per session, contrast ratio calculations, font size analysis, structural review, content/cognitive assessment. All sessions achieved 100% pass rate (of applicable checkpoints) with justified exceptions for data-dense visual demo slides (`sessions/session-0{1,2,3}/accessibility-testing-log.md`)
 - **[Pilot Test]**: Simulated pilot test report for Sessions 1-3 — clarity/pacing/relevance/cognitive load scoring, cross-session issue analysis, farmer persona walkthroughs, prioritized remediation recommendations. Overall readiness: 87% (`sessions/pilot-test-report.md`)
 
+#### Sprint 5 — EPIC-003: Iterate Sessions 1-3 Based on Pilot Feedback
+- **[Session 1]**: Reworded Slide 6 to lead with people ("Farmers, teachers, researchers") instead of numbers; added data privacy note to Slide 5 and facilitation script; moved "Commit" term from cheat sheet to "Coming Soon" section (`sessions/session-01/`)
+- **[Session 2]**: Split Slide 7 into two slides (7 and 7b) to reduce cognitive load; expanded photo upload guidance with device-specific instructions and "skip for now" fallback; added editing tip for typos; clarified that commenting does not close Issues; replaced "right sidebar" with "right side of the page" across all materials; rebalanced lab exercise timing; added fallback task suggestions for open-ended steps (`sessions/session-02/`)
+- **[Session 3]**: Added dropdown method as primary alternative to drag-and-drop for Board View; set Timeline View expectations ("covered in Session 9"); standardized "To Do" → "Todo" to match GitHub UI across slides, HTML, lab exercise, and checklist; added Turn and Talk activity at 0:20; reordered demo to teach dropdown first (`sessions/session-03/`)
+- **[Template]**: Updated session template to v2.0 with "Lessons Learned from Pilot Testing" section covering timing, terminology, interaction design, photo management, cognitive load, privacy, demo repository, and assessment patterns (`curriculum/session-template.md`)
+- **[Demo Repo]**: Created demo farm repository specification with exact file structure, content, pre-created Issues/Labels, and per-session verification checklist (`sessions/demo-repository-spec.md`)
+
+#### Sprint 5 — EPIC-009: UDL Implementation
+- **[Sessions 1-3]**: Added UDL Implementation Notes section to all three slide decks documenting 3+ representation modes, engagement options with learner choice, and multi-method assessment strategies per session
+- **[Sessions 1-3]**: Verified "Why This Matters for YOUR Farm" openings with partner discussion in all three sessions; confirmed 3 scenario options (crops, livestock, equipment) in all lab exercises; confirmed multi-method assessment (L1 surveys, L2 observation checklists, hands-on artifacts, verbal sharing, written reflection)
+
+#### Sprint 5 — Accessibility Re-Audit
+- **[Accessibility]**: Re-audited Sessions 1-3 against 27 WCAG 2.2 AA checkpoints post-revision; all sessions maintained 100% pass rate; Session 3 C2 checkpoint upgraded from PARTIAL to PASS (dropdown method now taught proactively); Sprint 5 remediation entries added to all testing logs (`sessions/session-0{1,2,3}/accessibility-testing-log.md`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"

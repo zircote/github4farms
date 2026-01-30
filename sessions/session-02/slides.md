@@ -2,7 +2,7 @@
 
 ## Slide Deck
 
-> **Duration:** 150 minutes (2.5 hours)
+> **Duration:** 165 minutes (2 hours 45 minutes; includes 15-minute buffer)
 > **Bloom's Level:** Remember / Understand / Apply
 > **Prerequisites:** Session 1 (GitHub account, repository navigation)
 > **Format:** 24pt+ headers, 18pt+ body text, high-contrast, descriptive alt text on all images
@@ -92,18 +92,31 @@ Every type of farm task can become an Issue.
 
 ---
 
-### Slide 7 — Anatomy of an Issue
+### Slide 7 — Anatomy of an Issue (Part 1)
 
-**An Issue page has these parts:**
+**The main parts of an Issue:**
 
-1. **Title** — At the top, in large text
+1. **Title** — At the top, in large text. This is what everyone sees first.
 2. **Description body** — The main area with details (supports text, photos, checklists)
-3. **Labels** — Colored tags on the right side
-4. **Assignees** — Who's responsible (right side)
-5. **Comment section** — Below the description, for updates
+3. **Comment section** — Below the description, for progress updates
+
+These are the parts you'll use most. Let's look at each one.
+
+> Instructor note: Show a real Issue on the projector. Point to each part slowly.
+
+---
+
+### Slide 7b — Anatomy of an Issue (Part 2)
+
+**More parts — on the right side of the page:**
+
+4. **Labels** — Colored tags to categorize your Issue
+5. **Assignees** — Who's responsible for this task
 6. **Close button** — Marks the Issue as done
 
-> Instructor note: Show a real Issue on the projector. Point to each part.
+**Tip:** Made a typo? You can edit any Issue after creating it. Click the **three-dot menu (...)** next to the title and choose **"Edit."**
+
+> Instructor note: Point to the right side of the page on the projector. Show the edit option briefly.
 
 ---
 
@@ -179,15 +192,21 @@ You can also:
 **Adding a photo to an Issue is easy:**
 
 1. Click in the description box
-2. Drag a photo from your desktop into the box, OR
-3. Click the **paperclip icon** at the bottom of the text box
-4. Select a photo from your device
-5. Wait for it to upload (you'll see a progress bar)
-6. The photo appears in the description
+2. Click the **paperclip icon** at the bottom of the text box
+3. Select a photo from your device
+4. Wait for it to upload (you'll see a progress bar)
+5. The photo appears in the description
+
+**Where are my photos?**
+- **On your phone:** Use the camera icon to take a photo directly, or browse your photo library
+- **On a laptop:** Check your **Downloads** folder or **Pictures** folder
+- **Emailed yourself a photo?** Save it to Downloads first, then upload
 
 **Farm example:** Take a photo of the broken fence post and attach it to the Issue. Now everyone can see exactly what needs fixing.
 
-> Instructor note: Demo uploading a photo. Test on both laptop and phone if possible.
+**If photos aren't working, skip it for now.** You can always add a photo later by editing the Issue.
+
+> Instructor note: Demo uploading a photo. Show both the paperclip method and the drag method. Test on laptop and phone if possible.
 
 ---
 
@@ -195,7 +214,7 @@ You can also:
 
 **After creating an Issue, add labels and assign it:**
 
-1. On the Issue page, look at the right sidebar
+1. On the Issue page, look at the right side of the page
 2. Click **"Labels"** — select one or more from the list
 3. Click **"Assignees"** — select yourself or a team member
 
@@ -230,6 +249,8 @@ Comments create a timeline of the task's progress — who said what, when.
 
 1. Scroll to the bottom of the Issue
 2. Click **"Close issue"** (or "Close with comment" to add a final note)
+
+**Important:** Adding a comment does NOT close the Issue. You must click the "Close issue" button to mark it done.
 
 A closed Issue:
 - Turns from "Open" to "Closed"
@@ -363,7 +384,30 @@ Thank you! You now know how to create, track, and close farm tasks on GitHub.
 
 ## Slide Notes Summary
 
-- **Total slides:** 24
+- **Total slides:** 25 (Slide 7 split into 7 and 7b)
 - **New concepts introduced:** 5 (Issue, label, assignee, comment, open/closed)
 - **Practice time:** ~70 minutes (guided practice + independent practice + reflection)
 - **Photo upload tested:** Demonstrated across laptop and mobile
+
+## UDL Implementation Notes
+
+### Representation (3+ modes)
+1. **Visual:** Projected slides with Issue anatomy diagrams and label color tables
+2. **Verbal:** Instructor narration using "Issue = Digital Work Order" analogy throughout
+3. **Written:** Printed issue creation guide (two-sided take-home reference)
+4. **Photographic:** Photo upload demonstrated — visual learners see real farm images attached to Issues
+5. **Tabular:** Good vs. Bad title comparison table (Slide 10) for pattern recognition
+
+### Engagement (learner choice)
+- **Three scenario options** in lab exercise (crops, livestock, equipment)
+- **Photo upload is optional** — learners choose whether to add a photo or skip
+- **Open-ended Issue #3** in lab: learners create a real farm task of their choosing (with fallback suggestions)
+- **Stretch challenges** for fast finishers (create checklist, help a partner, upload photos to all Issues)
+- **"Why This Matters for YOUR Farm"** opening with show-of-hands engagement
+
+### Action & Expression (multi-method assessment)
+- **L1 (Reaction):** Paper feedback survey
+- **L2 (Observation):** 6-skill checklist (create Issue, write description, upload photo, apply label, add comment, close Issue)
+- **Hands-on product:** Learners produce 3 Issues with labels, comments, and at least 1 photo — observable artifacts
+- **Verbal reflection:** Partner discussion on "3 tasks from your farm this week"
+- **Written checkpoint questions** embedded in lab exercise (Issue number, label name, open/closed counts)

@@ -13,17 +13,16 @@
 | 2 | **README** | *Sign on the barn door* | A special file that explains what the repository is for and what's inside |
 | 3 | **File** | *Item on a shelf* | A single document stored in a repository (a schedule, a log, a checklist) |
 | 4 | **Folder** (directory) | *Stall or section of the barn* | A way to organize files into groups (crops, equipment, livestock) |
-| 5 | **Commit** | *Field log entry* | A saved snapshot of changes — records what changed, who changed it, and when |
-| 6 | **History** | *Logbook* | The complete record of every commit (change) ever made to the repository |
-| 7 | **Profile** | *Your name tag* | Your personal GitHub page showing your name, photo, and repositories |
-| 8 | **Username** | *Your farm's brand* | The unique name you chose when you signed up (appears in your repository URLs) |
-| 9 | **Browser** | *Your truck to get to the barn* | The app you use to visit GitHub (Chrome, Safari, Firefox, Edge) |
-| 10 | **URL** | *Address to the barn* | The web address you type to get to a specific repository or page |
-| 11 | **Navigation bar** | *Signs inside the barn* | The menu at the top of every GitHub page that helps you find things |
-| 12 | **Search** | *Looking through the barn for a tool* | The search box at the top of GitHub that finds files, text, or repositories |
-| 13 | **Organization** | *A farming co-op* | A shared GitHub account where multiple people's repositories live together |
-| 14 | **Dashboard** | *Your kitchen bulletin board* | The first page you see after logging in — shows recent activity and your repositories |
-| 15 | **Markdown** | *Simple formatting shortcuts* | The way text is formatted on GitHub (# for headers, - for lists, **bold**) |
+| 5 | **History** | *Logbook* | The complete record of every change ever made to the repository |
+| 6 | **Profile** | *Your name tag* | Your personal GitHub page showing your name, photo, and repositories |
+| 7 | **Username** | *Your farm's brand* | The unique name you chose when you signed up (appears in your repository URLs) |
+| 8 | **Browser** | *Your truck to get to the barn* | The app you use to visit GitHub (Chrome, Safari, Firefox, Edge) |
+| 9 | **URL** | *Address to the barn* | The web address you type to get to a specific repository or page |
+| 10 | **Navigation bar** | *Signs inside the barn* | The menu at the top of every GitHub page that helps you find things |
+| 11 | **Search** | *Looking through the barn for a tool* | The search box at the top of GitHub that finds files, text, or repositories |
+| 12 | **Organization** | *A farming co-op* | A shared GitHub account where multiple people's repositories live together |
+| 13 | **Dashboard** | *Your kitchen bulletin board* | The first page you see after logging in — shows recent activity and your repositories |
+| 14 | **Markdown** | *Simple formatting shortcuts* | The way text is formatted on GitHub (# for headers, - for lists, **bold**) |
 
 ---
 
@@ -50,6 +49,7 @@ These terms will make more sense later — no need to learn them now!
 
 | Term | Farm Analogy | Session |
 |------|-------------|---------|
+| Commit | Field log entry — a saved snapshot of changes | Session 4 |
 | Issue | Work order | Session 2 |
 | Label | Color-coded tag | Session 2 |
 | Project | Planning board | Session 3 |

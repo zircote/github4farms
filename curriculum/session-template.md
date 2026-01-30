@@ -2,10 +2,10 @@
 
 > **Methodology:** Kolb's Experiential Learning Cycle
 > **Facilitation Model:** "I Do, We Do, You Do" gradual release
-> **Duration:** 150 minutes (2.5 hours) including one 15-minute break
+> **Duration:** 165 minutes (2 hours 45 minutes) including one 15-minute break and 15-minute buffer
 > **Practice Allocation Target:** 90–105 minutes (60–70% of session time)
 >
-> **Version:** 1.0
+> **Version:** 2.0
 > **Date:** 2026-01-30
 
 ---
@@ -14,7 +14,7 @@
 
 1. Copy this template for each new session
 2. Fill in all bracketed `[placeholder]` sections with session-specific content
-3. Verify timing adds up to ~150 minutes with practice time >= 90 minutes
+3. Verify timing adds up to ~165 minutes (150 min instruction + 15 min buffer) with practice time >= 90 minutes
 4. Run through the Accessibility Checklist before finalizing
 5. Have a colleague or pilot tester review the facilitation script
 
@@ -23,7 +23,7 @@
 ## Session [NUMBER]: [TITLE]
 
 **Date:** [Delivery date]
-**Duration:** 150 minutes
+**Duration:** 165 minutes (includes 15-minute buffer)
 **Bloom's Level:** [Remember / Understand / Apply / Analyze / Evaluate / Create]
 **Prerequisites:** [Previous sessions required]
 **Materials Needed:** [List all materials — slides, handouts, demo repos, devices]
@@ -226,6 +226,9 @@ Purpose: Learners practice independently with a farm scenario. This is where ski
 - Option B: [Livestock scenario]
 - Option C: [Equipment/maintenance scenario]
 
+**Fallback Task Suggestions (for open-ended steps):**
+- [List 3-4 specific task examples to reduce decision paralysis]
+
 **Key Elements:**
 - [ ] Exercise uses a real farm scenario
 - [ ] Instructions are numbered and specific
@@ -353,6 +356,32 @@ Complete this checklist for every session before delivery:
 
 ---
 
+## UDL (Universal Design for Learning) Checklist
+
+Every session must implement all three UDL principles:
+
+### Representation (3+ modes required)
+- [ ] **Visual:** Projected slides with high-contrast text and diagrams
+- [ ] **Verbal:** Instructor narration with farm analogies for every concept
+- [ ] **Written:** Printed take-home reference guide (cheat sheet, step-by-step guide, or checklist)
+- [ ] **[Session-specific mode]:** [e.g., Kinesthetic, Photographic, Spatial, Tabular]
+
+### Engagement (learner choice required)
+- [ ] **Scenario choice:** 3 farm options (crops, livestock, equipment) in lab exercises
+- [ ] **"Why This Matters for YOUR Farm"** opening connects to personal experience
+- [ ] **Optional stretch challenges** for fast finishers
+- [ ] **Partner work** available throughout — learners choose when to collaborate
+- [ ] **Fallback suggestions** provided for any open-ended steps
+
+### Action & Expression (multi-method assessment required)
+- [ ] **L1 Reaction:** Feedback survey (paper or digital)
+- [ ] **L2 Observation:** Skill checklist (3-6 observable skills per session)
+- [ ] **Hands-on product:** Learners produce an observable artifact (Issue, Project board, file, etc.)
+- [ ] **Verbal sharing:** Partner discussion + volunteer whole-group sharing
+- [ ] **Written reflection:** At least 1 written reflection question in the lab exercise
+
+---
+
 ## Post-Session Checklist
 
 ### Immediately After Session
@@ -370,4 +399,52 @@ Complete this checklist for every session before delivery:
 
 ---
 
-*This template is version 1.0. Update to version 2.0 after pilot testing (STORY-014) with lessons learned.*
+---
+
+## Lessons Learned from Pilot Testing (v2.0)
+
+These patterns were identified during Sprint 4 pilot testing of Sessions 1-3 and should be applied to all future sessions:
+
+### Timing
+- **Build a 15-minute buffer** into every session. Real classrooms encounter Wi-Fi issues, device differences, CAPTCHA struggles, and questions that consume more time than estimated.
+- **Timing estimates are 15-20% optimistic.** Account creation, photo uploads, and drag-and-drop interactions take longer than planned.
+- **Rebalance lab exercise sections** so that more complex parts get more time. Simple review sections can be shortened.
+
+### Terminology
+- **Use "right side of the page"** instead of "sidebar" — farmers don't use this term.
+- **Match GitHub's UI text exactly.** When GitHub displays "Todo" (no space), don't write "To Do." Zero-tech learners match handout text to screen text character by character.
+- **Define every technical term at first use** with a parenthetical farm analogy.
+- **Avoid compound jargon** like "custom field." Use plain language first, then introduce the term: "extra columns you create yourself (GitHub calls these custom fields)."
+
+### Interaction Design
+- **Always teach a fallback method** alongside the primary method. For drag-and-drop, teach the dropdown alternative first so learners have a reliable backup.
+- **Provide fallback task suggestions** for open-ended steps. When learners go from structured examples to "choose your own," decision paralysis is common. List 3-4 examples.
+- **Add editing guidance early.** Learners will make typos. Tell them immediately: "You can edit anything — click the three-dot menu."
+- **Clarify implicit UI behavior.** For example: "Adding a comment does NOT close an Issue — you must click 'Close issue'."
+
+### Photo and File Management
+- **Photo upload is the highest anxiety action.** Provide device-specific guidance (phone camera icon, Downloads folder, email-to-self workflow).
+- **Make photo upload optional** on first attempt: "If it's not working, skip it. You can add a photo later."
+- **Specify sample photo filenames** in the facilitation script pre-session checklist.
+
+### Cognitive Load
+- **Split dense slides.** If a slide introduces 6+ concepts, split into two slides with 3 each.
+- **Add "turn and talk" activities** to break up concept-heavy sections. Two minutes of pair discussion re-engages learners after 15+ minutes of instructor-led content.
+- **Lead with people, not numbers.** Instead of "40+ million people use GitHub," say "Farmers, teachers, and researchers use GitHub" — then mention the number.
+
+### Privacy and Safety
+- **Address data privacy proactively** in Session 1. Learners worry about who can see their information. Tell them: "Your repositories can be private — only you can see them."
+- **Reinforce "you can't break anything"** at every practice phase. Technology anxiety is real and persistent.
+
+### Demo Repository
+- **The demo repository must exist before delivery.** All lab exercises reference specific files, folders, and data. See `sessions/demo-repository-spec.md` for the full specification.
+- **Pre-create Issues with labels** before Session 2.
+- **Clean up test data** between session deliveries.
+
+### Assessment
+- **L2 observation checklists** should be practical — instructors can't observe and fill forms simultaneously. Use quick checkmark-style sheets, not detailed rubrics.
+- **Checkpoints in guided practice** are essential. "Raise your hand when you see X" gives the instructor a real-time completion count.
+
+---
+
+*This template is version 2.0, updated after Sprint 4 pilot testing. Apply these lessons to all sessions 4-12.*

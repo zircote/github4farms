@@ -2,7 +2,7 @@
 
 ## Slide Deck
 
-> **Duration:** 150 minutes (2.5 hours)
+> **Duration:** 165 minutes (2 hours 45 minutes; includes 15-minute buffer)
 > **Bloom's Level:** Apply
 > **Prerequisites:** Session 1 (GitHub account, repository navigation), Session 2 (Issues)
 > **Format:** 24pt+ headers, 18pt+ body text, high-contrast, descriptive alt text on all images
@@ -81,7 +81,7 @@ You already know how to create Issues. Projects let you **see them all at once**
 
 **GitHub Projects has 3 views — pick the one that fits your need.**
 
-- **Board View** — Columns like a whiteboard. Drag tasks between "To Do," "In Progress," and "Done."
+- **Board View** — Columns like a whiteboard. Drag tasks between "Todo," "In Progress," and "Done."
 - **Table View** — Rows and columns like a spreadsheet. Sort, filter, and add custom fields (extra columns you create yourself, like "Due Date").
 - **Timeline View** — A calendar showing when tasks start and end. See your whole season at a glance.
 
@@ -94,15 +94,17 @@ You can switch between views anytime — same data, different way to look at it.
 **Board View organizes tasks into columns.**
 
 Each column represents a status:
-- **To Do** — Work that hasn't started
+- **Todo** — Work that hasn't started
 - **In Progress** — Work someone is doing now
 - **Done** — Completed tasks
 
 To move a task: **drag the card** from one column to the next.
 
+**Drag-and-drop not working?** No problem — click the card, then use the **Status** dropdown on the right side of the page to change the column. Both methods do the same thing.
+
 It's like moving a sticky note on a whiteboard from "Needs Doing" to "Finished."
 
-> Instructor note: This is the view most farmers find intuitive. Start here.
+> Instructor note: Demonstrate BOTH methods — drag-and-drop AND the dropdown. Show the dropdown first so learners have a fallback. This is the view most farmers find intuitive. Start here.
 
 ---
 
@@ -136,7 +138,9 @@ You can see:
 
 Best for: **Planting schedules**, seasonal planning, seeing the big picture.
 
-> Instructor note: Timeline requires start and end dates on Issues. Show how to add these.
+**Note:** Timeline View needs start and end dates on your Issues to display them. We'll explore this in detail in **Session 9** (Advanced Projects). Today, we'll focus on Board View and Table View.
+
+> Instructor note: Set expectations — Timeline View may appear empty if Issues lack dates. Briefly show it but don't dwell. Tell learners it's covered in Session 9.
 
 ---
 
@@ -185,7 +189,7 @@ Each Issue becomes a **card** on your board.
 
 **To update a task's status, drag the card.**
 
-- Task started? Drag from **"To Do"** to **"In Progress"**
+- Task started? Drag from **"Todo"** to **"In Progress"**
 - Task finished? Drag to **"Done"**
 
 Everyone with access can see the current status instantly.
@@ -200,7 +204,7 @@ It's like moving a sticky note across a whiteboard — but everyone can see it f
 
 **You can rename columns or add new ones.**
 
-Default columns: To Do, In Progress, Done
+Default columns: Todo, In Progress, Done
 
 Farm-friendly columns you might add:
 - **Waiting on Weather**
@@ -259,7 +263,7 @@ If you get stuck:
 6. Add 3 Issues to your board using **"+ Add item"**
 7. Drag 1 Issue to **"In Progress"**
 
-**Checkpoint:** You should see 3 cards on your board — 2 in "To Do" and 1 in "In Progress."
+**Checkpoint:** You should see 3 cards on your board — 2 in "Todo" and 1 in "In Progress."
 
 > Instructor note: Pause at checkpoint. "Raise your hand when you see 3 cards on your board."
 
@@ -296,7 +300,7 @@ For your project board:
 **New terms from today:**
 
 - **Project** — A planning board that organizes Issues visually
-- **Board View** — Columns layout (To Do, In Progress, Done)
+- **Board View** — Columns layout (Todo, In Progress, Done)
 - **Table View** — Spreadsheet layout with sortable columns
 - **Timeline View** — Calendar layout showing start/end dates
 - **Card** — An Issue displayed on a project board
@@ -339,3 +343,28 @@ Learn to share your farm plans with others and work together — like passing a 
 **Thank you!**
 
 You now know how to plan and organize your farm tasks visually on GitHub.
+
+---
+
+## UDL Implementation Notes
+
+### Representation (3+ modes)
+1. **Visual:** Projected slides showing Board, Table, and Timeline views side-by-side
+2. **Verbal:** Instructor narration using "Project = Digital Planning Board / Whiteboard" analogy
+3. **Written:** Printed project board setup checklist (take-home reference)
+4. **Spatial:** Board View provides a spatial/kinesthetic layout — drag cards between columns
+5. **Tabular:** Table View provides a spreadsheet/structured layout for detail-oriented learners
+
+### Engagement (learner choice)
+- **Three scenario options** in lab exercise (spring planting, equipment maintenance, livestock health)
+- **Three view options** — learners explore Board, Table, and Timeline and identify which suits their farm
+- **Custom column creation** — learners name their own workflow column (Waiting on Weather, Waiting on Parts, etc.)
+- **Turn and talk** activity at the 0:20 mark breaks up concept-heavy introduction
+- **"Why This Matters for YOUR Farm"** opening with partner discussion
+
+### Action & Expression (multi-method assessment)
+- **L1 (Reaction):** Paper feedback survey
+- **L2 (Observation):** 6-skill checklist (create Project, add Issues, move cards, add custom column, switch views, understand view purpose)
+- **Hands-on product:** Learners produce a complete project board with 4+ Issues, custom column, and multiple views explored
+- **Verbal reflection:** Partner discussion on "Which view would be most useful on your farm?"
+- **Written checklist:** Completion checklist embedded in lab exercise for self-assessment

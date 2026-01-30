@@ -38,9 +38,17 @@ In this exercise, you'll create a GitHub Project board to plan a farm season. Yo
 
 ### Step 3: Move a Card
 
+**Method 1 (Dropdown — always works):**
+1. Click on one of the cards in "Todo"
+2. Find the **Status** dropdown on the right side of the page
+3. Change it to **"In Progress"**
+
+**Method 2 (Drag — quicker):**
 1. Click and hold on one of the cards in "Todo"
 2. Drag it to the **"In Progress"** column
 3. Release the card
+
+Use whichever method works on your device.
 
 **What you should see:** 2 cards in "Todo" and 1 card in "In Progress."
 
@@ -118,10 +126,10 @@ In this exercise, you'll create a GitHub Project board to plan a farm season. Yo
 |---------|----------|
 | Can't find the Projects tab | Look at the top of the repository page, between "Pull requests" and "Actions" |
 | "Add item" doesn't find my Issue | Make sure the Issue is in the same repository. Try typing the full title. |
-| Can't drag a card | Click and hold for a moment before dragging. Try a different browser if it doesn't work. |
+| Can't drag a card | Use the dropdown method instead: click the card, then change the Status dropdown on the right side of the page. This always works. |
 | Board looks empty | Click "Todo" column — cards might be collapsed. Check that you added Issues to THIS project. |
 | Table View looks different | That's expected — it shows the same data in spreadsheet format. All your Issues are still there. |
-| Timeline is blank | Issues need start and end date fields. Ask the instructor for help adding dates. |
+| Timeline is blank | Issues need start and end date fields to appear on the Timeline. This is expected — we'll cover dates in Session 9. |
 
 ---
 

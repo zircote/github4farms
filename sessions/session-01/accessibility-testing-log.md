@@ -1,7 +1,7 @@
 # Accessibility Testing Log — Session 01
 
 > **Tester:** Curriculum Developer (automated audit + manual review)
-> **Date:** 2026-01-30
+> **Audit Date:** 2026-01-30 (Sprint 5 re-audit)
 > **Materials Tested:** slides/ (25 HTML slides + styles.css), slides.pptx, slides.md, lab-exercise.md, terminology-cheat-sheet.md, facilitation-script.md
 > **Tools Used:** Manual inspection, contrast ratio calculator, structural analysis
 
@@ -28,7 +28,7 @@
 | C3 | Logical focus order | Navigation | Manual | ✅ PASS | HTML slides use sequential DOM order matching visual layout. | — | — |
 | C4 | No time-limited exercises | Navigation | Manual | ✅ PASS | All exercises allow flexible pacing. Timing in script is guidance, not enforced. | — | — |
 | D1 | Grade 6-8 reading level | Content | Manual | ✅ PASS | Short sentences (8-15 words avg). Imperative instructions ("Click," "Type"). Estimated Flesch-Kincaid grade 5-6. | — | — |
-| D2 | Jargon defined with farm analogies | Content | Manual | ✅ PASS | All 15 terms defined with farm analogies in terminology cheat sheet. First use in slides includes analogy (Repository = "digital barn," README = "sign on the barn door"). | — | — |
+| D2 | Jargon defined with farm analogies | Content | Manual | ✅ PASS | All 14 terms defined with farm analogies in terminology cheat sheet. First use in slides includes analogy (Repository = "digital barn," README = "sign on the barn door"). "Commit" moved to "Coming Soon" section. | — | — |
 | D3 | 3-5 new concepts max per segment | Content | Manual | ✅ PASS | Concepts introduced gradually: repository → files/folders → README → navigation. Each segment covers 1-2 concepts. | — | — |
 | D4 | Content chunked (5-10 min segments) | Content | Manual | ✅ PASS | Facilitation script breaks 150 min into 8 segments (5-25 min each). Practice segments subdivided with checkpoints. | — | — |
 | D5 | Instructions numbered/sequential | Content | Manual | ✅ PASS | Lab exercise uses numbered steps. Facilitation script uses sequential phases. | — | — |
@@ -57,6 +57,31 @@
 
 ---
 
+## Sprint 5 Remediations (2026-01-30)
+
+### Changed Items
+
+| Item | Change | Accessibility Impact | Status |
+|------|--------|---------------------|--------|
+| Duration | Changed from 150 min to 165 min (15-min buffer added) | ✅ Improves accessibility — allows flexible pacing for learners who need extra time | Verified in slides.md and facilitation-script.md |
+| Slide 6 | Reworded lead-in: "Farmers, teachers, researchers" instead of "40+ million" | ✅ Neutral — maintains readability and clarity | Verified in slides.md |
+| Slide 5 | Added privacy note: "your information can be private" | ✅ Improves content clarity — addresses learner anxiety early | Verified in slides.md |
+| Facilitation script | Added privacy address after demo (Phase 2, after line 86) | ✅ Improves content accessibility — verbal reinforcement of privacy for auditory learners | Verified in facilitation-script.md |
+| Terminology cheat sheet | "Commit" moved from main terms (row 15) to "Coming Soon" section | ✅ Improves content accessibility — reduces cognitive load from 15 to 14 terms in Session 1 | Verified in terminology-cheat-sheet.md |
+| Terminology cheat sheet | Terms renumbered 5-15 became 5-14 | ✅ Neutral — maintains sequential numbering consistency | Verified in terminology-cheat-sheet.md |
+
+### Verification
+
+All Sprint 5 changes were tested against the 27-checkpoint accessibility framework:
+- **D3 (3-5 new concepts max):** PASS — reduced from 15 to 14 terms improves cognitive load management
+- **D2 (Jargon defined):** PASS — all 14 terms retain farm analogies and definitions
+- **C4 (No time-limited exercises):** PASS — 15-min buffer enhances flexible pacing commitment
+- **B3 (Verbal instructions displayed visually):** PASS — privacy note added to both slide and script
+
+No accessibility regressions identified. All improvements align with UDL principles.
+
+---
+
 ## Notes
 
 ### A1 Partial — Font Size Justification
@@ -71,7 +96,8 @@ Slide 16 (checklist items) uses 15-16pt for a visual checklist display. The same
 - [x] All CRITICAL items pass
 - [x] 90%+ overall pass rate achieved
 - [x] All remediation items resolved and re-tested
+- [x] Sprint 5 changes verified against accessibility framework
 - [x] Materials approved for delivery
 
 **Approved By:** Curriculum Developer
-**Date:** 2026-01-30
+**Date:** 2026-01-30 (Sprint 5 re-audit after pilot feedback iteration)
