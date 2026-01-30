@@ -79,6 +79,22 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Session 7 PPTX]**: PowerPoint deck for "Introduction to GitHub Actions" — automation concepts, trigger types, YAML reading slides (`sessions/session-07/slides.pptx`)
 - **[Session 8 PPTX]**: PowerPoint deck for "Automating Farm Tasks" — workflow creation, cron scheduling, troubleshooting slides (`sessions/session-08/slides.pptx`)
 
+#### Sprint 9 — EPIC-006: Sessions 11-12 Content Development
+- **[Session 11]**: Complete session materials for "GitHub Spark & Copilot Agents" — 24-slide deck introducing GitHub Spark (natural-language app builder), Copilot Agents (multi-step AI assistants), human-in-the-loop principles, guardrails, and approval gates. Lab exploring a pre-built Spark app and configuring agent permissions. "Spark & Agents Quick-Reference" handout. Full facilitation script with L2 checklist. Farm analogies: "digital farmhand team / fence keeping the farmhand in the right pasture" (`sessions/session-11/`)
+- **[Session 12]**: Complete session materials for "Capstone & Train-the-Trainer" — 24-slide deck with capstone project (build a complete farm repository from scratch), 4-step teaching method (Show/Explain/Let Them Try/Give Feedback), peer teaching exercise, capstone showcase, course completion celebration. Lab with 3 scenario options (crops, equipment, livestock), rubric, self-assessment. "Capstone Guide" step-by-step handout. Full facilitation script with L2 checklist (`sessions/session-12/`)
+
+#### Sprint 9 — EPIC-008: Quick-Reference Guides
+- **[Guide]**: GitHub Terminology Glossary — 40+ terms with plain-language definitions and farm analogies in a 3-column reference table, ordered by session encounter sequence (`guides/glossary.md`)
+- **[Guide]**: Common Tasks Cheat Sheet — 10 tasks with numbered step-by-step instructions covering repository creation, Issues, labels, Project boards, templates, iterations, Timeline view, Copilot drafting, Pull Requests, and Watch notifications (`guides/cheat-sheet.md`)
+- **[Guide]**: Troubleshooting Guide — 15 common problems organized by category (Account & Access, Issues & Labels, Projects & Views, Collaboration & PRs, Notifications & Settings, General) with symptoms and solutions (`guides/troubleshooting.md`)
+- **[Guide]**: Device-Specific Guides — laptop, tablet, and phone sections with key locations, keyboard shortcuts, desktop-site instructions, tips, and a "Which Device Should I Use?" comparison table (`guides/device-guides.md`)
+
+#### PPTX Slide Decks — Sessions 9-12
+- **[Session 9 PPTX]**: PowerPoint deck for "Advanced Projects & Roadmaps" — custom fields, iterations, Timeline view, cross-repository linking slides (`sessions/session-09/slides.pptx`)
+- **[Session 10 PPTX]**: PowerPoint deck for "GitHub Copilot Basics" — AI-assisted drafting, prompting, evaluation, before/after comparison slides (`sessions/session-10/slides.pptx`)
+- **[Session 11 PPTX]**: PowerPoint deck for "GitHub Spark & Copilot Agents" — Spark app builder, agent capabilities, human oversight, guardrails slides (`sessions/session-11/slides.pptx`)
+- **[Session 12 PPTX]**: PowerPoint deck for "Capstone & Train-the-Trainer" — capstone checklist, rubric, 4-step teaching method, learning journey summary slides (`sessions/session-12/slides.pptx`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"

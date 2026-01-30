@@ -242,30 +242,30 @@
 
 ### Epic EPIC-006: Sessions 10-12 (Complete)
 
-- [ ] **STORY-024** — Develop Session 11: GitHub Spark & Agents
-  - [ ] ✓ Materials in `sessions/session-11/`
+- [x] **STORY-024** — Develop Session 11: GitHub Spark & Agents
+  - [x] ✓ Materials in `sessions/session-11/`
 
-- [ ] **STORY-025** — Develop Session 12: Capstone & Train-the-Trainer
-  - [ ] Create capstone brief, rubric, peer teaching plan, coaching outline
-  - [ ] ✓ Materials in `sessions/session-12/`
+- [x] **STORY-025** — Develop Session 12: Capstone & Train-the-Trainer
+  - [x] Create capstone brief, rubric, peer teaching plan, coaching outline
+  - [x] ✓ Materials in `sessions/session-12/`
 
 ### Epic EPIC-008: Quick-Reference Guides
 
-- [ ] **STORY-030** — Create GitHub Terminology Glossary ⊘ EPIC-006
-  - [ ] 30+ terms with farm analogies
-  - [ ] ✓ Glossary in `guides/`
+- [x] **STORY-030** — Create GitHub Terminology Glossary ⊘ EPIC-006
+  - [x] 40+ terms with farm analogies
+  - [x] ✓ Glossary in `guides/glossary.md`
 
-- [ ] **STORY-031** — Create Common Tasks Cheat Sheet
-  - [ ] 7+ tasks with numbered steps and screenshots
-  - [ ] ✓ Cheat sheet in `guides/`
+- [x] **STORY-031** — Create Common Tasks Cheat Sheet
+  - [x] 10 tasks with numbered steps
+  - [x] ✓ Cheat sheet in `guides/cheat-sheet.md`
 
-- [ ] **STORY-032** — Create Troubleshooting Guide
-  - [ ] 10+ common problems with solutions
-  - [ ] ✓ Guide in `guides/`
+- [x] **STORY-032** — Create Troubleshooting Guide
+  - [x] 15 common problems with solutions
+  - [x] ✓ Guide in `guides/troubleshooting.md`
 
-- [ ] **STORY-033** — Create Device-Specific Guides
-  - [ ] Laptop, tablet, phone guides with annotated screenshots
-  - [ ] ✓ 3 device guides in `guides/`
+- [x] **STORY-033** — Create Device-Specific Guides
+  - [x] Laptop, tablet, phone guides
+  - [x] ✓ 3 device guides in `guides/device-guides.md`
 
 ### Epic EPIC-009: Final Accessibility Audit
 
