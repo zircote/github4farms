@@ -20,11 +20,11 @@ jobs:
           required_files=(
             "PROJECT-PLAN.md"
             "GANTT-CHART.md"
-            "JIRA-STRUCTURE.md"
+            "_plan/JIRA-STRUCTURE.md"
             "RACI-CHART.md"
             "RISK-REGISTER.md"
             "SEVERITY-CLASSIFICATION.md"
-            "BEST-PRACTICES.md"
+            "_research/BEST-PRACTICES.md"
             "SUCCESS-METRICS.md"
             "RUNBOOK-TEMPLATE.md"
             "README.md"
