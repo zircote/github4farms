@@ -51,6 +51,11 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 #### Sprint 5 — Accessibility Re-Audit
 - **[Accessibility]**: Re-audited Sessions 1-3 against 27 WCAG 2.2 AA checkpoints post-revision; all sessions maintained 100% pass rate; Session 3 C2 checkpoint upgraded from PARTIAL to PASS (dropdown method now taught proactively); Sprint 5 remediation entries added to all testing logs (`sessions/session-0{1,2,3}/accessibility-testing-log.md`)
 
+#### Sprint 6 — EPIC-004: Sessions 4-6 Content Development
+- **[Session 4]**: Complete session materials for "Collaboration & Pull Requests" — 25-slide deck with fork/edit/PR/review/merge workflow, paired collaboration lab with role-switching (suggest vs. review), "Collaboration Basics" quick-reference guide, full facilitation script with L2 observation checklist. Web UI only, no CLI references. Farm analogy: "photocopy → mark up → hand back for review" (`sessions/session-04/`)
+- **[Session 5]**: Complete session materials for "Notifications & Team Communication" — 25-slide deck covering Watch settings, @mentions, GitHub Discussions, and notification management. Lab exercise with real-time peer @mention exchange, Discussion posting, and notification inbox management. "Notification & Communication Settings" quick-reference guide, full facilitation script with L2 checklist. Farm analogy: "text alerts / tap on the shoulder / bulletin board" (`sessions/session-05/`)
+- **[Session 6]**: Complete session materials for "Basic Workflows & Templates" — 26-slide deck covering Issue Templates, Saved Replies, and Project Templates preview. Lab exercise creating 3+ custom Issue Templates and 3+ Saved Replies with farm scenarios (equipment, crops, livestock, safety, seasonal, supply). "Template Design Guide" quick-reference with Markdown formatting help. Full facilitation script with L2 checklist. Farm analogy: "pre-printed work order form / rubber stamp" (`sessions/session-06/`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"

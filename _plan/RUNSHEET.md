@@ -167,18 +167,18 @@
 
 ### Epic EPIC-004: Sessions 4-6
 
-- [ ] **STORY-017** — Develop Session 4: Collaboration & Pull Requests ⊘ EPIC-003
-  - [ ] Create slide deck (web UI only, no CLI)
-  - [ ] Develop fork → edit → PR lab
-  - [ ] ✓ Materials in `sessions/session-04/`; no CLI references
+- [x] **STORY-017** — Develop Session 4: Collaboration & Pull Requests ⊘ EPIC-003
+  - [x] Create slide deck (web UI only, no CLI)
+  - [x] Develop fork → edit → PR lab
+  - [x] ✓ Materials in `sessions/session-04/`; no CLI references
 
-- [ ] **STORY-018** — Develop Session 5: Notifications & Team Communication
-  - [ ] Create materials covering watching repos, @mentions, Discussions
-  - [ ] ✓ Materials in `sessions/session-05/`
+- [x] **STORY-018** — Develop Session 5: Notifications & Team Communication
+  - [x] Create materials covering watching repos, @mentions, Discussions
+  - [x] ✓ Materials in `sessions/session-05/`
 
-- [ ] **STORY-019** — Develop Session 6: Basic Workflows & Templates
-  - [ ] Create materials covering issue templates, saved replies, project templates
-  - [ ] ✓ Materials in `sessions/session-06/`
+- [x] **STORY-019** — Develop Session 6: Basic Workflows & Templates
+  - [x] Create materials covering issue templates, saved replies, project templates
+  - [x] ✓ Materials in `sessions/session-06/`
 
 **Sprint Gate:** Sessions 4-6 complete and consistent with Sessions 1-3 structure
 
