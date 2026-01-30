@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 16pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 12pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 15pt; margin: 0 0 6pt; }
+.code-block { background: #2C2C2C; padding: 10pt 14pt; border-radius: 6pt; margin: 6pt 0; }
+.code-block p { color: #4E9F3D; font-family: Courier New, monospace; font-size: 11pt; margin: 0 0 1pt; }
+.comment { color: #999999 !important; }
+.note { color: #1E5128; font-size: 15pt; font-weight: bold; margin-top: 4pt; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Reading a YAML File (Read-Only)</h1></div>
+<div class="content">
+<p><b>The workflow instructions are written in a file called YAML.</b></p>
+<p>YAML is like a <b>recipe card</b> for your automatic helper. Today, you will learn to <b>read</b> a YAML file, not write one.</p>
+<div class="code-block">
+  <p><span class="comment"># Recipe name</span></p>
+  <p>name: Weekly Equipment Reminder</p>
+  <p><span class="comment"># When to start</span></p>
+  <p>on:</p>
+  <p>&nbsp;&nbsp;schedule:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;cron: '0 8 * * MON' <span class="comment"># Mon 8AM</span></p>
+  <p><span class="comment"># The work to do</span></p>
+  <p>jobs:</p>
+  <p>&nbsp;&nbsp;send-reminder:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;steps:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: Create reminder Issue</p>
+</div>
+<p class="note">Don't worry about every line. Focus on the parts we will highlight next.</p>
+</div>
+</body>
+</html>

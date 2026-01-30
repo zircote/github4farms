@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 18pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 28pt; margin: 0; }
+.content { margin: 16pt 36pt; flex: 1; }
+.content h2 { color: #1E5128; font-size: 20pt; margin: 0 0 6pt; }
+.content p { color: #2C2C2C; font-size: 16pt; margin: 0 0 5pt; }
+.content ul { color: #2C2C2C; font-size: 16pt; margin: 0 0 6pt; padding-left: 24pt; }
+.content li { margin-bottom: 2pt; }
+.callout { background: #FFFFFF; border-left: 6pt solid #4E9F3D; padding: 8pt 14pt; margin-top: 4pt; }
+.callout p { color: #2C2C2C; font-size: 15pt; margin: 0 0 3pt; }
+.callout p:last-child { margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Reading a Workflow Status</h1></div>
+<div class="content">
+<h2>How to Tell If the Helper Did Its Job</h2>
+<p>When you click on a workflow run, you see:</p>
+<ul>
+  <li><b>Which workflow</b> ran (the name of the instructions)</li>
+  <li><b>When</b> it ran (date and time)</li>
+  <li><b>What triggered</b> it (schedule, event, or manual)</li>
+  <li><b>How long</b> it took</li>
+  <li><b>The result</b> &mdash; success or failure</li>
+</ul>
+<div class="callout">
+  <p><b>You don't need to understand the technical details.</b> Just look for:</p>
+  <p>Green checkmark = All good. The automatic task completed.</p>
+  <p>Red X = Something went wrong. Ask for help or check the error message.</p>
+  <p>Yellow dot = Still working. Check back in a few minutes.</p>
+</div>
+</div>
+</body>
+</html>

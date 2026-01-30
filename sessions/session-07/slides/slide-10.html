@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 18pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 28pt; margin: 0; }
+.content { margin: 20pt 36pt; flex: 1; }
+.content h2 { color: #1E5128; font-size: 22pt; margin: 0 0 10pt; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 8pt; }
+.status-row { display: flex; gap: 16pt; margin: 10pt 0; }
+.status-item { background: #FFFFFF; padding: 12pt 16pt; border-radius: 8pt; flex: 1; }
+.status-item p { font-size: 16pt; margin: 0 0 4pt; }
+.green p:first-child { color: #1E5128; font-weight: bold; }
+.red p:first-child { color: #CC0000; font-weight: bold; }
+.yellow p:first-child { color: #B8860B; font-weight: bold; }
+.analogy { background: #FFFFFF; border-left: 6pt solid #4E9F3D; padding: 10pt 16pt; margin-top: 6pt; }
+.analogy p { color: #2C2C2C; font-size: 16pt; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Viewing the Actions Tab</h1></div>
+<div class="content">
+<h2>Where do you see your automatic helpers at work?</h2>
+<p>Every repository has an <b>Actions</b> tab. Click it to see:</p>
+<div class="status-row">
+  <div class="status-item green">
+    <p>Green Checkmark</p>
+    <p><b>Success</b> &mdash; the helper finished the job correctly</p>
+  </div>
+  <div class="status-item red">
+    <p>Red X</p>
+    <p><b>Failure</b> &mdash; something went wrong</p>
+  </div>
+  <div class="status-item yellow">
+    <p>Yellow Dot</p>
+    <p><b>In Progress</b> &mdash; the helper is working right now</p>
+  </div>
+</div>
+<div class="analogy">
+  <p><b>Farm analogy:</b> Think of the Actions tab as the job board in the farm office. Each completed job has a green check (done right) or a red X (problem).</p>
+</div>
+</div>
+</body>
+</html>

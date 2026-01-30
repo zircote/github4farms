@@ -216,23 +216,23 @@
 
 ### Epic EPIC-005: Sessions 7-9 (Part 2)
 
-- [ ] **STORY-022** — Develop Session 9: Advanced Projects & Roadmaps ⊘ EPIC-004
-  - [ ] Create materials covering custom fields, iterations, roadmap view
-  - [ ] ✓ Materials in `sessions/session-09/`
+- [x] **STORY-022** — Develop Session 9: Advanced Projects & Roadmaps ⊘ EPIC-004
+  - [x] Create materials covering custom fields, iterations, roadmap view
+  - [x] ✓ Materials in `sessions/session-09/`
 
 ### Epic EPIC-006: Sessions 10-12 (Start)
 
-- [ ] **STORY-023** — Develop Session 10: GitHub Copilot Basics ⊘ EPIC-005
-  - [ ] Create introduction to AI-assisted work
-  - [ ] ✓ Materials in `sessions/session-10/`
+- [x] **STORY-023** — Develop Session 10: GitHub Copilot Basics ⊘ EPIC-005
+  - [x] Create introduction to AI-assisted work
+  - [x] ✓ Materials in `sessions/session-10/`
 
 ### Epic EPIC-007: Templates (Complete)
 
-- [ ] **STORY-028** — Create Equipment Maintenance Log Template
-  - [ ] ✓ Template in `templates/equipment-maintenance/`
+- [x] **STORY-028** — Create Equipment Maintenance Log Template
+  - [x] ✓ Template in `templates/equipment-maintenance/`
 
-- [ ] **STORY-029** — Create Grant Compliance Tracker Template
-  - [ ] ✓ Template in `templates/grant-compliance/`
+- [x] **STORY-029** — Create Grant Compliance Tracker Template
+  - [x] ✓ Template in `templates/grant-compliance/`
 
 **Sprint Gate:** Sessions 9-10 and all 4 templates complete
 

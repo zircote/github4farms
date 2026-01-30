@@ -64,6 +64,21 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Template]**: Farm Task Tracker repository template with README, 4 Issue Templates (equipment repair, livestock health, field inspection, general task), 10 color-coded labels, project board specification, setup instructions at grade 8 reading level (`templates/farm-task-tracker/`)
 - **[Template]**: Planting Schedule repository template with README, 2 Issue Templates (planting task, field season summary), crop type and field labels, custom fields specification for Timeline view, sample planting data for diversified farm, seasonal workflow guide (`templates/planting-schedule/`)
 
+#### Sprint 8 — EPIC-005/006: Sessions 9-10 Content Development
+- **[Session 9]**: Complete session materials for "Advanced Projects & Roadmaps" — slide deck covering custom fields (date, dropdown, number), iterations, Timeline/Roadmap view, cross-repository Project linking. Lab building a seasonal farm roadmap. "Advanced Projects" quick-reference guide. Full facilitation script with L2 checklist (`sessions/session-09/`)
+- **[Session 10]**: Complete session materials for "GitHub Copilot Basics" — slide deck introducing AI-assisted text drafting, prompting best practices, output evaluation, manual vs. Copilot comparison. Lab using Copilot to draft farm Issue descriptions. "Getting Started with Copilot" quick-reference guide. Full facilitation script with L2 checklist (`sessions/session-10/`)
+
+#### Sprint 8 — EPIC-007: Farm Repository Templates (Complete)
+- **[Template]**: Equipment Maintenance Log repository template with README, 3 Issue Templates (routine maintenance, repair request, equipment inspection), 10 labels, equipment inventory table, photo support guidance (`templates/equipment-maintenance/`)
+- **[Template]**: Grant Compliance Tracker repository template with README, 3 Issue Templates (grant milestone, reporting deadline, documentation task), 10 labels, audit trail explanation, grant information table (`templates/grant-compliance/`)
+
+#### PPTX Slide Decks — Sessions 4-8
+- **[Session 4 PPTX]**: PowerPoint deck for "Collaboration & Pull Requests" — forest green/cream theme, fork/edit/PR/review/merge workflow slides (`sessions/session-04/slides.pptx`)
+- **[Session 5 PPTX]**: PowerPoint deck for "Notifications & Team Communication" — Watch settings, @mentions, Discussions slides (`sessions/session-05/slides.pptx`)
+- **[Session 6 PPTX]**: PowerPoint deck for "Basic Workflows & Templates" — Issue Templates, Saved Replies, before/after comparison slides (`sessions/session-06/slides.pptx`)
+- **[Session 7 PPTX]**: PowerPoint deck for "Introduction to GitHub Actions" — automation concepts, trigger types, YAML reading slides (`sessions/session-07/slides.pptx`)
+- **[Session 8 PPTX]**: PowerPoint deck for "Automating Farm Tasks" — workflow creation, cron scheduling, troubleshooting slides (`sessions/session-08/slides.pptx`)
+
 ### Fixed
 - **[Content]**: Added explanation for Markdown checkbox syntax `- [ ]` in Session 2 slides.md — farmers may not recognize raw Markdown syntax
 - **[Content]**: Defined "custom field" term in Session 3 slides.md and slide-06.html — parenthetical explanation "(extra columns you create yourself)"

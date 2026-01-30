@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.workflow-row { display: flex; gap: 4pt; margin: 8pt 0; align-items: center; }
+.wf-box {
+  background: #E8F5E9; border-radius: 6pt; padding: 6pt 8pt;
+  text-align: center; flex: 1;
+}
+.wf-box p { color: #1E5128; font-size: 14pt; margin: 1pt 0; }
+.wf-box .wf-num { font-size: 18pt; font-weight: bold; color: #4E9F3D; }
+.wf-arrow p { color: #4E9F3D; font-size: 18pt; margin: 0; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>The Full Workflow: Visual Summary</h1></div>
+  <div class="slide-body">
+    <p><b>The collaboration cycle:</b></p>
+    <div class="workflow-row">
+      <div class="wf-box"><p class="wf-num">1</p><p><b>FORK</b></p></div>
+      <div class="wf-arrow"><p>&rarr;</p></div>
+      <div class="wf-box"><p class="wf-num">2</p><p><b>EDIT</b></p></div>
+      <div class="wf-arrow"><p>&rarr;</p></div>
+      <div class="wf-box"><p class="wf-num">3</p><p><b>PR</b></p></div>
+      <div class="wf-arrow"><p>&rarr;</p></div>
+      <div class="wf-box"><p class="wf-num">4</p><p><b>REVIEW</b></p></div>
+      <div class="wf-arrow"><p>&rarr;</p></div>
+      <div class="wf-box"><p class="wf-num">5</p><p><b>MERGE</b></p></div>
+    </div>
+    <ul>
+      <li><b>Fork</b> — Make your own copy</li>
+      <li><b>Edit</b> — Make changes in your copy</li>
+      <li><b>Pull Request</b> — Ask for review</li>
+      <li><b>Review</b> — Get feedback</li>
+      <li><b>Merge</b> — Changes go live. This cycle repeats every time!</li>
+    </ul>
+  </div>
+</div>
+</body></html>

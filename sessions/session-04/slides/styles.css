@@ -1,0 +1,112 @@
+/* Session 4 Slide Styles — Agriculture/Education Theme */
+/* Color Palette: Forest Green (#1E5128), Sage (#4E9F3D), Cream (#F4F1DE), Charcoal (#2C2C2C), White (#FFFFFF) */
+
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+  background: #FFFFFF;
+}
+
+/* Title slide style */
+.title-slide {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 36pt;
+}
+.title-slide h1 { color: #FFFFFF; font-size: 30pt; margin: 0 0 8pt 0; }
+.title-slide p { color: #E8F5E9; font-size: 20pt; margin: 4pt 0; }
+.title-divider { width: 80pt; height: 3pt; background: #A5D6A7; margin: 14pt auto; }
+.title-meta { margin-top: 20pt; }
+.title-meta p { color: #A5D6A7; font-size: 16pt; }
+
+/* Standard content slide */
+.content-slide {
+  flex: 1; display: flex; flex-direction: column;
+  padding: 0;
+}
+.header-bar {
+  background: #1E5128; padding: 12pt 28pt;
+  min-height: 44pt; display: flex; align-items: center;
+}
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.slide-body {
+  flex: 1; padding: 16pt 28pt;
+  display: flex; flex-direction: column;
+}
+.slide-body p { color: #2C2C2C; font-size: 19pt; margin: 5pt 0; line-height: 1.35; }
+.slide-body ul, .slide-body ol { color: #2C2C2C; font-size: 19pt; margin: 5pt 0; padding-left: 26pt; }
+.slide-body li { margin: 3pt 0; line-height: 1.35; }
+
+/* Callout box */
+.callout {
+  background: #E8F5E9; border-left: 5pt solid #4E9F3D;
+  padding: 8pt 14pt; margin: 8pt 0;
+}
+.callout p { color: #1E5128; font-size: 19pt; margin: 2pt 0; }
+
+/* Question slide */
+.question-slide .slide-body {
+  justify-content: center; align-items: center; text-align: center;
+}
+.question-slide .slide-body p { font-size: 22pt; }
+
+/* Two column layout */
+.two-col { display: flex; gap: 20pt; flex: 1; }
+.two-col .col { flex: 1; }
+
+/* Table styling */
+.slide-table { width: 100%; border-collapse: collapse; margin: 8pt 0; }
+.slide-table th { background: #1E5128; color: #FFFFFF; font-size: 17pt; padding: 8pt 10pt; text-align: left; }
+.slide-table td { font-size: 17pt; padding: 6pt 10pt; border-bottom: 1pt solid #CCCCCC; color: #2C2C2C; }
+.slide-table tr:nth-child(even) td { background: #F4F1DE; }
+
+/* Break slide */
+.break-slide {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 36pt;
+  background: #F4F1DE;
+}
+.break-slide h1 { color: #1E5128; font-size: 36pt; margin: 0 0 16pt 0; }
+.break-slide p { color: #2C2C2C; font-size: 21pt; margin: 5pt 0; }
+
+/* Accent text */
+.accent { color: #4E9F3D; font-weight: bold; }
+.bold-green { color: #1E5128; font-weight: bold; }
+
+/* Analogy / emphasis box */
+.analogy-box {
+  background: #4E9F3D; border-radius: 6pt;
+  padding: 8pt 16pt; margin: 6pt 0; text-align: center;
+}
+.analogy-box p { color: #FFFFFF; font-size: 22pt; margin: 0; }
+
+/* Workflow step boxes */
+.workflow-steps { display: flex; gap: 8pt; margin: 8pt 0; flex-wrap: wrap; }
+.step-box {
+  background: #E8F5E9; border-radius: 6pt; padding: 8pt 12pt;
+  flex: 1; min-width: 120pt; text-align: center;
+}
+.step-box p { color: #1E5128; font-size: 16pt; margin: 2pt 0; }
+.step-box .step-num { font-size: 24pt; font-weight: bold; color: #4E9F3D; }
+.step-arrow { display: flex; align-items: center; color: #4E9F3D; font-size: 24pt; }
+
+/* Numbered list styling */
+.slide-body ol li { margin: 4pt 0; }
+
+/* Checklist */
+.checklist { list-style: none; padding-left: 10pt; }
+.checklist li { margin: 4pt 0; font-size: 19pt; color: #2C2C2C; }
+.checklist li:before { content: ''; }
+
+/* Thank you slide */
+.thank-slide {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 36pt;
+  background: #1E5128;
+}
+.thank-slide h1 { color: #FFFFFF; font-size: 36pt; margin: 0 0 16pt 0; }
+.thank-slide p { color: #A5D6A7; font-size: 21pt; margin: 5pt 0; }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 18pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 28pt; margin: 0; }
+.content { margin: 24pt 36pt; flex: 1; }
+.content h2 { color: #1E5128; font-size: 22pt; margin: 0 0 12pt; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 10pt; }
+.content ul { color: #2C2C2C; font-size: 18pt; margin: 0 0 12pt; padding-left: 24pt; }
+.content li { margin-bottom: 4pt; }
+.analogy { background: #FFFFFF; border-left: 6pt solid #4E9F3D; padding: 12pt 16pt; margin-top: 6pt; }
+.analogy p { color: #2C2C2C; font-size: 16pt; margin: 0 0 6pt; }
+.analogy p:last-child { margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Schedule Triggers: The Alarm Clock</h1></div>
+<div class="content">
+<h2>Schedule = The helper starts at a set time, automatically.</h2>
+<p>Examples:</p>
+<ul>
+  <li>Every Monday at 8 AM &mdash; create a weekly equipment checklist Issue</li>
+  <li>First of every month &mdash; remind the team about monthly safety inspection</li>
+  <li>Every Friday at 5 PM &mdash; post a summary of open Issues</li>
+</ul>
+<div class="analogy">
+  <p><b>Farm analogy:</b> Like setting your alarm clock to feed the chickens at 6 AM. You set it once, and it goes off every day whether you remember or not.</p>
+  <p><b>Technical name:</b> GitHub uses something called "cron" to set schedules. You don't need to memorize this &mdash; just know that schedules can be set to any day, time, or interval.</p>
+</div>
+</div>
+</body>
+</html>

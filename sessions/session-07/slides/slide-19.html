@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 16pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 28pt; margin: 0; }
+.content { margin: 12pt 36pt; flex: 1; }
+.content h2 { color: #1E5128; font-size: 20pt; margin: 0 0 6pt; }
+.steps-box { background: #FFFFFF; padding: 10pt 16pt; border-radius: 6pt; }
+.steps-box ol { color: #2C2C2C; font-size: 15pt; margin: 0; padding-left: 20pt; }
+.steps-box li { margin-bottom: 3pt; }
+.checkpoint { background: #1E5128; padding: 10pt 16pt; border-radius: 6pt; margin-top: 6pt; }
+.checkpoint p { color: #FFFFFF; font-size: 16pt; font-weight: bold; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Guided Practice Steps</h1></div>
+<div class="content">
+<h2>Follow along with me:</h2>
+<div class="steps-box">
+<ol>
+  <li>Go to the <b>demo repository</b> (URL on your handout)</li>
+  <li>Click the <b>"Actions"</b> tab</li>
+  <li>Find a workflow run with a green checkmark and click it</li>
+  <li>Answer: What triggered this workflow? When did it run?</li>
+  <li>Find a run with a red X &mdash; what does that tell you?</li>
+  <li>Navigate to <b>.github/workflows/</b> in the code</li>
+  <li>Click a <b>.yml</b> file &mdash; spot the name, trigger, job, and steps</li>
+</ol>
+</div>
+<div class="checkpoint">
+  <p>Checkpoint: Raise your hand when you can point to the name, trigger, and steps in the YAML file.</p>
+</div>
+</div>
+</body>
+</html>

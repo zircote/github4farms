@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 18pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 24pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 10pt; }
+.label { color: #1E5128; font-weight: bold; }
+.steps-box { background: #FFFFFF; padding: 12pt 16pt; border-radius: 6pt; margin: 8pt 0; }
+.steps-box p { color: #2C2C2C; font-size: 18pt; margin: 0 0 4pt; }
+.analogy { background: #FFFFFF; border-left: 6pt solid #4E9F3D; padding: 10pt 16pt; margin-top: 8pt; }
+.analogy p { color: #2C2C2C; font-size: 16pt; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Example 2: Overdue Issue Alert</h1></div>
+<div class="content">
+<p><span class="label">Name:</span> Overdue Issue Notification</p>
+<p><span class="label">Trigger:</span> Event &mdash; runs on a schedule, checks for Issues older than 14 days</p>
+<p><span class="label">Job:</span> Add a comment to any Issue that has been open too long</p>
+<div class="steps-box">
+  <p><b>Steps:</b></p>
+  <p>1. Search for Issues open more than 14 days</p>
+  <p>2. Add a comment: "This Issue has been open for over 2 weeks. Does it still need attention?"</p>
+</div>
+<div class="analogy">
+  <p><b>Farm analogy:</b> Like a calendar reminder that nudges you: "That fence repair has been on the list for two weeks &mdash; time to deal with it."</p>
+</div>
+</div>
+</body>
+</html>
