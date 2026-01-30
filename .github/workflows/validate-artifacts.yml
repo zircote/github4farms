@@ -4,10 +4,12 @@ on:
   push:
     branches: [main]
     paths:
-      - '*.md'
+      - '**.md'
       - '.github/**'
+      - '.gitignore'
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   validate:
