@@ -6,48 +6,48 @@
   <defs>
     <!-- Phase 1: Preparation (Blue) -->
     <linearGradient id="phase1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="phase1-light" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.7" />
-      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:0.7" />
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0.7" />
     </linearGradient>
 
     <!-- Phase 2: Design (Green) -->
     <linearGradient id="phase2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="0%" stop-color="#10b981" stop-opacity="1" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="phase2-light" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#34d399;stop-opacity:0.7" />
-      <stop offset="100%" style="stop-color:#6ee7b7;stop-opacity:0.7" />
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0.7" />
     </linearGradient>
 
     <!-- Phase 3: Development (Amber) -->
     <linearGradient id="phase3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="1" />
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="phase3-light" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.7" />
-      <stop offset="100%" style="stop-color:#fcd34d;stop-opacity:0.7" />
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#fcd34d" stop-opacity="0.7" />
     </linearGradient>
 
     <!-- Phase 4: Delivery (Purple) -->
     <linearGradient id="phase4" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="phase4-light" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.7" />
-      <stop offset="100%" style="stop-color:#c4b5fd;stop-opacity:0.7" />
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0.7" />
     </linearGradient>
 
     <!-- Seasonal Break (Gray) -->
     <linearGradient id="break" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:1" />
+      <stop offset="0%" stop-color="#64748b" stop-opacity="1" />
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="1" />
     </linearGradient>
   </defs>
 
