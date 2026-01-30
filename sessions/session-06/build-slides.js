@@ -76,7 +76,22 @@ function addHeading(slide, text, opts = {}) {
 }
 
 function addBody(slide, text, opts = {}) {
-  slide.addText(text, {
+  // When text is an array of {text, options} objects, ensure each gets breakLine
+  let formattedText = text;
+  if (Array.isArray(text)) {
+    formattedText = text.map((item, idx) => {
+      if (typeof item === "object" && item.text !== undefined) {
+        const newItem = { ...item, options: { ...item.options } };
+        // Add breakLine to all items except the last
+        if (idx < text.length - 1 && newItem.options.breakLine === undefined) {
+          newItem.options.breakLine = true;
+        }
+        return newItem;
+      }
+      return item;
+    });
+  }
+  slide.addText(formattedText, {
     x: opts.x || 0.5,
     y: opts.y || 1.1,
     w: opts.w || 9.0,
@@ -360,33 +375,33 @@ function buildSlides(pptx) {
     [
       {
         text: "An Issue Template is a form that pre-fills parts of a new Issue for you.",
-        options: { fontSize: 18, color: COLORS.charcoal, paraSpaceBefore: 8 },
+        options: { fontSize: 16, color: COLORS.charcoal, paraSpaceBefore: 8 },
       },
-      { text: "", options: { fontSize: 8 } },
+      { text: "", options: { fontSize: 6 } },
       {
         text: "Instead of a blank page, you get:",
-        options: { fontSize: 18, color: COLORS.charcoal },
+        options: { fontSize: 16, color: COLORS.charcoal },
       },
       {
         text: "A pre-written title structure",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Guided sections (What happened? Where? How urgent?)",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Checklists already set up",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Labels automatically applied",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
       },
-      { text: "", options: { fontSize: 8 } },
+      { text: "", options: { fontSize: 6 } },
       {
         text: "Think of it like a pre-printed form at the vet's office — you fill in the blanks instead of writing everything on a blank sheet.",
-        options: { fontSize: 16, italic: true, color: COLORS.forestGreen },
+        options: { fontSize: 14, italic: true, color: COLORS.forestGreen },
       },
     ],
     { y: 1.55 },
@@ -685,39 +700,31 @@ function buildSlides(pptx) {
     {
       text: "A good template has three parts:",
       options: {
-        fontSize: 20,
+        fontSize: 18,
         bold: true,
         color: COLORS.forestGreen,
         paraSpaceBefore: 4,
       },
     },
+    { text: "", options: { fontSize: 4 } },
+    {
+      text: '1.  Title format — e.g., "Equipment Issue: [Name] — [Problem]"',
+      options: { fontSize: 14, color: COLORS.charcoal },
+    },
+    { text: "", options: { fontSize: 3 } },
+    {
+      text: "2.  Guided sections — Prompts: What happened? Where? How urgent?",
+      options: { fontSize: 14, color: COLORS.charcoal },
+    },
+    { text: "", options: { fontSize: 3 } },
+    {
+      text: "3.  Checklist — ☐ Photos attached  ☐ Parts identified  ☐ Assigned",
+      options: { fontSize: 14, color: COLORS.charcoal },
+    },
     { text: "", options: { fontSize: 6 } },
     {
-      text: '1.  Title format — A structure like: "Equipment Issue: [Name] — [Problem]"',
-      options: { fontSize: 18, color: COLORS.charcoal },
-    },
-    { text: "", options: { fontSize: 4 } },
-    {
-      text: "2.  Guided sections — Prompts that tell the person what to write:",
-      options: { fontSize: 18, color: COLORS.charcoal },
-    },
-    {
-      text: "     What happened?  •  Where?  •  How urgent?  •  What's been tried?",
-      options: { fontSize: 16, color: COLORS.sage },
-    },
-    { text: "", options: { fontSize: 4 } },
-    {
-      text: "3.  Checklist — Steps to complete:",
-      options: { fontSize: 18, color: COLORS.charcoal },
-    },
-    {
-      text: "     ☐ Photos attached  ☐ Parts needed identified  ☐ Assigned to someone",
-      options: { fontSize: 16, color: COLORS.sage },
-    },
-    { text: "", options: { fontSize: 8 } },
-    {
-      text: "Tip: Write your template as if you're explaining to someone who just started working on the farm. What information would they need to give you?",
-      options: { fontSize: 16, italic: true, color: COLORS.forestGreen },
+      text: "Tip: Write your template as if explaining to someone new on the farm.\nWhat information would they need to give you?",
+      options: { fontSize: 13, italic: true, color: COLORS.forestGreen },
     },
   ]);
   addFooter(slide, 10, TOTAL_SLIDES);
@@ -748,38 +755,38 @@ function buildSlides(pptx) {
     [
       {
         text: "## Equipment Information\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "Equipment name: [e.g., John Deere 6120M Tractor]\nLocation: [e.g., Equipment shed, Field 2]\nCurrent hours/mileage: [if applicable]\n\n",
-        options: { fontSize: 12, color: COLORS.charcoal },
+        options: { fontSize: 10, color: COLORS.charcoal },
       },
       {
         text: "## Problem Description\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "[Describe what's wrong or what maintenance is needed]\n\n",
-        options: { fontSize: 12, color: "888888" },
+        options: { fontSize: 10, color: "888888" },
       },
       {
         text: "## Urgency\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "☐ Emergency  ☐ High (2 days)  ☐ Medium (this week)  ☐ Low\n\n",
-        options: { fontSize: 12, color: COLORS.charcoal },
+        options: { fontSize: 10, color: COLORS.charcoal },
       },
       {
         text: "## Checklist\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
-        text: "☐ Photo attached  ☐ Service manual consulted  ☐ Parts identified  ☐ Repair completed  ☐ Post-repair test done",
-        options: { fontSize: 12, color: COLORS.charcoal },
+        text: "☐ Photo attached  ☐ Service manual consulted  ☐ Parts identified\n☐ Repair completed  ☐ Post-repair test done",
+        options: { fontSize: 10, color: COLORS.charcoal },
       },
     ],
-    { x: 0.7, y: 1.6, w: 8.6, h: 3.4, fontFace: "Courier New", valign: "top" },
+    { x: 0.7, y: 1.6, w: 8.6, h: 3.3, fontFace: "Courier New", valign: "top" },
   );
   addFooter(slide, 11, TOTAL_SLIDES);
 
@@ -809,46 +816,46 @@ function buildSlides(pptx) {
     [
       {
         text: "## Field Information\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "Field name/number: [e.g., Field 3]\nCrop: [e.g., Soybeans]\nGrowth stage: [e.g., V3, flowering, mature]\n\n",
-        options: { fontSize: 12, color: COLORS.charcoal },
+        options: { fontSize: 10, color: COLORS.charcoal },
       },
       {
         text: "## Issue Description\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "[Describe what you're seeing — discoloration, pests, wilting, etc.]\n\n",
-        options: { fontSize: 12, color: "888888" },
+        options: { fontSize: 10, color: "888888" },
       },
       {
         text: "## Photos\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "[Attach 1-2 photos of the issue]\n\n",
-        options: { fontSize: 12, color: "888888" },
+        options: { fontSize: 10, color: "888888" },
       },
       {
         text: "## Urgency\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "☐ Immediate — crop at risk  ☐ This week  ☐ Monitor\n\n",
-        options: { fontSize: 12, color: COLORS.charcoal },
+        options: { fontSize: 10, color: COLORS.charcoal },
       },
       {
         text: "## Possible Causes / Action Taken\n",
-        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "[Your best guess or observations / Steps already taken]",
-        options: { fontSize: 12, color: "888888" },
+        options: { fontSize: 10, color: "888888" },
       },
     ],
-    { x: 0.7, y: 1.6, w: 8.6, h: 3.4, fontFace: "Courier New", valign: "top" },
+    { x: 0.7, y: 1.6, w: 8.6, h: 3.3, fontFace: "Courier New", valign: "top" },
   );
   addFooter(slide, 12, TOTAL_SLIDES);
 
@@ -871,33 +878,33 @@ function buildSlides(pptx) {
     [
       {
         text: "If you find yourself typing the same comment over and over, save it as a Saved Reply.",
-        options: { fontSize: 18, color: COLORS.charcoal, paraSpaceBefore: 8 },
+        options: { fontSize: 14, color: COLORS.charcoal, paraSpaceBefore: 4 },
       },
-      { text: "", options: { fontSize: 8 } },
+      { text: "", options: { fontSize: 4 } },
       {
         text: "Examples:",
-        options: { fontSize: 18, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
       },
       {
         text: '"Repair completed and tested. Closing this Issue."',
-        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 13, color: COLORS.charcoal, bullet: true },
       },
       {
         text: '"Parts ordered. Expected delivery: [date]. Will update when received."',
-        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 13, color: COLORS.charcoal, bullet: true },
       },
       {
         text: '"Reassigning to @[name] — this is in their area."',
-        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 13, color: COLORS.charcoal, bullet: true },
       },
       {
         text: '"Thank you for reporting this. I\'ll check on it today."',
-        options: { fontSize: 16, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 13, color: COLORS.charcoal, bullet: true },
       },
-      { text: "", options: { fontSize: 8 } },
+      { text: "", options: { fontSize: 4 } },
       {
         text: "Where to find: When typing a comment, look for the arrow icon near the comment box toolbar.",
-        options: { fontSize: 16, italic: true, color: COLORS.forestGreen },
+        options: { fontSize: 12, italic: true, color: COLORS.forestGreen },
       },
     ],
     { y: 1.55 },
@@ -912,41 +919,41 @@ function buildSlides(pptx) {
     {
       text: "How to create a Saved Reply:",
       options: {
-        fontSize: 20,
+        fontSize: 16,
         bold: true,
         color: COLORS.forestGreen,
         paraSpaceBefore: 4,
       },
     },
-    { text: "", options: { fontSize: 6 } },
+    { text: "", options: { fontSize: 4 } },
     {
       text: '1.  Click your profile icon (top right) → "Settings"',
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '2.  Click "Saved replies" (left menu, under "Code, planning, and automation")',
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '3.  Click "Add a saved reply"',
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '4.  Give it a title (e.g., "Parts ordered")',
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: "5.  Write the reply text",
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '6.  Click "Add saved reply"',
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
-    { text: "", options: { fontSize: 8 } },
+    { text: "", options: { fontSize: 4 } },
     {
       text: "To use it: In any comment box, click the arrow icon in the toolbar and select your saved reply. Edit the [bracketed] parts before posting.",
-      options: { fontSize: 16, bold: true, color: COLORS.forestGreen },
+      options: { fontSize: 13, bold: true, color: COLORS.forestGreen },
     },
   ]);
   addNotes(
@@ -962,34 +969,34 @@ function buildSlides(pptx) {
   addBody(slide, [
     {
       text: "GitHub also has Project Templates — pre-built planning boards.",
-      options: { fontSize: 18, color: COLORS.charcoal, paraSpaceBefore: 4 },
+      options: { fontSize: 14, color: COLORS.charcoal, paraSpaceBefore: 4 },
     },
-    { text: "", options: { fontSize: 8 } },
+    { text: "", options: { fontSize: 4 } },
     {
       text: "When you create a new Project, you can choose from starter templates:",
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: "Board — Todo / In Progress / Done columns",
-      options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+      options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
     },
     {
       text: "Team backlog — Columns with priority levels",
-      options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+      options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
     },
     {
       text: "Roadmap — Timeline-based planning",
-      options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+      options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
     },
-    { text: "", options: { fontSize: 8 } },
+    { text: "", options: { fontSize: 4 } },
     {
       text: "You can also copy an existing Project to reuse your own custom board setup.",
-      options: { fontSize: 18, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
-    { text: "", options: { fontSize: 8 } },
+    { text: "", options: { fontSize: 4 } },
     {
       text: "We'll explore Project Templates in depth in Session 9 (Advanced Projects). For now, know they exist.",
-      options: { fontSize: 18, bold: true, color: COLORS.forestGreen },
+      options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
     },
   ]);
   addNotes(
@@ -1124,30 +1131,30 @@ function buildSlides(pptx) {
     [
       {
         text: "You're going to create your own Issue Template for a common farm task.",
-        options: { fontSize: 20, color: COLORS.cream },
+        options: { fontSize: 18, color: COLORS.cream },
       },
       {
         text: "\n\nI'll walk through each step. Follow along on your screen.",
-        options: { fontSize: 18, color: COLORS.cream },
+        options: { fontSize: 16, color: COLORS.cream },
       },
       {
         text: "\n\nIf you get stuck:",
-        options: { fontSize: 18, color: COLORS.cream },
+        options: { fontSize: 16, color: COLORS.cream },
       },
       {
         text: "\n1.  Ask your partner",
-        options: { fontSize: 18, color: COLORS.cream },
+        options: { fontSize: 16, color: COLORS.cream },
       },
       {
         text: "\n2.  Raise your hand",
-        options: { fontSize: 18, color: COLORS.cream },
+        options: { fontSize: 16, color: COLORS.cream },
       },
       {
         text: "\n\nYou can always edit or delete a template later — so don't worry about getting it perfect.",
-        options: { fontSize: 18, bold: true, italic: true, color: COLORS.sage },
+        options: { fontSize: 16, bold: true, italic: true, color: COLORS.sage },
       },
     ],
-    { x: 0.8, y: 2.3, w: 8.4, h: 2.8, fontFace: "Arial", valign: "top" },
+    { x: 0.8, y: 2.2, w: 8.4, h: 3.0, fontFace: "Arial", valign: "top" },
   );
   addNotes(
     slide,
@@ -1171,45 +1178,45 @@ function buildSlides(pptx) {
     { text: "", options: { fontSize: 4 } },
     {
       text: "1.  Go to your own repository (you need to be the owner)",
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '2.  Click "Settings"',
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '3.  Scroll to "Features" → next to Issues, click "Set up templates"',
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '4.  Click "Add template" → choose "Custom template"',
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
-    { text: "5.  Fill in:", options: { fontSize: 16, color: COLORS.charcoal } },
+    { text: "5.  Fill in:", options: { fontSize: 14, color: COLORS.charcoal } },
     {
       text: '     Name: "Equipment Maintenance Request"',
-      options: { fontSize: 14, color: COLORS.sage },
+      options: { fontSize: 12, color: COLORS.sage },
     },
     {
       text: '     About: "Use this template to report equipment issues"',
-      options: { fontSize: 14, color: COLORS.sage },
+      options: { fontSize: 12, color: COLORS.sage },
     },
     {
       text: "     Content: Copy from your handout (or write your own)",
-      options: { fontSize: 14, color: COLORS.sage },
+      options: { fontSize: 12, color: COLORS.sage },
     },
     {
       text: '6.  Click "Propose changes"',
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     {
       text: '7.  Click "Commit changes"',
-      options: { fontSize: 16, color: COLORS.charcoal },
+      options: { fontSize: 14, color: COLORS.charcoal },
     },
     { text: "", options: { fontSize: 6 } },
     {
       text: 'Checkpoint: Go to Issues tab → "New Issue" — you should see your template listed.',
-      options: { fontSize: 16, bold: true, color: COLORS.forestGreen },
+      options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
     },
   ]);
   addNotes(
@@ -1280,7 +1287,7 @@ function buildSlides(pptx) {
     x: 0.3,
     y: 1.55,
     w: 4.5,
-    h: 2.5,
+    h: 2.3,
     fill: { color: COLORS.white },
     shadow: { type: "outer", blur: 3, offset: 1, color: "CCCCCC" },
     rectRadius: 0.05,
@@ -1330,7 +1337,7 @@ function buildSlides(pptx) {
         options: { fontSize: 11, bold: true, color: COLORS.sage },
       },
     ],
-    { x: 0.5, y: 2.0, w: 4.1, h: 1.9, fontFace: "Arial", valign: "top" },
+    { x: 0.5, y: 2.0, w: 4.1, h: 1.7, fontFace: "Arial", valign: "top" },
   );
 
   // Task 2
@@ -1401,18 +1408,27 @@ function buildSlides(pptx) {
     },
   );
 
-  // Success criteria
+  // Success criteria — compact horizontal layout
+  slide.addShape("rect", {
+    x: 0.3,
+    y: 4.05,
+    w: 9.4,
+    h: 0.45,
+    fill: { color: COLORS.forestGreen },
+    rectRadius: 0.05,
+  });
   slide.addText(
-    "Success: ☐ 2+ Issue Templates  ☐ Guided sections & checklists  ☐ 2+ Saved Replies  ☐ Tested a template",
+    "Success:  ☐ 2+ Issue Templates   ☐ Guided sections & checklists   ☐ 2+ Saved Replies   ☐ Tested a template",
     {
       x: 0.5,
-      y: 4.3,
+      y: 4.05,
       w: 9.0,
-      h: 0.4,
-      fontSize: 13,
+      h: 0.45,
+      fontSize: 12,
       bold: true,
-      color: COLORS.forestGreen,
+      color: COLORS.white,
       fontFace: "Arial",
+      valign: "middle",
     },
   );
   addFooter(slide, 21, TOTAL_SLIDES);
@@ -1560,28 +1576,28 @@ function buildSlides(pptx) {
     [
       {
         text: "Next time, you'll learn how GitHub can automatically do things for you — like sending a reminder when an equipment check is due, or notifying the team when a task is overdue. No coding required!",
-        options: { fontSize: 18, color: COLORS.charcoal, paraSpaceBefore: 8 },
+        options: { fontSize: 14, color: COLORS.charcoal, paraSpaceBefore: 4 },
       },
-      { text: "", options: { fontSize: 12 } },
+      { text: "", options: { fontSize: 6 } },
       {
         text: "Optional between-session practice:",
-        options: { fontSize: 18, bold: true, color: COLORS.forestGreen },
+        options: { fontSize: 14, bold: true, color: COLORS.forestGreen },
       },
       {
         text: "Add another Issue Template to your repository",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Use your templates to create a few real farm Issues",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Try using a Saved Reply when commenting on an Issue",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
       },
       {
         text: "Think about what farm tasks you'd like to automate",
-        options: { fontSize: 18, color: COLORS.charcoal, bullet: true },
+        options: { fontSize: 14, color: COLORS.charcoal, bullet: true },
       },
     ],
     { y: 1.7 },

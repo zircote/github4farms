@@ -317,14 +317,14 @@ async function buildDeck() {
         "Workflow file \u2014 lives in the .github/workflows/ folder of your repository",
         "Three trigger types: manual (workflow_dispatch), event-based (push, issues), and scheduled (schedule)",
       ],
-      { y: 1.8, h: 2.6 },
+      { y: 1.7, h: 2.6, fontSize: 16 },
     );
     addBody(
       slide,
       "Today we focus on scheduled triggers \u2014 the alarm clock of GitHub Actions.",
       {
-        y: 4.2,
-        h: 0.6,
+        y: 4.4,
+        h: 0.5,
         bold: true,
         color: FOREST_GREEN,
       },
@@ -580,16 +580,16 @@ async function buildDeck() {
       "                    + '- [ ] Inspect irrigation lines',\n" +
       "              labels: ['equipment', 'recurring']\n" +
       "            })";
-    addCodeBlock(slide, yaml, { y: 1.5, h: 3.6, fontSize: 11 });
+    addCodeBlock(slide, yaml, { y: 1.5, h: 3.0, fontSize: 10 });
     addBody(
       slide,
       "Don\u2019t panic! We\u2019ll break this down piece by piece.",
       {
-        y: 5.0,
+        y: 4.55,
         h: 0.3,
         italic: true,
         color: SAGE,
-        fontSize: 14,
+        fontSize: 13,
       },
     );
   }
@@ -600,7 +600,7 @@ async function buildDeck() {
     addHeader(slide, "Breaking Down the Recipe");
     addBody(slide, "Line by line, like reading a recipe card:", {
       y: 1.1,
-      h: 0.3,
+      h: 0.25,
       bold: true,
       fontSize: 16,
     });
@@ -622,7 +622,7 @@ async function buildDeck() {
         ["title:", "The Issue title", '"What to write on the work order"'],
         ["body:", "The Issue content", '"The checklist inside the work order"'],
       ],
-      { y: 1.35, colW: [2.6, 2.6, 3.6], rowH: 0.36 },
+      { y: 1.35, colW: [2.6, 2.6, 3.6], rowH: 0.35 },
     );
   }
 
@@ -644,7 +644,7 @@ async function buildDeck() {
         "You\u2019ll see a list of workflow runs",
         "Look for the status icon:",
       ],
-      { y: 1.7, h: 1.3 },
+      { y: 1.6, h: 0.9, fontSize: 14 },
     );
     // Status icons as sub-items
     addBullets(
@@ -655,16 +655,17 @@ async function buildDeck() {
         "\uD83D\uDFE1  Yellow circle = In progress (still running)",
         "Click on a run to see the details and log",
       ],
-      { y: 3.0, h: 1.4, x: 1.2, w: 7.6 },
+      { y: 2.5, h: 1.3, x: 1.2, w: 7.6, fontSize: 14 },
     );
     addBody(
       slide,
       "Think of it like checking your alarm clock history \u2014 did it go off? Did you hear it?",
       {
-        y: 4.3,
+        y: 4.0,
         h: 0.5,
         italic: true,
         color: FOREST_GREEN,
+        fontSize: 14,
       },
     );
   }
@@ -761,10 +762,10 @@ async function buildDeck() {
     addHeader(slide, "Live Demo: Weekly Equipment Check Workflow");
     addBody(slide, "Watch me build an automated reminder from scratch.", {
       y: 1.2,
-      h: 0.4,
+      h: 0.35,
       bold: true,
       color: SAGE,
-      fontSize: 20,
+      fontSize: 18,
     });
     addBullets(
       slide,
@@ -778,16 +779,17 @@ async function buildDeck() {
         "Check the Actions tab for the green checkmark",
         "Open the Issue it created",
       ],
-      { y: 1.8, h: 2.8 },
+      { y: 1.6, h: 2.8, fontSize: 13 },
     );
     addBody(
       slide,
       "Just watch for now \u2014 you\u2019ll build your own next.",
       {
-        y: 4.3,
-        h: 0.5,
+        y: 4.5,
+        h: 0.4,
         bold: true,
         color: FOREST_GREEN,
+        fontSize: 14,
       },
     );
     addNotes(
@@ -802,33 +804,35 @@ async function buildDeck() {
     addHeader(slide, "Adding Manual Trigger for Testing");
     addBody(slide, "Pro tip: Add workflow_dispatch so you can test anytime.", {
       y: 1.2,
-      h: 0.4,
+      h: 0.35,
       bold: true,
       color: SAGE,
-      fontSize: 20,
+      fontSize: 18,
     });
     const yaml =
       "on:\n" +
       "  schedule:\n" +
       "    - cron: '0 13 * * 1'\n" +
       "  workflow_dispatch:";
-    addCodeBlock(slide, yaml, { y: 1.8, h: 1.6, fontSize: 16 });
+    addCodeBlock(slide, yaml, { y: 1.6, h: 1.4, fontSize: 14 });
     addBody(
       slide,
       'Adding workflow_dispatch means you can also click "Run workflow" in the Actions tab to test it immediately \u2014 instead of waiting until the scheduled time.',
       {
-        y: 3.6,
-        h: 0.8,
+        y: 3.1,
+        h: 0.7,
+        fontSize: 14,
       },
     );
     addBody(
       slide,
       'Think of it like adding a "Test" button to your alarm clock so you can make sure it works before Monday.',
       {
-        y: 4.3,
-        h: 0.6,
+        y: 3.85,
+        h: 0.5,
         italic: true,
         color: FOREST_GREEN,
+        fontSize: 14,
       },
     );
   }
@@ -839,8 +843,9 @@ async function buildDeck() {
     addHeader(slide, "Guided Practice: Your Turn!");
     addBody(slide, "We\u2019ll work through this together, step by step:", {
       y: 1.2,
-      h: 0.4,
+      h: 0.3,
       bold: true,
+      fontSize: 14,
     });
     addBullets(
       slide,
@@ -852,32 +857,34 @@ async function buildDeck() {
         "Modify the schedule",
         "Commit and test it",
       ],
-      { y: 1.7, h: 2.2 },
+      { y: 1.5, h: 1.6, fontSize: 13 },
     );
     addBody(slide, "Open your lab exercise handout to Part 1.", {
-      y: 3.7,
-      h: 0.4,
+      y: 3.15,
+      h: 0.3,
       bold: true,
       color: FOREST_GREEN,
+      fontSize: 14,
     });
     addBody(
       slide,
       "If you get stuck: (1) Check the quick-reference guide, (2) Ask your partner, (3) Raise your hand.",
       {
-        y: 4.1,
-        h: 0.4,
-        fontSize: 16,
+        y: 3.5,
+        h: 0.35,
+        fontSize: 12,
       },
     );
     addBody(
       slide,
       "You can\u2019t break anything. If something goes wrong, we\u2019ll fix it together.",
       {
-        y: 4.5,
-        h: 0.4,
+        y: 3.9,
+        h: 0.35,
         bold: true,
         italic: true,
         color: SAGE,
+        fontSize: 13,
       },
     );
     addNotes(
@@ -916,15 +923,15 @@ async function buildDeck() {
       "When we come back, you\u2019ll create your own automated farm workflow from scratch!\n\nThink about which scenario you want to try:\n\u2022 Equipment: Weekly equipment check reminder\n\u2022 Crops: Planting season preparation reminder\n\u2022 Livestock: Livestock health check reminder",
       {
         x: 1.0,
-        y: 3.4,
+        y: 3.2,
         w: 8.0,
-        h: 1.8,
-        fontSize: BODY_SIZE,
+        h: 1.5,
+        fontSize: 12,
         fontFace: "Arial",
         color: CREAM,
         align: "center",
         valign: "top",
-        lineSpacingMultiple: 1.3,
+        lineSpacingMultiple: 1.1,
       },
     );
   }
@@ -938,8 +945,9 @@ async function buildDeck() {
       "Create an automated farm reminder workflow. Choose your scenario:",
       {
         y: 1.2,
-        h: 0.4,
+        h: 0.3,
         bold: true,
+        fontSize: 14,
       },
     );
     addBullets(
@@ -949,9 +957,9 @@ async function buildDeck() {
         "Option B: Planting Season Reminder \u2014 first of each month at 8 AM",
         "Option C: Livestock Health Check \u2014 every Wednesday and Friday at 6 AM",
       ],
-      { y: 1.7, h: 1.3, fontSize: 16 },
+      { y: 1.5, h: 0.85, fontSize: 12 },
     );
-    addBody(slide, "Steps:", { y: 3.0, h: 0.3, bold: true });
+    addBody(slide, "Steps:", { y: 2.35, h: 0.25, bold: true, fontSize: 13 });
     addBullets(
       slide,
       [
@@ -962,17 +970,17 @@ async function buildDeck() {
         "Commit, test, and verify in the Actions tab",
         "If it fails, read the error log and fix the problem",
       ],
-      { y: 3.3, h: 2.0, fontSize: 16 },
+      { y: 2.6, h: 1.6, fontSize: 11 },
     );
     addBody(
       slide,
       "Stretch challenge: Modify the cron schedule to a different day or time.",
       {
-        y: 4.8,
+        y: 4.3,
         h: 0.3,
         italic: true,
         color: SAGE,
-        fontSize: 14,
+        fontSize: 12,
       },
     );
   }

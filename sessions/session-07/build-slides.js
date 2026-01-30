@@ -26,15 +26,23 @@ async function buildSession7Slides() {
     const htmlFile = path.join(slidesDir, `slide-${num}.html`);
     console.log(`Processing slide ${i}/${totalSlides}`);
     try {
-      const { slide } = await html2pptx(htmlFile, pptx);
+      const { slide, placeholders } = await html2pptx(htmlFile, pptx);
 
       // Add instructor notes
       if (notes[i]) {
         slide.addNotes(notes[i]);
       }
 
+      // Find placeholder if present
+      const ph = placeholders.find(
+        (p) =>
+          p.id === "trigger-table" ||
+          p.id === "recipe-table" ||
+          p.id === "vocab-table",
+      );
+
       // Slide 6: Trigger types table
-      if (i === 6) {
+      if (i === 6 && ph) {
         slide.addTable(
           [
             [
@@ -101,20 +109,22 @@ async function buildSession7Slides() {
             ],
           ],
           {
-            x: 0.5,
-            y: 1.35,
-            w: 9.0,
+            x: ph.x,
+            y: ph.y,
+            w: ph.w,
+            h: ph.h,
             colW: [1.8, 3.2, 4.0],
             rowH: [0.4, 0.5, 0.5, 0.5],
             border: { pt: 1, color: "CCCCCC" },
             valign: "middle",
             color: "2C2C2C",
+            autoPage: false,
           },
         );
       }
 
       // Slide 13: Recipe card parts table
-      if (i === 13) {
+      if (i === 13 && ph) {
         slide.addTable(
           [
             [
@@ -198,20 +208,26 @@ async function buildSession7Slides() {
             ],
           ],
           {
-            x: 0.5,
-            y: 1.2,
-            w: 9.0,
+            x: ph.x,
+            y: ph.y,
+            w: ph.w,
+            h: ph.h,
             colW: [2.5, 1.8, 4.7],
-            rowH: [0.4, 0.45, 0.45, 0.45, 0.45],
+            rowH: [0.36, 0.38, 0.38, 0.38, 0.38],
             border: { pt: 1, color: "CCCCCC" },
             valign: "middle",
             color: "2C2C2C",
+            autoPage: false,
           },
         );
       }
 
       // Slide 23: Key vocabulary review table
       if (i === 23) {
+        const vocabPh = placeholders.find((p) => p.id === "vocab-table");
+        const tblOpts = vocabPh
+          ? { x: vocabPh.x, y: vocabPh.y, w: vocabPh.w, h: vocabPh.h }
+          : { x: 0.5, y: 1.0, w: 9.0 };
         slide.addTable(
           [
             [
@@ -321,14 +337,13 @@ async function buildSession7Slides() {
             ],
           ],
           {
-            x: 0.5,
-            y: 1.0,
-            w: 9.0,
+            ...tblOpts,
             colW: [2.0, 3.0, 4.0],
-            rowH: [0.38, 0.38, 0.38, 0.38, 0.38, 0.38, 0.38, 0.38, 0.38],
+            rowH: [0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35, 0.35],
             border: { pt: 1, color: "CCCCCC" },
             valign: "middle",
             color: "2C2C2C",
+            autoPage: false,
           },
         );
       }
