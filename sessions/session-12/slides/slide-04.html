@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Your Learning Journey: Sessions 1-11</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 4pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 16pt; margin: 0 0 1pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 12pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 12pt; padding: 3pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-session { width: 50pt; }
+.col-learned { width: 280pt; }
+.col-analogy { flex: 1; }
+.footer { margin-top: 0pt; }
+.footer p { color: #2C2C2C; font-size: 16pt; font-weight: bold; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Your Learning Journey: Sessions 1-11</h1></div>
+<div class="content">
+  <p>Look how far you've come:</p>
+  <div class="grid-table">
+    <div class="grid-header">
+      <p class="col-session">Session</p>
+      <p class="col-learned">What You Learned</p>
+      <p class="col-analogy">Farm Analogy</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">1</p>
+      <p class="col-learned">GitHub navigation &amp; repositories</p>
+      <p class="col-analogy">Your digital farm office</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">2</p>
+      <p class="col-learned">Issues &amp; task tracking</p>
+      <p class="col-analogy">Work orders for the farm</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">3</p>
+      <p class="col-learned">Projects &amp; organization</p>
+      <p class="col-analogy">Your farm planning board</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">4</p>
+      <p class="col-learned">Pull Requests &amp; collaboration</p>
+      <p class="col-analogy">Reviewing a farmhand's work</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">5</p>
+      <p class="col-learned">Notifications &amp; communication</p>
+      <p class="col-analogy">Farm radio / bulletin board</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">6</p>
+      <p class="col-learned">Templates &amp; standardization</p>
+      <p class="col-analogy">Pre-printed work order forms</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">7</p>
+      <p class="col-learned">YAML &amp; configuration basics</p>
+      <p class="col-analogy">Recipes for automation</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">8</p>
+      <p class="col-learned">GitHub Actions &amp; automation</p>
+      <p class="col-analogy">Automated irrigation timer</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">9</p>
+      <p class="col-learned">Advanced Projects</p>
+      <p class="col-analogy">The master farm calendar</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">10</p>
+      <p class="col-learned">GitHub Copilot</p>
+      <p class="col-analogy">Your AI writing assistant</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-session">11</p>
+      <p class="col-learned">Spark &amp; Copilot Agents</p>
+      <p class="col-analogy">Your digital farmhand team</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Today: You combine ALL of these into one complete system.</p>
   </div>
 </div>
-</body></html>
+</body>
+</html>

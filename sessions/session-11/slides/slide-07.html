@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>How Spark Works: The Three Steps</h1></div>
-  <div class="slide-body">
-    <p><b>Building with Spark is a simple cycle:</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; }
+.col-step { width: 144pt; flex-shrink: 0; }
+.col-what { width: 252pt; flex-shrink: 0; }
+.col-farm { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>How Spark Works: The Three Steps</h1></div>
+<div class="content">
+<p><b>Building with Spark is a simple cycle:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-step">Step</p>
+    <p class="col-what">What You Do</p>
+    <p class="col-farm">Farm Analogy</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-step"><b>1. Describe</b></p>
+    <p class="col-what">Type what you want in plain English</p>
+    <p class="col-farm">Telling a farmhand what tool you need</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-step"><b>2. Review</b></p>
+    <p class="col-what">Look at what Spark built and test it</p>
+    <p class="col-farm">Checking the farmhand's work before using it</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-step"><b>3. Refine</b></p>
+    <p class="col-what">Ask Spark to make changes or fix issues</p>
+    <p class="col-farm">Giving feedback: &ldquo;Make the handle longer&rdquo;</p>
   </div>
 </div>
-</body></html>
+<p>You repeat steps 2 and 3 until the tool works the way you need.</p>
+<p><b>This is the same prompt-evaluate-edit cycle you learned with Copilot &mdash; just applied to building tools instead of writing text.</b></p>
+</div>
+</body>
+</html>

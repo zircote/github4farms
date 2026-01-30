@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Key Vocabulary Review</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; }
+.col-term { width: 2.5in; flex-shrink: 0; }
+.col-meaning { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Key Vocabulary Review</h1></div>
+<div class="content">
+<p><b>New terms from today:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-term">Term</p>
+    <p class="col-meaning">Meaning</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>GitHub Spark</b></p>
+    <p class="col-meaning">Builds simple web apps from plain English descriptions</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>App</b></p>
+    <p class="col-meaning">A small program you use in a web browser (calculator, form)</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>Agent</b></p>
+    <p class="col-meaning">AI that follows multi-step instructions through a plan</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>Natural language</b></p>
+    <p class="col-meaning">Everyday English, as opposed to code or commands</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>Prompt engineering</b></p>
+    <p class="col-meaning">Writing clear instructions to get good AI results</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>Guardrails</b></p>
+    <p class="col-meaning">Limits that prevent AI from acting without permission</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-term"><b>Human-in-the-loop</b></p>
+    <p class="col-meaning">A person reviews and approves AI work before it takes effect</p>
   </div>
 </div>
-</body></html>
+</div>
+</body>
+</html>

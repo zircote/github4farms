@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Capstone Work Time (continued)</h1></div>
-  <div class="slide-body">
-    <p><b>Progress check — where should you be?</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 14pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 8pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 13pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-time { width: 160pt; }
+.col-completed { flex: 1; }
+.footer { margin-top: 8pt; }
+.footer p { color: #2C2C2C; font-size: 18pt; font-weight: bold; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Capstone Work Time (continued)</h1></div>
+<div class="content">
+  <p>Progress check &mdash; where should you be?</p>
+  <div class="grid-table">
+    <div class="grid-header">
+      <p class="col-time">Time Elapsed</p>
+      <p class="col-completed">You Should Have Completed</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-time">10 minutes</p>
+      <p class="col-completed">Repository, README, labels</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-time">20 minutes</p>
+      <p class="col-completed">3+ Issues created (including 1 Copilot-drafted)</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-time">30 minutes</p>
+      <p class="col-completed">5 Issues, Issue template created</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-time">40 minutes</p>
+      <p class="col-completed">Project board with custom fields</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-time">50 minutes</p>
+      <p class="col-completed">Iterations, Timeline view, final review</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Remember: Done is better than perfect. A working system you'll actually use beats a polished system you won't.</p>
   </div>
 </div>
-</body></html>
+</body>
+</html>

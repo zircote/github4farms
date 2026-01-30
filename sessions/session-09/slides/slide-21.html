@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Key Vocabulary Review</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 6pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 4pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-a { width: 130pt; flex-shrink: 0; }
+.col-b { width: 150pt; flex-shrink: 0; }
+.col-c { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Key Vocabulary Review</h1></div>
+<div class="content">
+<p><b>New terms from today:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-a">GitHub Term</p>
+    <p class="col-b">Farm Analogy</p>
+    <p class="col-c">Meaning</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Custom field</p>
+    <p class="col-b">Ledger column</p>
+    <p class="col-c">Extra column you add to a Project</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Single select</p>
+    <p class="col-b">Dropdown menu</p>
+    <p class="col-c">A field with predefined options</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Iteration</p>
+    <p class="col-b">Season chapter</p>
+    <p class="col-c">Named time block with start/end dates</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Timeline view</p>
+    <p class="col-b">Wall calendar</p>
+    <p class="col-c">Visual calendar showing Issues as bars</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Cross-repo linking</p>
+    <p class="col-b">One master board</p>
+    <p class="col-c">Adding Issues from different repos into one Project</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Scheduling conflict</p>
+    <p class="col-b">Double-booking</p>
+    <p class="col-c">Two tasks needing the same resource at once</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Resource bottleneck</p>
+    <p class="col-b">Traffic jam</p>
+    <p class="col-c">Demand exceeds availability in a period</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Missing dependency</p>
+    <p class="col-b">Forgot a step</p>
+    <p class="col-c">A prerequisite task not on the schedule</p>
   </div>
 </div>
-</body></html>
+</div>
+</body>
+</html>

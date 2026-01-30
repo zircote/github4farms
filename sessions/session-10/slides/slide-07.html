@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>The Human + AI Partnership</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 5pt; }
+.content ol { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; padding-left: 24pt; }
+.content li { margin-bottom: 2pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-role { width: 200pt; }
+.col-what { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>The Human + AI Partnership</h1></div>
+<div class="content">
+<p><b>How to Think About Copilot:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-role">Role</p>
+    <p class="col-what">What They Do</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-role"><b>You (the farmer)</b></p>
+    <p class="col-what">Know your farm, set priorities, make decisions, verify accuracy</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-role"><b>Copilot (the helper)</b></p>
+    <p class="col-what">Suggests drafts, fills in structure, saves typing time</p>
   </div>
 </div>
-</body></html>
+<p><b>The best results come from working together:</b></p>
+<ol>
+  <li>You provide the context (&ldquo;I need a spring planting checklist for my 40-acre corn field&rdquo;)</li>
+  <li>Copilot drafts a suggestion</li>
+  <li>You review, edit, and approve</li>
+</ol>
+<p><em>Your knowledge + Copilot&rsquo;s speed = better task descriptions in less time.</em></p>
+</div>
+</body>
+</html>

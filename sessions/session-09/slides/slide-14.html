@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Evaluating: Farm Examples</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 8pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 6pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-a { flex: 1; }
+.col-b { flex: 1; }
+.col-c { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Evaluating: Farm Examples</h1></div>
+<div class="content">
+<p><b>Example conflicts to spot on a roadmap:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-a">What You See</p>
+    <p class="col-b">The Problem</p>
+    <p class="col-c">The Fix</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Tractor service overlaps planting</p>
+    <p class="col-b">Tractor in the shop when needed in the field</p>
+    <p class="col-c">Move service to 2 weeks before planting</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Corn &amp; soybean planting same week</p>
+    <p class="col-b">Not enough labor/equipment for both</p>
+    <p class="col-c">Stagger: corn Week 1, soybeans Week 3</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">Harvest starts before growing ends</p>
+    <p class="col-b">Harvest scheduled too early</p>
+    <p class="col-c">Move harvest start date back 2 weeks</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">No bar between seed order &amp; planting</p>
+    <p class="col-b">Missing dependency &mdash; delivery takes 2 weeks</p>
+    <p class="col-c">Add "Receive seed delivery" task</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-a">3 equipment repairs same week</p>
+    <p class="col-b">Mechanic can't do three at once</p>
+    <p class="col-c">Spread repairs across 3 different weeks</p>
   </div>
 </div>
-</body></html>
+</div>
+</body>
+</html>

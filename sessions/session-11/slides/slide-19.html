@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Agent Exploration (Bonus)</h1></div>
-  <div class="slide-body">
-    <p><b>Finished your Spark app early? Try this with your partner:</b></p>
-    <ol>
-      <li>Open Copilot Chat in your farm repository</li>
-      <li>Try a multi-step request:
-        <ul>
-          <li>"Suggest which open Issues should be worked on first"</li>
-          <li>"Create three Issues for end-of-season tasks"</li>
-          <li>"Review my most recent PR and suggest improvements"</li>
-        </ul>
-      </li>
-      <li>Evaluate: Did the agent understand your request?</li>
-    </ol>
-    <p><b>The agent proposes, you decide.</b></p>
-  </div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 12pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; }
+.content ol { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; padding-left: 24pt; }
+.content li { margin-bottom: 3pt; }
+.content ul { color: #2C2C2C; font-size: 13pt; margin: 2pt 0 2pt; padding-left: 24pt; }
+.content ul li { margin-bottom: 1pt; }
+.prompt-examples { background: #E8F5E9; border-left: 4pt solid #4E9F3D; padding: 6pt 12pt; margin: 4pt 0 6pt 24pt; }
+.prompt-examples p { font-size: 13pt; font-style: italic; color: #1E5128; margin: 2pt 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Agent Exploration (Bonus)</h1></div>
+<div class="content">
+<p><b>Finished your Spark app early? Try this with your partner:</b></p>
+<ol>
+  <li>Open Copilot Chat in your farm repository</li>
+  <li>Try a multi-step request (pick one below)</li>
+  <li>Evaluate: Did the agent understand your request?</li>
+</ol>
+<div class="prompt-examples">
+  <p>&ldquo;Suggest which open Issues should be worked on first&rdquo;</p>
+  <p>&ldquo;Create three Issues for end-of-season tasks&rdquo;</p>
+  <p>&ldquo;Review my most recent PR and suggest improvements&rdquo;</p>
 </div>
-</body></html>
+<p><b>The agent proposes, you decide.</b></p>
+</div>
+</body>
+</html>

@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Writing Good Prompts for Spark</h1></div>
-  <div class="slide-body">
-    <p><b>Describe what the tool DOES, what you PUT IN, and what you GET OUT.</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 5pt; }
+.col-weak { width: 180pt; flex-shrink: 0; }
+.col-strong { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Writing Good Prompts for Spark</h1></div>
+<div class="content">
+<p><b>Describe what the tool DOES, what you PUT IN, and what you GET OUT.</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-weak">Weak Prompt</p>
+    <p class="col-strong">Strong Prompt</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-weak">&ldquo;seed calculator&rdquo;</p>
+    <p class="col-strong">&ldquo;Build a seed order calculator: enter field size in acres and seeding rate. Calculate total seeds and number of 80,000-seed bags.&rdquo;</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-weak">&ldquo;equipment list&rdquo;</p>
+    <p class="col-strong">&ldquo;Build a checklist for pre-season equipment inspection. List tractor, combine, planter. Checkboxes for oil, tires, belts, safety.&rdquo;</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-weak">&ldquo;animal log&rdquo;</p>
+    <p class="col-strong">&ldquo;Build a daily livestock health log: select animal ID, enter date, check appetite/movement/temp, type notes. Save entries in a list.&rdquo;</p>
   </div>
 </div>
-</body></html>
+</div>
+</body>
+</html>

@@ -70,6 +70,15 @@ body {
 .break-slide h1 { color: #1E5128; font-size: 36pt; margin: 0 0 16pt 0; }
 .break-slide p { color: #2C2C2C; font-size: 21pt; margin: 5pt 0; }
 
+/* Div-grid table replacement (PPTX-safe) */
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+
 /* Accent text */
 .accent { color: #4E9F3D; font-weight: bold; }
 .bold-green { color: #1E5128; font-weight: bold; }

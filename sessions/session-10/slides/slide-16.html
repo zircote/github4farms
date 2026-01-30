@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Side-by-Side Comparison</h1></div>
-  <div class="slide-body">
-    <p><b>The same task, two approaches:</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 18pt; margin: 0 0 6pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-label { width: 100pt; }
+.col-manual { width: 250pt; }
+.col-copilot { width: 250pt; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Side-by-Side Comparison</h1></div>
+<div class="content">
+<p><b>The same task, two approaches:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-label"></p>
+    <p class="col-manual">Manual (No Copilot)</p>
+    <p class="col-copilot">With Copilot</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-label"><b>Time</b></p>
+    <p class="col-manual">10&ndash;15 min typing</p>
+    <p class="col-copilot">2&ndash;3 min prompt + 5 min editing</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-label"><b>Effort</b></p>
+    <p class="col-manual">Think of every step yourself</p>
+    <p class="col-copilot">Copilot suggests, you review</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-label"><b>Quality</b></p>
+    <p class="col-manual">Exactly what you want</p>
+    <p class="col-copilot">Good draft that needs your edits</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-label"><b>Best for</b></p>
+    <p class="col-manual">Short, unique tasks</p>
+    <p class="col-copilot">Long, structured checklists</p>
   </div>
 </div>
-</body></html>
+</div>
+</body>
+</html>

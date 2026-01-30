@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html><head><link rel="stylesheet" href="styles.css">
 <style>
-.compact-table th { font-size: 15pt; padding: 5pt 8pt; }
-.compact-table td { font-size: 15pt; padding: 4pt 8pt; }
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 15pt; font-weight: bold; padding: 5pt 8pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 15pt; padding: 4pt 8pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-a { width: 22%; }
+.col-b { width: 22%; }
+.col-c { width: 56%; }
 </style>
 </head><body>
 <div class="content-slide">
   <div class="header-bar"><h1>Key Vocabulary Review</h1></div>
   <div class="slide-body">
-    <table class="slide-table compact-table">
-      <tr><th>GitHub Term</th><th>Farm Analogy</th><th>Meaning</th></tr>
-      <tr><td><b>Fork</b></td><td>Photocopy</td><td>Your own copy of a shared repository</td></tr>
-      <tr><td><b>Commit</b></td><td>Sticky note</td><td>Saving changes with a description</td></tr>
-      <tr><td><b>Pull Request</b></td><td>Marked-up copy</td><td>Request to merge changes into the original</td></tr>
-      <tr><td><b>Review</b></td><td>Proofreading</td><td>Reading changes and giving feedback</td></tr>
-      <tr><td><b>Merge</b></td><td>Accept changes</td><td>Making changes part of the official version</td></tr>
-      <tr><td><b>Approve</b></td><td>"Looks good"</td><td>Signing off that changes are ready</td></tr>
-    </table>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-a">GitHub Term</p>
+        <p class="col-b">Farm Analogy</p>
+        <p class="col-c">Meaning</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Fork</b></p>
+        <p class="col-b">Photocopy</p>
+        <p class="col-c">Your own copy of a shared repository</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Commit</b></p>
+        <p class="col-b">Sticky note</p>
+        <p class="col-c">Saving changes with a description</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Pull Request</b></p>
+        <p class="col-b">Marked-up copy</p>
+        <p class="col-c">Request to merge changes into the original</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Review</b></p>
+        <p class="col-b">Proofreading</p>
+        <p class="col-c">Reading changes and giving feedback</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Merge</b></p>
+        <p class="col-b">Accept changes</p>
+        <p class="col-c">Making changes part of the official version</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Approve</b></p>
+        <p class="col-b">"Looks good"</p>
+        <p class="col-c">Signing off that changes are ready</p>
+      </div>
+    </div>
   </div>
 </div>
 </body></html>

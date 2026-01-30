@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Capstone Rubric Overview</h1></div>
-  <div class="slide-body">
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 10pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 24pt; margin: 0; }
+.content { margin: 4pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 16pt; margin: 0 0 2pt; }
+.grid-table { margin: 2pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 11pt; font-weight: bold; padding: 4pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 11pt; padding: 3pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-criterion { width: 90pt; }
+.col-level { flex: 1; }
+.footer { margin-top: 0pt; }
+.footer p { color: #2C2C2C; font-size: 15pt; font-weight: bold; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Capstone Rubric Overview</h1></div>
+<div class="content">
+  <p>How your capstone will be assessed:</p>
+  <div class="grid-table">
+    <div class="grid-header">
+      <p class="col-criterion">Criterion</p>
+      <p class="col-level">Excellent (4)</p>
+      <p class="col-level">Good (3)</p>
+      <p class="col-level">Developing (2)</p>
+      <p class="col-level">Beginning (1)</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Repository Setup</b></p>
+      <p class="col-level">Name, README, clear description</p>
+      <p class="col-level">Name and README present</p>
+      <p class="col-level">Created, minimal README</p>
+      <p class="col-level">Repository exists</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Issues (5+)</b></p>
+      <p class="col-level">Detailed, labeled, well-written</p>
+      <p class="col-level">Adequate detail, most labeled</p>
+      <p class="col-level">Some Issues, few labels</p>
+      <p class="col-level">Fewer than 3 Issues</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Project Board</b></p>
+      <p class="col-level">Board + Timeline, custom fields, iterations</p>
+      <p class="col-level">Board with some custom fields</p>
+      <p class="col-level">Board, default settings</p>
+      <p class="col-level">No Project board</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Templates</b></p>
+      <p class="col-level">Works, matches farm needs</p>
+      <p class="col-level">Created with most fields</p>
+      <p class="col-level">Basic template exists</p>
+      <p class="col-level">No template</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Copilot Use</b></p>
+      <p class="col-level">Drafted, evaluated, edited</p>
+      <p class="col-level">Drafted and edited</p>
+      <p class="col-level">Drafted only, no edits</p>
+      <p class="col-level">No Copilot use</p>
+    </div>
+    <div class="grid-row">
+      <p class="col-criterion"><b>Overall Coherence</b></p>
+      <p class="col-level">All pieces work as real system</p>
+      <p class="col-level">Most pieces connected</p>
+      <p class="col-level">Created but not integrated</p>
+      <p class="col-level">Disconnected elements</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Target score: 18+ out of 24</p>
   </div>
 </div>
-</body></html>
+</body>
+</html>

@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Human-in-the-Loop: You Stay in Charge</h1></div>
-  <div class="slide-body">
-    <p><b>The most important concept in AI tools: HUMAN OVERSIGHT</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 12pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 24pt; margin: 0; }
+.content { margin: 4pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 2pt; }
+.content ul { color: #2C2C2C; font-size: 14pt; margin: 0 0 2pt; padding-left: 24pt; }
+.content li { margin-bottom: 0pt; }
+.col-principle { width: 158pt; flex-shrink: 0; }
+.col-means { width: 245pt; flex-shrink: 0; }
+.col-analogy { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Human-in-the-Loop: You Stay in Charge</h1></div>
+<div class="content">
+<p><b>The most important concept in AI tools: HUMAN OVERSIGHT</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-principle">Principle</p>
+    <p class="col-means">What It Means</p>
+    <p class="col-analogy">Farm Analogy</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-principle"><b>Human-in-the-loop</b></p>
+    <p class="col-means">A person reviews AI work before it takes effect</p>
+    <p class="col-analogy">Checking the farmhand's work before signing off</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-principle"><b>Guardrails</b></p>
+    <p class="col-means">Limits on what AI can do without asking</p>
+    <p class="col-analogy">A fence that keeps the farmhand in the right pasture</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-principle"><b>Approval gates</b></p>
+    <p class="col-means">Points where you must say &ldquo;yes&rdquo; before AI continues</p>
+    <p class="col-analogy">Farmhand asks permission before buying supplies</p>
   </div>
 </div>
-</body></html>
+<p><b>Why this matters:</b></p>
+<ul>
+  <li>AI tools are powerful but not perfect</li>
+  <li>Mistakes are easier to prevent than to fix</li>
+  <li>Your farming expertise is what makes AI output useful</li>
+  <li>Trust is built gradually &mdash; start with small tasks and verify results</li>
+</ul>
+<p><b>You wouldn't hand the farm keys to someone on their first day. Same idea with agents.</b></p>
+</div>
+</body>
+</html>

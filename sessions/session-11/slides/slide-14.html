@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="styles.css">
-</head><body>
-<div class="content-slide">
-  <div class="header-bar"><h1>Comparing Your AI Tools</h1></div>
-  <div class="slide-body">
-    <p><b>Three levels of AI help, from simple to advanced:</b></p>
-    <!-- table-placeholder: rendered by build-slides.js -->
-    <div id="table-placeholder" style="flex:1;"></div>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F1DE; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header-bar { background: #1E5128; padding: 14pt 36pt; }
+.header-bar h1 { color: #FFFFFF; font-size: 26pt; margin: 0; }
+.content { margin: 10pt 36pt; flex: 1; }
+.content p { color: #2C2C2C; font-size: 14pt; margin: 0 0 4pt; }
+.content ol { color: #2C2C2C; font-size: 13pt; margin: 0 0 4pt; padding-left: 24pt; }
+.content li { margin-bottom: 1pt; }
+.col-tool { width: 90pt; flex-shrink: 0; }
+.col-does { width: 170pt; flex-shrink: 0; }
+.col-analogy { width: 220pt; flex-shrink: 0; }
+.col-learned { flex: 1; }
+</style>
+</head>
+<body>
+<div class="header-bar"><h1>Comparing Your AI Tools</h1></div>
+<div class="content">
+<p><b>Three levels of AI help, from simple to advanced:</b></p>
+<div class="grid-table">
+  <div class="grid-header">
+    <p class="col-tool">Tool</p>
+    <p class="col-does">What It Does</p>
+    <p class="col-analogy">Farm Analogy</p>
+    <p class="col-learned">Learned In</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-tool"><b>Copilot</b></p>
+    <p class="col-does">Suggests text as you write</p>
+    <p class="col-analogy">Farmhand who finishes your sentences</p>
+    <p class="col-learned">Session 10</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-tool"><b>Spark</b></p>
+    <p class="col-does">Builds simple apps from descriptions</p>
+    <p class="col-analogy">Farmhand who builds a tool from your sketch</p>
+    <p class="col-learned">Today</p>
+  </div>
+  <div class="grid-row">
+    <p class="col-tool"><b>Agents</b></p>
+    <p class="col-does">Follows multi-step instructions</p>
+    <p class="col-analogy">Farmhand who handles a whole job list</p>
+    <p class="col-learned">Today</p>
   </div>
 </div>
-</body></html>
+<p><b>All three share the same foundation:</b></p>
+<ol>
+  <li>You give clear instructions (prompt)</li>
+  <li>The AI does work for you (output)</li>
+  <li>You review and approve (evaluation)</li>
+</ol>
+</div>
+</body>
+</html>

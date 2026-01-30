@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 4pt 0; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-row p { font-size: 13pt; padding: 4pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-a { width: 28%; }
+.col-b { width: 36%; }
+.col-c { width: 36%; }
+</style>
 </head><body>
 <div class="content-slide">
   <div class="header-bar"><h1>When to Use Fork &amp; PR vs. Direct Editing</h1></div>
   <div class="slide-body">
     <p><b>Two ways to make changes on GitHub:</b></p>
-    <table class="slide-table">
-      <tr><th>Method</th><th>When to Use</th><th>Example</th></tr>
-      <tr><td><b>Direct edit</b> (on your own repo)</td><td>You own it, small change, just you</td><td>Fix a typo in your own planting schedule</td></tr>
-      <tr><td><b>Fork + Pull Request</b></td><td>Shared repo, team review needed, important changes</td><td>Update the official farm plan that the whole team uses</td></tr>
-    </table>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-a">Method</p>
+        <p class="col-b">When to Use</p>
+        <p class="col-c">Example</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Direct edit</b> (on your own repo)</p>
+        <p class="col-b">You own it, small change, just you</p>
+        <p class="col-c">Fix a typo in your own planting schedule</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-a"><b>Fork + Pull Request</b></p>
+        <p class="col-b">Shared repo, team review needed, important changes</p>
+        <p class="col-c">Update the official farm plan that the whole team uses</p>
+      </div>
+    </div>
     <div class="callout">
       <p><b>Rule of thumb:</b> If other people depend on the document, use a Pull Request so someone can review before it goes live.</p>
     </div>
