@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 6pt 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 15pt; font-weight: bold; padding: 6pt 8pt; margin: 0; }
+.grid-row p { font-size: 14pt; padding: 5pt 8pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.bad p { color: #C62828; }
+.good p { color: #1E5128; }
+.col-bad { width: 33%; }
+.col-good { width: 67%; }
+.callout p { font-size: 16pt; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Writing a Good Title</h1></div>
+  <div class="slide-body">
+    <p><b>Good titles are short and specific.</b></p>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-bad">Bad Title</p>
+        <p class="col-good">Good Title</p>
+      </div>
+      <div class="grid-row bad">
+        <p class="col-bad"><b>"Problem"</b></p>
+        <p class="col-good">"Fix broken fence post — north pasture"</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-bad"><b>"Tractor"</b></p>
+        <p class="col-good">"Tractor oil change due — 500 hour service"</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-bad"><b>"Seeds"</b></p>
+        <p class="col-good">"Order corn and soybean seeds for spring"</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-bad"><b>"Help needed"</b></p>
+        <p class="col-good">"Irrigation leak in Field 2 — repair by Friday"</p>
+      </div>
+    </div>
+    <div class="callout">
+      <p><b>Rule of thumb:</b> Someone should know what the task is just from reading the title.</p>
+    </div>
+  </div>
+</div>
+</body></html>

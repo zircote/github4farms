@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.board-demo { display: flex; gap: 6pt; margin: 4pt 0; }
+.board-col {
+  flex: 1; background: #F4F1DE; border-radius: 6pt;
+  padding: 4pt 6pt;
+}
+.board-col-header { background: #1E5128; border-radius: 4pt; padding: 2pt 6pt; margin-bottom: 3pt; }
+.board-col-header p { color: #FFFFFF; font-size: 13pt; margin: 0; font-weight: bold; text-align: center; }
+.board-card {
+  background: #FFFFFF; border: 1pt solid #CCCCCC; border-radius: 3pt;
+  padding: 2pt 6pt; margin: 2pt 0;
+}
+.board-card p { font-size: 11pt; color: #2C2C2C; margin: 0; }
+.slide-body p { font-size: 16pt; margin: 3pt 0; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Board View: Your Task Whiteboard</h1></div>
+  <div class="slide-body">
+    <p><b>Columns like a whiteboard. Drag cards to update status.</b></p>
+    <div class="board-demo">
+      <div class="board-col">
+        <div class="board-col-header"><p>To Do</p></div>
+        <div class="board-card"><p>Order soybean seeds</p></div>
+        <div class="board-card"><p>Test soil in Field 3</p></div>
+      </div>
+      <div class="board-col">
+        <div class="board-col-header"><p>In Progress</p></div>
+        <div class="board-card"><p>Prepare Field 1 for corn</p></div>
+      </div>
+      <div class="board-col">
+        <div class="board-col-header"><p>Done</p></div>
+        <div class="board-card"><p>Fix irrigation pump</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

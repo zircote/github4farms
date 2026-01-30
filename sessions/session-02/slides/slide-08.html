@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 4pt 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 15pt; font-weight: bold; padding: 5pt 7pt; margin: 0; }
+.grid-row p { font-size: 14pt; padding: 3pt 7pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-label { width: 24%; }
+.col-color { width: 18%; }
+.col-used { width: 58%; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Labels: Color-Coded Categories</h1></div>
+  <div class="slide-body">
+    <p><b>Labels help you filter and find Issues quickly.</b></p>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-label">Label</p>
+        <p class="col-color">Color</p>
+        <p class="col-used">Used For</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>equipment</b></p>
+        <p class="col-color">Blue</p>
+        <p class="col-used">Machines, tools, vehicles</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>livestock</b></p>
+        <p class="col-color">Green</p>
+        <p class="col-used">Animal health, feeding, breeding</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>crops</b></p>
+        <p class="col-color">Yellow</p>
+        <p class="col-used">Planting, harvesting, crop records</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>maintenance</b></p>
+        <p class="col-color">Orange</p>
+        <p class="col-used">Routine upkeep and repairs</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>urgent</b></p>
+        <p class="col-color">Red</p>
+        <p class="col-used">Needs attention today</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>routine</b></p>
+        <p class="col-color">Gray</p>
+        <p class="col-used">Regular scheduled tasks</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-label"><b>compliance</b></p>
+        <p class="col-color">Purple</p>
+        <p class="col-used">Grants, certifications, audits</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

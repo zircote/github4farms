@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.status-row { display: flex; gap: 16pt; margin: 10pt 0; }
+.status-card {
+  flex: 1; border-radius: 8pt; padding: 12pt 16pt; text-align: center;
+}
+.status-open { background: #E8F5E9; border: 2pt solid #4E9F3D; }
+.status-closed { background: #F4F1DE; border: 2pt solid #8D6E63; }
+.status-card h2 { margin: 0 0 4pt 0; font-size: 24pt; }
+.status-card p { margin: 2pt 0; font-size: 17pt; }
+.status-open h2 { color: #1E5128; }
+.status-closed h2 { color: #5D4037; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Open vs. Closed</h1></div>
+  <div class="slide-body">
+    <p><b>Your Issue list has two views:</b></p>
+    <div class="status-row">
+      <div class="status-card status-open">
+        <h2>Open</h2>
+        <p>Tasks that still need doing</p>
+      </div>
+      <div class="status-card status-closed">
+        <h2>Closed</h2>
+        <p>Tasks that are done</p>
+      </div>
+    </div>
+    <p>Toggle between them using the "Open" and "Closed" buttons at the top of the Issues list.</p>
+    <div class="callout">
+      <p><b>Closed Issues are your farm's history.</b> Six months from now, you can look back and see exactly when things were done.</p>
+    </div>
+  </div>
+</div>
+</body></html>

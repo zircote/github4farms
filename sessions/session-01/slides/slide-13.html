@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.folder-grid { display: flex; flex-wrap: wrap; gap: 10pt; margin: 8pt 0; }
+.folder-card {
+  background: #F4F1DE; border: 2pt solid #4E9F3D; border-radius: 6pt;
+  padding: 8pt 12pt; flex: 1; min-width: 130pt;
+  text-align: center;
+}
+.folder-card p { margin: 2pt 0; }
+.folder-name { color: #1E5128; font-size: 19pt; font-weight: bold; }
+.folder-desc { color: #555555; font-size: 15pt; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Folders</h1></div>
+  <div class="slide-body">
+    <p><b>Folders organize your files into categories.</b></p>
+    <p>Click a folder name to see what's inside. Just like opening a section of your barn.</p>
+    <p><b>Common farm repository folders:</b></p>
+    <div class="folder-grid">
+      <div class="folder-card">
+        <p class="folder-name">crops/</p>
+        <p class="folder-desc">Planting schedules, crop records</p>
+      </div>
+      <div class="folder-card">
+        <p class="folder-name">equipment/</p>
+        <p class="folder-desc">Maintenance logs, manuals</p>
+      </div>
+      <div class="folder-card">
+        <p class="folder-name">livestock/</p>
+        <p class="folder-desc">Health records, feeding schedules</p>
+      </div>
+      <div class="folder-card">
+        <p class="folder-name">compliance/</p>
+        <p class="folder-desc">Grant documents, certifications</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

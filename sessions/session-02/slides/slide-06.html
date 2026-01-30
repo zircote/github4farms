@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 4pt 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 6pt; margin: 0; }
+.grid-row p { font-size: 13pt; padding: 4pt 6pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-task { width: 26%; }
+.col-title { width: 47%; }
+.col-labels { width: 27%; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Issue Examples from the Farm</h1></div>
+  <div class="slide-body">
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-task">Farm Task</p>
+        <p class="col-title">Issue Title</p>
+        <p class="col-labels">Labels</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-task">Fence post broken</p>
+        <p class="col-title">"Fix broken fence post — north pasture"</p>
+        <p class="col-labels">fencing, urgent</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-task">Tractor needs oil change</p>
+        <p class="col-title">"Tractor oil change due"</p>
+        <p class="col-labels">equipment, maintenance</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-task">Order seeds for spring</p>
+        <p class="col-title">"Order corn and soybean seeds"</p>
+        <p class="col-labels">crops, routine</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-task">Vaccination due for Herd B</p>
+        <p class="col-title">"Schedule Herd B vaccinations"</p>
+        <p class="col-labels">livestock, health</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-task">Submit grant report</p>
+        <p class="col-title">"USDA EQIP Q2 report due June 15"</p>
+        <p class="col-labels">compliance, deadline</p>
+      </div>
+    </div>
+    <p><b>Every type of farm task can become an Issue.</b></p>
+  </div>
+</div>
+</body></html>

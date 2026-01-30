@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.timeline-bar {
+  background: #E8F5E9; border-radius: 4pt; padding: 8pt 12pt; margin: 6pt 0;
+}
+.tl-row { display: flex; align-items: center; margin: 4pt 0; }
+.tl-label { width: 35%; }
+.tl-label p { font-size: 14pt; color: #2C2C2C; margin: 0; }
+.tl-bar-area { width: 65%; height: 20pt; position: relative; background: #F4F1DE; border-radius: 3pt; }
+.tl-bar {
+  position: absolute; height: 16pt; top: 2pt; border-radius: 3pt;
+}
+.tl-bar-green { background: #4E9F3D; }
+.tl-bar-blue { background: #2196F3; }
+.tl-bar-amber { background: #FF9800; }
+.tl-months { display: flex; width: 65%; margin-left: 35%; }
+.tl-months p { flex: 1; font-size: 12pt; color: #666666; margin: 0; text-align: center; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Timeline View: Your Season Calendar</h1></div>
+  <div class="slide-body">
+    <p><b>Timeline View shows tasks on a calendar — see your whole season at a glance.</b></p>
+    <div class="timeline-bar">
+      <div class="tl-months">
+        <p>Feb</p><p>Mar</p><p>Apr</p><p>May</p>
+      </div>
+      <div class="tl-row">
+        <div class="tl-label"><p>Prepare Field 1</p></div>
+        <div class="tl-bar-area"><div class="tl-bar tl-bar-green" style="left:10%;width:30%;"></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-label"><p>Order soybean seeds</p></div>
+        <div class="tl-bar-area"><div class="tl-bar tl-bar-blue" style="left:0%;width:15%;"></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-label"><p>Plant corn — Field 1</p></div>
+        <div class="tl-bar-area"><div class="tl-bar tl-bar-amber" style="left:35%;width:20%;"></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-label"><p>Plant soybeans — Field 3</p></div>
+        <div class="tl-bar-area"><div class="tl-bar tl-bar-green" style="left:45%;width:25%;"></div></div>
+      </div>
+    </div>
+    <p>Best for: <b>planting schedules</b>, seasonal planning, seeing the big picture.</p>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 10pt 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 17pt; font-weight: bold; padding: 7pt 8pt; margin: 0; }
+.grid-row p { font-size: 16pt; padding: 7pt 8pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-part { width: 25%; }
+.col-analogy { width: 35%; }
+.col-does { width: 40%; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Repository Anatomy</h1></div>
+  <div class="slide-body">
+    <p><b>Inside a Repository:</b></p>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-part">Part</p>
+        <p class="col-analogy">Farm Analogy</p>
+        <p class="col-does">What It Does</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-part"><b>README</b></p>
+        <p class="col-analogy">Sign on the barn door</p>
+        <p class="col-does">Explains what's inside</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-part"><b>Files</b></p>
+        <p class="col-analogy">Items on shelves</p>
+        <p class="col-does">Your actual documents and data</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-part"><b>Folders</b></p>
+        <p class="col-analogy">Stalls and sections</p>
+        <p class="col-does">Organization by category</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-part"><b>History</b></p>
+        <p class="col-analogy">Logbook</p>
+        <p class="col-does">Record of every change</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

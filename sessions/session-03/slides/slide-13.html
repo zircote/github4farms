@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.drag-demo { display: flex; align-items: center; gap: 10pt; margin: 10pt 0; justify-content: center; }
+.drag-col {
+  background: #F4F1DE; border-radius: 6pt; padding: 6pt 10pt;
+  width: 140pt; text-align: center;
+}
+.drag-col p { font-size: 14pt; color: #2C2C2C; margin: 2pt 0; }
+.drag-col-header { background: #1E5128; border-radius: 4pt; padding: 3pt 6pt; margin-bottom: 4pt; }
+.drag-col-header p { color: #FFFFFF; font-size: 13pt; margin: 0; font-weight: bold; }
+.drag-arrow p { font-size: 28pt; color: #4E9F3D; margin: 0; }
+.drag-card-highlight {
+  background: #FFFFFF; border: 2pt solid #4E9F3D; border-radius: 4pt;
+  padding: 3pt 6pt; margin: 3pt 0;
+}
+.drag-card-highlight p { font-size: 12pt; color: #1E5128; margin: 0; font-weight: bold; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Moving Cards on the Board</h1></div>
+  <div class="slide-body">
+    <p><b>To update a task's status, drag the card.</b></p>
+    <div class="drag-demo">
+      <div class="drag-col">
+        <div class="drag-col-header"><p>To Do</p></div>
+        <div class="drag-card-highlight"><p>Fix fence post</p></div>
+      </div>
+      <div class="drag-arrow"><p>--></p></div>
+      <div class="drag-col">
+        <div class="drag-col-header"><p>In Progress</p></div>
+        <div class="drag-card-highlight"><p>Fix fence post</p></div>
+      </div>
+      <div class="drag-arrow"><p>--></p></div>
+      <div class="drag-col">
+        <div class="drag-col-header"><p>Done</p></div>
+        <div class="drag-card-highlight"><p>Fix fence post</p></div>
+      </div>
+    </div>
+    <p>Everyone with access can see the current status instantly.</p>
+    <p>It's like moving a sticky note across a whiteboard — but everyone can see it from anywhere.</p>
+  </div>
+</div>
+</body></html>

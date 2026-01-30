@@ -112,12 +112,12 @@
 
 ### Epic EPIC-003: Sessions 1-3 Prototype (Part 2)
 
-- [ ] **STORY-011** — Develop Session 3: GitHub Projects ⊘ EPIC-002
-  - [ ] Create slide deck covering Board, Table, Timeline views
-  - [ ] Develop "Spring planting project board" lab
-  - [ ] Write "Project Board Setup Checklist" guide
-  - [ ] Create facilitation script; apply accessibility
-  - [ ] ✓ All materials in `sessions/session-03/`
+- [x] **STORY-011** — Develop Session 3: GitHub Projects ⊘ EPIC-002
+  - [x] Create slide deck covering Board, Table, Timeline views
+  - [x] Develop "Spring planting project board" lab
+  - [x] Write "Project Board Setup Checklist" guide
+  - [x] Create facilitation script; apply accessibility
+  - [x] ✓ All materials in `sessions/session-03/`
 
 - [ ] **STORY-012** — Conduct Accessibility Audit of Sessions 1-3
   - [ ] Run WAVE/axe on all materials

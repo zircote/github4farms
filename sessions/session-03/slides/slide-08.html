@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="styles.css">
+<style>
+.grid-table { margin: 6pt 0; }
+.grid-row { display: flex; border-bottom: 1pt solid #CCCCCC; }
+.grid-header { display: flex; background: #1E5128; border-radius: 4pt 4pt 0 0; }
+.grid-header p { color: #FFFFFF; font-size: 14pt; font-weight: bold; padding: 5pt 6pt; margin: 0; }
+.grid-row p { font-size: 13pt; padding: 4pt 6pt; margin: 0; color: #2C2C2C; }
+.grid-row:nth-child(even) { background: #F4F1DE; }
+.grid-row:nth-child(odd) { background: #FFFFFF; }
+.col-title { width: 34%; }
+.col-status { width: 16%; }
+.col-assignee { width: 16%; }
+.col-label { width: 16%; }
+.col-due { width: 18%; }
+</style>
+</head><body>
+<div class="content-slide">
+  <div class="header-bar"><h1>Table View: Your Spreadsheet</h1></div>
+  <div class="slide-body">
+    <p><b>Table View shows tasks in rows — like a spreadsheet.</b></p>
+    <div class="grid-table">
+      <div class="grid-header">
+        <p class="col-title">Title</p>
+        <p class="col-status">Status</p>
+        <p class="col-assignee">Assignee</p>
+        <p class="col-label">Label</p>
+        <p class="col-due">Due Date</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-title">Prepare Field 1 for corn</p>
+        <p class="col-status">In Progress</p>
+        <p class="col-assignee">Maria</p>
+        <p class="col-label">crops</p>
+        <p class="col-due">Mar 15</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-title">Order soybean seeds</p>
+        <p class="col-status">To Do</p>
+        <p class="col-assignee">Jake</p>
+        <p class="col-label">crops</p>
+        <p class="col-due">Feb 28</p>
+      </div>
+      <div class="grid-row">
+        <p class="col-title">Fix irrigation pump</p>
+        <p class="col-status">Done</p>
+        <p class="col-assignee">Maria</p>
+        <p class="col-label">equipment</p>
+        <p class="col-due">Feb 10</p>
+      </div>
+    </div>
+    <p>Sort by any column. Filter to show only certain tasks. Best for seeing lots of details at once.</p>
+  </div>
+</div>
+</body></html>

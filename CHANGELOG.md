@@ -19,6 +19,23 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **[Curriculum]**: Seasonal training schedule with 3 delivery blocks (Mar–Apr, Jul–Aug, Nov–Dec), planting/harvest blackout periods, recap session designs, and asynchronous bridge activities (`curriculum/seasonal-schedule.md`)
 - **[Curriculum]**: Accessibility compliance checklist with 35 checkpoints across 6 categories (visual, auditory, navigation, content, structural, material-specific), 10 CRITICAL items, 8 testing tools with access instructions (`curriculum/accessibility-checklist.md`)
 
+#### Sprint 3 — EPIC-003 / EPIC-009: Sessions 1-2 Prototype + Accessibility Workflow
+- **[Session 1]**: Complete session materials for "Introduction to GitHub & Repositories" — 25-slide deck with farm analogies, "Explore a farm repository" lab exercise with 3 scenario options, 15-term terminology cheat sheet with farm analogies, full facilitation script with timing, troubleshooting, and emergency procedures (`sessions/session-01/`)
+- **[Session 2]**: Complete session materials for "GitHub Issues for Task Tracking" — 24-slide deck with farm task examples, lab exercise creating 3 Issues with photos/labels/comments, "Issue Creation Step-by-Step" printer-friendly guide, full facilitation script with L2 observation checklist (`sessions/session-02/`)
+- **[Accessibility]**: 6-step accessibility testing workflow with tool-by-tool instructions, time estimates, and testing schedule (`curriculum/accessibility-testing-workflow.md`)
+- **[Accessibility]**: Testing log template with 27 checkpoints mapped to WCAG 2.2 AA categories, remediation tracking, and sign-off section (`curriculum/accessibility-testing-log-template.md`)
+
+#### PPTX Slide Decks — Sessions 1-3
+- **[Session 1 PPTX]**: 25-slide PowerPoint deck for "Introduction to GitHub & Repositories" — forest green/cream theme, 24pt+ headers, 19pt body, farm analogies throughout, validated via thumbnail grid (`sessions/session-01/slides.pptx`)
+- **[Session 2 PPTX]**: 24-slide PowerPoint deck for "GitHub Issues for Task Tracking" — matching theme, two-column layouts for dense content, farm task examples, validated via thumbnail grid (`sessions/session-02/slides.pptx`)
+- **[Session 3 PPTX]**: 23-slide PowerPoint deck for "GitHub Projects for Planning" — visual board/table/timeline demos, drag-flow visualization, seasonal calendar mockup, validated via thumbnail grid (`sessions/session-03/slides.pptx`)
+
+#### Sprint 4 — EPIC-003: Session 3 Prototype (Part 2)
+- **[Session 3]**: Complete session materials for "GitHub Projects for Planning" — 23-slide deck with Board/Table/Timeline view demos, "Spring planting project board" lab exercise with 3 scenario options, "Project Board Setup Checklist" quick-reference guide, full facilitation script with L2 observation checklist (`sessions/session-03/`)
+
+### Fixed
+- **[PPTX]**: Converted all HTML `<table>` elements to `<div>`-based grid layouts across Sessions 1-3 (6 slides total) — html2pptx does not render `<table>` elements, resulting in empty slides in PowerPoint
+
 ### Fixed
 - **[Cross-references]**: Corrected 4 broken links to `BEST-PRACTICES.md` in PROJECT-PLAN.md, RUNBOOK-TEMPLATE.md, and SUCCESS-METRICS.md (changed `./BEST-PRACTICES.md` → `./_research/BEST-PRACTICES.md`)
 
