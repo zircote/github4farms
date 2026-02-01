@@ -13,7 +13,7 @@
 ```bash
 # From GitHub: Click "Use this template" → "Create a new repository"
 # Or clone directly:
-git clone https://github.com/zircote/project-planning-template.git my-project
+git clone https://github.com/zircote/github4farms.git my-project
 cd my-project
 ```
 

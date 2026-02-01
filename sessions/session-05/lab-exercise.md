@@ -11,7 +11,7 @@
 
 ### Step 1: Watch the Repository (3 min)
 
-1. Go to the demo farm repository: `https://github.com/github4farms-training/demo-farm`
+1. Go to the demo farm repository: `https://github.com/zircote/github4farms-training`
 2. Click the **"Watch"** button (top right area, near Fork and Star)
 3. Select **"All Activity"**
 

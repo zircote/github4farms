@@ -18,12 +18,12 @@ You and your partner will practice the collaboration workflow together. One pers
 **Partner A — Follow these steps:**
 
 **Step 1: Fork the demo farm repository**
-1. Go to the demo farm repository: `https://github.com/github4farms-training/demo-farm`
+1. Go to the demo farm repository: `https://github.com/zircote/github4farms-training`
 2. Click the **"Fork"** button (top right area of the page)
 3. On the "Create a new fork" page, leave everything as-is
 4. Click **"Create fork"**
 
-**Checkpoint:** You should now be on a page that shows **your username / demo-farm** at the top, with "forked from github4farms-training/demo-farm" below it.
+**Checkpoint:** You should now be on a page that shows **your username / github4farms-training** at the top, with "forked from zircote/github4farms-training" below it.
 
 **Step 2: Edit a file**
 1. Click the `crops/` folder
@@ -51,7 +51,7 @@ You and your partner will practice the collaboration workflow together. One pers
 **Partner B — Follow these steps:**
 
 **Step 4: Review the Pull Request**
-1. Go to the original demo farm repository: `https://github.com/github4farms-training/demo-farm`
+1. Go to the original demo farm repository: `https://github.com/zircote/github4farms-training`
 2. Click the **"Pull requests"** tab
 3. Find Partner A's Pull Request and click it
 4. Click **"Files changed"** to see what was modified
@@ -181,7 +181,7 @@ Answer these on your lab sheet or discuss with your partner:
 | No "Contribute" banner after editing | Click the **"Pull requests"** tab on your fork, then **"New pull request"** — this is an alternative way to create a PR |
 | Pull Request says "Can't automatically merge" | This usually means someone else changed the same file. Ask the instructor for help — this is normal in team collaboration |
 | Accidentally edited the wrong file | Create the Pull Request anyway, then ask your reviewer to reject it. Or click the pencil icon and fix the file. You can always edit again |
-| Partner's Pull Request doesn't appear | Make sure your partner created the PR to the **original** repository (github4farms-training/demo-farm), not to their own fork |
+| Partner's Pull Request doesn't appear | Make sure your partner created the PR to the **original** repository (zircote/github4farms-training), not to their own fork |
 | "Merge" button is grayed out | You may not have permission to merge. Ask the instructor to check repository settings |
 | Made a typo in commit message | You can't edit a commit message after committing, but you can explain the correction in your Pull Request description. This is normal — everyone does it |
 

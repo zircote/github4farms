@@ -2,7 +2,7 @@
 
 > 12 hands-on sessions that take farmers from zero GitHub experience to independent usage — accessible, farm-relevant, and ready to deliver.
 
-[![Version](https://img.shields.io/badge/version-0.1.0-1E5128)](./CHANGELOG.md) [![License: MIT](https://img.shields.io/badge/license-MIT-4E9F3D)](./LICENSE) [![Sessions](https://img.shields.io/badge/sessions-12-F4F1DE?labelColor=1E5128)](./sessions/) [![WCAG 2.2 AA](https://img.shields.io/badge/WCAG_2.2-AA_compliant-4E9F3D)](./curriculum/accessibility-checklist.md) [![Templates](https://img.shields.io/badge/farm_templates-4-F4F1DE?labelColor=1E5128)](./templates/)
+[![Version](https://img.shields.io/badge/version-0.1.1-1E5128)](./CHANGELOG.md) [![License: MIT](https://img.shields.io/badge/license-MIT-4E9F3D)](./LICENSE) [![Sessions](https://img.shields.io/badge/sessions-12-F4F1DE?labelColor=1E5128)](./sessions/) [![WCAG 2.2 AA](https://img.shields.io/badge/WCAG_2.2-AA_compliant-4E9F3D)](./curriculum/accessibility-checklist.md) [![Templates](https://img.shields.io/badge/farm_templates-4-F4F1DE?labelColor=1E5128)](./templates/)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/readme-infographic.svg">

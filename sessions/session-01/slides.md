@@ -137,7 +137,7 @@ Think of it as the sign on your barn door that tells visitors what they'll find 
 
 **Let's look at a real repository together.**
 
-> Instructor note: Open the demo farm repository (github4farms-training demo org) on the projector. Walk through each element slowly.
+> Instructor note: Open the demo farm repository (zircote/github4farms-training) on the projector. Walk through each element slowly.
 
 I'm going to show you:
 1. The repository name and description

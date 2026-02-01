@@ -15,7 +15,7 @@ The training uses a GitHub organization with demo repositories. You need:
 
 | Repository | Purpose |
 |-----------|---------|
-| `demo-farm` | Primary training repo used in all 12 sessions |
+| `github4farms-training` | Primary training repo used in all 12 sessions |
 | `sunrise-acres-example` | Completed example showing full implementation |
 | `template-starter` | Minimal template learners fork in Session 12 |
 | `instructor-notes` | Private repo with answer keys and setup scripts |
@@ -65,7 +65,7 @@ Invitations expire in 7 days — send reminders!
 
 Use the verification checklist in [delivery/demo-environment-spec.md](./delivery/demo-environment-spec.md#7-verification-checklist-pre-cohort):
 
-- [ ] `demo-farm` is public and has 8+ Issues
+- [ ] `github4farms-training` is public and has 8+ Issues
 - [ ] All learners accepted organization invitations
 - [ ] Projector/screen sharing works with slide deck
 - [ ] You can access all demo repositories
@@ -74,13 +74,13 @@ Use the verification checklist in [delivery/demo-environment-spec.md](./delivery
 
 ## Step 5: Deliver Session 1
 
-**Session 1 is read-only** — learners browse `demo-farm` without making changes.
+**Session 1 is read-only** — learners browse `github4farms-training` without making changes.
 
 | Phase | Time | Activity |
 |-------|------|----------|
 | Opening | 15 min | Welcome, introductions, farm analogies |
 | Instruction | 45 min | Navigate repository, find files, understand structure |
-| Practice | 60 min | Lab exercise exploring `demo-farm` |
+| Practice | 60 min | Lab exercise exploring `github4farms-training` |
 | Wrap-up | 15 min | Reflection, preview Session 2 |
 
 **Don't forget:**

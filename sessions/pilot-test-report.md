@@ -61,7 +61,7 @@ Detailed word-for-word scripts with timing, checkpoints, emergency procedures, a
 
 All materials reference a "demo farm repository" that must contain specific files (planting schedules, equipment logs, livestock records) and pre-created Issues with labels. This repository does not yet exist.
 
-**Action Required:** Create demo repository at `github4farms-training/demo-farm` with exact structure matching lab exercise questions. Test all lab questions against real content.
+**Action Required:** Create demo repository at `zircote/github4farms-training` with exact structure matching lab exercise questions. Test all lab questions against real content.
 
 ### Issue 2: Timing Estimates Are 15-20% Optimistic
 **Severity:** MEDIUM

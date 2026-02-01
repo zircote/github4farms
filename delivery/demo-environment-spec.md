@@ -2,8 +2,8 @@
 
 > **Purpose:** This document specifies the complete GitHub training environment for the 12-session GitHub for Farmers curriculum. It includes organization setup, multiple demo repositories, pre-created content, and session-specific configuration requirements.
 >
-> **Organization Name:** `github4farms-training`
-> **Primary URL:** `https://github.com/github4farms-training`
+> **Organization Name:** `zircote`
+> **Primary URL:** `https://github.com/zircote`
 
 ---
 
@@ -13,7 +13,7 @@
 
 | Setting | Value |
 |---------|-------|
-| **Name** | `github4farms-training` |
+| **Name** | `zircote` |
 | **Display Name** | GitHub for Farmers Training |
 | **Description** | Hands-on training environment for farmers learning GitHub project management |
 | **URL** | Leave blank or link to curriculum repository |
@@ -58,14 +58,14 @@ Enable the following features under Organization Settings:
 
 | Repository | Visibility | Purpose | Sessions Used |
 |-----------|-----------|---------|--------------|
-| `demo-farm` | Public | Primary training repository with farm data | 1-12 (all) |
+| `github4farms-training` | Public | Primary training repository with farm data | 1-12 (all) |
 | `sunrise-acres-example` | Public | Completed example showing full implementation | 3, 6, 8, 11 |
 | `template-starter` | Public template | Minimal starter repo learners can fork | 1, 12 |
 | `instructor-notes` | Private | Instructor resources and setup scripts | N/A (instructor only) |
 
 ---
 
-### Repository: `demo-farm`
+### Repository: `github4farms-training`
 
 **Full specification:** See `sessions/demo-repository-spec.md` for complete details.
 
@@ -215,7 +215,7 @@ Welcome to the [Farm Name] repository.
 
 ---
 
-*Repository created from the github4farms-training template*
+*Repository created from the zircote template*
 ```
 
 **Pre-Created Content:**
@@ -246,7 +246,7 @@ Private instructor resources for GitHub for Farmers training delivery. Contains 
 instructor-notes/
 ├── README.md
 ├── setup-scripts/
-│   ├── create-demo-farm-issues.md
+│   ├── create-github4farms-training-issues.md
 │   ├── reset-environment.md
 │   └── verify-org-settings.sh
 ├── answer-keys/
@@ -264,7 +264,7 @@ instructor-notes/
 
 **Key Files:**
 
-- **setup-scripts/create-demo-farm-issues.md:** Markdown checklist for creating all 8 Issues in `demo-farm` before each cohort
+- **setup-scripts/create-github4farms-training-issues.md:** Markdown checklist for creating all 8 Issues in `github4farms-training` before each cohort
 - **setup-scripts/reset-environment.md:** Step-by-step guide for cleaning up between cohorts
 - **answer-keys/:** Lab exercise answers for each session
 - **facilitation-notes/common-troubleshooting.md:** Known issues and solutions (e.g., "Learner can't see Issues" → Check repository permissions)
@@ -277,7 +277,7 @@ instructor-notes/
 
 ## 3. Pre-Created Content per Repository
 
-### `demo-farm` Content
+### `github4farms-training` Content
 
 | Component | Quantity | Status | Details |
 |-----------|----------|--------|---------|
@@ -326,13 +326,13 @@ instructor-notes/
 ### Session 1: Introduction to GitHub
 
 **Required Before Session:**
-- [ ] `demo-farm` repository is public and accessible
-- [ ] All files in `demo-farm` match specification (crops, livestock, equipment, compliance folders)
+- [ ] `github4farms-training` repository is public and accessible
+- [ ] All files in `github4farms-training` match specification (crops, livestock, equipment, compliance folders)
 - [ ] README displays correctly
 - [ ] No write access needed yet (read-only session)
 
 **During Session:**
-- Learners browse `demo-farm` without GitHub accounts (public access)
+- Learners browse `github4farms-training` without GitHub accounts (public access)
 - Lab exercise questions reference specific data in files
 
 **Cleanup After Session:**
@@ -343,15 +343,15 @@ instructor-notes/
 ### Session 2: Issues and Task Tracking
 
 **Required Before Session:**
-- [ ] `demo-farm` has 8+ Issues created with correct labels
+- [ ] `github4farms-training` has 8+ Issues created with correct labels
 - [ ] Issue #1 (fence post) has a photo attachment for demo
 - [ ] Learners have GitHub accounts created
-- [ ] Learners are invited to `github4farms-training` organization as Members
-- [ ] Learners can create Issues in `demo-farm` (write access verified)
+- [ ] Learners are invited to `zircote` organization as Members
+- [ ] Learners can create Issues in `github4farms-training` (write access verified)
 
 **During Session:**
 - Instructor demos Issue creation using Issue #1 as example
-- Learners create their own Issues in `demo-farm`
+- Learners create their own Issues in `github4farms-training`
 
 **Cleanup After Session:**
 - [ ] Review learner-created Issues
@@ -363,13 +363,13 @@ instructor-notes/
 ### Session 3: Project Boards
 
 **Required Before Session:**
-- [ ] `demo-farm` has at least 8 Issues (learners need Issues to add to Projects)
+- [ ] `github4farms-training` has at least 8 Issues (learners need Issues to add to Projects)
 - [ ] Clean up any leftover test Projects from previous cohorts
 - [ ] Verify learners can create Projects in the organization
 - [ ] `sunrise-acres-example` Project board is visible as reference
 
 **During Session:**
-- Learners create Project boards and add Issues from `demo-farm`
+- Learners create Project boards and add Issues from `github4farms-training`
 - Instructor shows `sunrise-acres-example` as completed example
 
 **Cleanup After Session:**
@@ -381,14 +381,14 @@ instructor-notes/
 ### Session 4: Branching and Pull Requests
 
 **Required Before Session:**
-- [ ] `demo-farm` has at least 1 merged PR visible in history
+- [ ] `github4farms-training` has at least 1 merged PR visible in history
 - [ ] Branch `equipment-updates` exists with 1+ commit ahead of `main`
 - [ ] Learners have write access to create branches
 - [ ] GitHub Desktop installed (if using live demonstration)
 
 **During Session:**
 - Instructor demos branching workflow
-- Learners practice on `demo-farm` or their own repositories
+- Learners practice on `github4farms-training` or their own repositories
 
 **Cleanup After Session:**
 - [ ] Merge or close test branches created by learners
@@ -400,7 +400,7 @@ instructor-notes/
 ### Session 5: Discussions and Team Communication
 
 **Required Before Session:**
-- [ ] Discussions enabled in `demo-farm`
+- [ ] Discussions enabled in `github4farms-training`
 - [ ] 3+ Discussion threads created in advance (categories: Announcements, Q&A, General)
 - [ ] `sunrise-acres-example` has active Discussions for reference
 
@@ -417,7 +417,7 @@ instructor-notes/
 ### Session 6: Timeline View and Iterations
 
 **Required Before Session:**
-- [ ] `demo-farm` Project board has Timeline view enabled
+- [ ] `github4farms-training` Project board has Timeline view enabled
 - [ ] At least 6 Issues have start and end dates set
 - [ ] `sunrise-acres-example` has 6 Iterations configured
 - [ ] Learners can edit Project boards
@@ -440,7 +440,7 @@ instructor-notes/
 - [ ] Sample template files available in instructor-notes
 
 **During Session:**
-- Learners create custom Issue templates in `demo-farm` or their own repos
+- Learners create custom Issue templates in `github4farms-training` or their own repos
 - Instructor demos using `sunrise-acres-example` templates
 
 **Cleanup After Session:**
@@ -453,7 +453,7 @@ instructor-notes/
 
 **Required Before Session:**
 - [ ] `sunrise-acres-example` has 2+ open PRs with comments and reviews
-- [ ] Learners can create PRs in `demo-farm`
+- [ ] Learners can create PRs in `github4farms-training`
 - [ ] At least 1 PR shows merge conflict resolution example
 
 **During Session:**
@@ -466,52 +466,56 @@ instructor-notes/
 
 ---
 
-### Session 9: Markdown Mastery
+### Session 9: Advanced Projects & Roadmaps
 
 **Required Before Session:**
-- [ ] Sample markdown files available in `demo-farm`
-- [ ] Learners can edit files via web interface or GitHub Desktop
-- [ ] `sunrise-acres-example` has well-formatted markdown READMEs
+- [ ] `github4farms-training` Project board has Timeline view enabled
+- [ ] At least 6 Issues have start and end dates set
+- [ ] `sunrise-acres-example` has 6 Iterations configured
+- [ ] Learners can edit Project boards
 
 **During Session:**
-- Learners practice markdown syntax
-- Instructor shows markdown preview features
+- Learners add custom fields (date, dropdown, number) to Projects
+- Configure iterations for seasonal planning
+- Build a seasonal roadmap using Timeline view
 
 **Cleanup After Session:**
-- No cleanup needed (file edits preserved)
+- [ ] Verify Iterations are preserved for reference
+- [ ] Clean up test date assignments
 
 ---
 
-### Session 10: Labels and Milestones
+### Session 10: GitHub Copilot Basics
 
 **Required Before Session:**
-- [ ] `demo-farm` has 10+ labels defined
-- [ ] `sunrise-acres-example` has 15+ labels and 4 milestones
-- [ ] Learners can create/edit labels and milestones
+- [ ] Copilot is enabled for the organization (if using Copilot features)
+- [ ] Sample Issues available for drafting exercises
+- [ ] Learners have access to Copilot (or instructor demonstrates)
 
 **During Session:**
-- Learners create custom label systems
-- Instructor demos milestone-based planning
+- Learners use Copilot to draft Issue descriptions
+- Evaluate and edit AI-generated content
+- Compare manual vs. Copilot-assisted writing
 
 **Cleanup After Session:**
-- [ ] Review and preserve useful label systems
-- [ ] Archive completed milestones
+- No cleanup needed (draft exercises)
 
 ---
 
-### Session 11: Real-World Applications
+### Session 11: GitHub Spark & Copilot Agents
 
 **Required Before Session:**
-- [ ] All demo repositories are in stable state
+- [ ] Pre-built Spark app example available (or instructor demonstrates)
 - [ ] `sunrise-acres-example` is fully populated as reference
-- [ ] Guest speaker farm repository URL (if applicable)
+- [ ] Learners understand human-in-the-loop concepts
 
 **During Session:**
-- Case study discussion using `sunrise-acres-example`
-- Learners explore real-world farm GitHub usage
+- Explore pre-built Spark apps
+- Understand agent capabilities and guardrails
+- Discuss AI assistant governance
 
 **Cleanup After Session:**
-- No cleanup needed (discussion-based)
+- No cleanup needed (exploration-based)
 
 ---
 
@@ -549,7 +553,7 @@ instructor-notes/
    - Maintain roster: Name → GitHub Username → Email
 
 3. **Send organization invitations:**
-   - Invite learners to `github4farms-training` organization as Members
+   - Invite learners to `zircote` organization as Members
    - Invitations sent via email (learners must accept)
    - Reminder: Invitations expire in 7 days
 
@@ -568,7 +572,7 @@ Some learners may not be able to create GitHub accounts due to:
 - Technical barriers
 
 **Observer Mode:**
-- Learners can view `demo-farm` and `sunrise-acres-example` without accounts (public repositories)
+- Learners can view `github4farms-training` and `sunrise-acres-example` without accounts (public repositories)
 - Pair learners without accounts with learners who have accounts
 - Provide paper-based exercises (e.g., "Draw what a Project board looks like")
 - Follow up after training with account setup assistance
@@ -600,7 +604,7 @@ Some learners may not be able to create GitHub accounts due to:
   - Remove all Members from previous cohort
   - Keep Owners (instructors)
 
-- [ ] **Reset `demo-farm` repository:**
+- [ ] **Reset `github4farms-training` repository:**
   - Delete all learner-created Issues (keep the original 8)
   - Close or delete learner-created Projects
   - Delete all branches except `main` and `equipment-updates`
@@ -631,7 +635,7 @@ Some learners may not be able to create GitHub accounts due to:
 
 **Light Cleanup Checklist:**
 
-- [ ] Close duplicate or test Issues in `demo-farm`
+- [ ] Close duplicate or test Issues in `github4farms-training`
 - [ ] Archive completed Projects
 - [ ] Delete stale branches older than 7 days
 - [ ] Pin important Discussions, lock off-topic ones
@@ -651,8 +655,8 @@ Some learners may not be able to create GitHub accounts due to:
    - Can it be restored from Git history?
 
 2. **Restore from backup:**
-   - If `demo-farm` files deleted: Restore from last known good commit
-   - If Issues deleted: Recreate from `instructor-notes/setup-scripts/create-demo-farm-issues.md`
+   - If `github4farms-training` files deleted: Restore from last known good commit
+   - If Issues deleted: Recreate from `instructor-notes/setup-scripts/create-github4farms-training-issues.md`
    - If permissions broken: Verify organization settings and member roles
 
 3. **Communicate with learners:**
@@ -670,13 +674,13 @@ Some learners may not be able to create GitHub accounts due to:
 **Complete this checklist 1 week before Session 1:**
 
 ### Organization Settings
-- [ ] Organization `github4farms-training` exists
+- [ ] Organization `zircote` exists
 - [ ] Organization is Public
 - [ ] Discussions enabled
 - [ ] Projects enabled
 - [ ] Default repository permissions set to Write
 
-### Repository: `demo-farm`
+### Repository: `github4farms-training`
 - [ ] Repository is Public
 - [ ] All files match specification (14+ files in 4 folders)
 - [ ] 8+ Issues exist with correct labels
@@ -726,7 +730,7 @@ Some learners may not be able to create GitHub accounts due to:
 
 ## 8. Troubleshooting Guide
 
-### Issue: Learner Can't See Issues in `demo-farm`
+### Issue: Learner Can't See Issues in `github4farms-training`
 
 **Cause:** Repository permissions or learner not signed in
 

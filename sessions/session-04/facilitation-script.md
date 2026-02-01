@@ -75,7 +75,7 @@
 **Step 1: Fork the repository (3 min)**
 > "First, I need my own copy of the farm repository. This is called **forking** — it's like photocopying a document so I can mark it up without changing the original."
 
-1. Navigate to `github4farms-training/demo-farm`
+1. Navigate to `zircote/github4farms-training`
 2. Click the **Fork** button
 3. Click **Create fork**
 
@@ -271,7 +271,7 @@ Show the comparison table (Slide 13):
 **Common issues during independent practice:**
 - **Learners forgetting to fork first:** Remind them they need their own copy before editing
 - **Vague commit messages ("Updated file"):** Gently suggest: "What if you add what you changed and why? Like 'Updated tractor service date — completed 500-hour maintenance.'"
-- **Confusion about which repository is theirs:** Point to the username in the URL — "If you see your name, it's your fork. If you see github4farms-training, it's the original."
+- **Confusion about which repository is theirs:** Point to the username in the URL — "If you see your name, it's your fork. If you see zircote, it's the original."
 
 ---
 

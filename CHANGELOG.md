@@ -6,6 +6,19 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-02-01
+
+### Changed
+- **[Sessions/Delivery]**: Updated all artifact references from `github4farms-training/demo-farm` organization to `zircote/github4farms-training` repository across 8 files:
+  - [sessions/demo-repository-spec.md](./sessions/demo-repository-spec.md): Updated repo name, URL pattern, and directory structure reference
+  - [sessions/pilot-test-report.md](./sessions/pilot-test-report.md): Updated demo repo action item
+  - [sessions/session-01/slides.md](./sessions/session-01/slides.md): Updated instructor note for demo repo
+  - [sessions/session-04/lab-exercise.md](./sessions/session-04/lab-exercise.md): Updated 5 fork/PR URL references and checkpoint messages
+  - [sessions/session-04/facilitation-script.md](./sessions/session-04/facilitation-script.md): Updated navigation instructions and troubleshooting guidance
+  - [sessions/session-05/lab-exercise.md](./sessions/session-05/lab-exercise.md): Updated demo repo URL
+  - [delivery/demo-environment-spec.md](./delivery/demo-environment-spec.md): Comprehensive update replacing all org and repo references
+  - [QUICKSTART-INSTRUCTOR.md](./QUICKSTART-INSTRUCTOR.md): Updated 4 demo repo references
+
 ## [0.1.0] - 2026-01-30
 
 ### Added
@@ -121,6 +134,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [1.0.0] - 2026-01-30
 
+> **Note:** Version 1.0.0 represents the initial project planning template artifacts. Version 0.1.0 (same date) represents the first curriculum content build using those templates. The 0.x.x line tracks curriculum iterations.
+
 ### Added
 
 #### Core Planning Documents
@@ -206,6 +221,6 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 **Document Version:** 1.0.0
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-01
 **Owner:** Curriculum Developer/Instructor
 **Next Review:** Post-Phase 1 completion (Week 4)

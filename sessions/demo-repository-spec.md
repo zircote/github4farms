@@ -2,16 +2,16 @@
 
 > **Purpose:** This document specifies the exact structure and content required in the demo farm repository used across all training sessions. All lab exercises, guided practices, and facilitation scripts reference this repository.
 >
-> **Repository Name:** `demo-farm` (under the `github4farms-training` organization)
+> **Repository Name:** `github4farms-training` (under the `zircote` account)
 > **Visibility:** Public (so learners can access without invitations)
-> **URL Pattern:** `https://github.com/github4farms-training/demo-farm`
+> **URL Pattern:** `https://github.com/zircote/github4farms-training`
 
 ---
 
 ## Repository Structure
 
 ```
-demo-farm/
+github4farms-training/
 ├── README.md
 ├── crops/
 │   ├── README.md
