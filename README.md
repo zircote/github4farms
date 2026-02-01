@@ -11,7 +11,7 @@
 
 ## What This Is
 
-A complete, ready-to-deliver training curriculum that teaches farmers how to use GitHub for farm management — task tracking, team collaboration, automation, and AI-assisted writing. Every session includes a slide deck (HTML + PowerPoint), lab exercise, quick-reference handout, and facilitation script.
+A complete, ready-to-deliver training curriculum that teaches farmers how to use GitHub for farm management — task tracking, team collaboration, automation, and AI-assisted writing. Every session includes a slide deck (HTML + PowerPoint), lab exercise, topic-specific guide, and facilitation script.
 
 **No coding required.** Everything uses the GitHub web interface. Farm analogies ground every concept in familiar territory.
 
@@ -42,7 +42,7 @@ Each session folder contains:
 - **`slides/`** — Individual HTML slides (720pt x 405pt, 16:9)
 - **`slides.pptx`** — Ready-to-present PowerPoint deck
 - **`lab-exercise.md`** — Hands-on activity with 3 farm scenario options
-- **`quick-reference.md`** — Printer-friendly handout
+- **`*-guide.md`** — Topic-specific printer-friendly handout (e.g., `issue-creation-guide.md`, `spark-agents-guide.md`)
 - **`facilitation-script.md`** — Timing, talking points, troubleshooting
 - **`accessibility-testing-log.md`** — WCAG 2.2 AA audit results
 
