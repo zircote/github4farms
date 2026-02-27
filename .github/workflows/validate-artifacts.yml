@@ -1,1 +1,75 @@
+name: Validate Artifacts
 
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - '.github/**'
+      - '.gitignore'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Check required artifacts exist
+        run: |
+          required_files=(
+            "README.md"
+            "CHANGELOG.md"
+          )
+          missing=0
+          for f in "${required_files[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "MISSING: $f"
+              missing=$((missing + 1))
+            else
+              echo "OK: $f"
+            fi
+          done
+          if [ $missing -gt 0 ]; then
+            echo ""
+            echo "$missing required artifact(s) missing."
+            exit 1
+          fi
+
+      - name: Check for placeholder content
+        run: |
+          placeholder_count=0
+          for f in *.md; do
+            if grep -qE '\[TODO\]|\[TBD\]|\[PLACEHOLDER\]|\[INSERT\]' "$f" 2>/dev/null; then
+              echo "PLACEHOLDER CONTENT in $f:"
+              grep -nE '\[TODO\]|\[TBD\]|\[PLACEHOLDER\]|\[INSERT\]' "$f"
+              placeholder_count=$((placeholder_count + 1))
+            fi
+          done
+          if [ $placeholder_count -gt 0 ]; then
+            echo ""
+            echo "Found placeholder content in $placeholder_count file(s)."
+            exit 1
+          fi
+          echo "No placeholder content found."
+
+      - name: Validate internal links
+        run: |
+          broken=0
+          for f in *.md; do
+            while IFS= read -r link; do
+              target=$(echo "$link" | sed 's/.*](//' | sed 's/).*//')
+              if [[ "$target" != http* ]] && [[ "$target" != "#"* ]] && [ ! -e "$target" ]; then
+                echo "BROKEN LINK in $f: $target"
+                broken=$((broken + 1))
+              fi
+            done < <(grep -oE '\[.*?\]\([^)]+\)' "$f" 2>/dev/null || true)
+          done
+          if [ $broken -gt 0 ]; then
+            echo ""
+            echo "$broken broken internal link(s) found."
+            exit 1
+          fi
+          echo "All internal links valid."
