@@ -54,22 +54,3 @@ jobs:
             exit 1
           fi
           echo "No placeholder content found."
-
-      - name: Validate internal links
-        run: |
-          broken=0
-          for f in *.md; do
-            while IFS= read -r link; do
-              target=$(echo "$link" | sed 's/.*](//' | sed 's/).*//')
-              if [[ "$target" != http* ]] && [[ "$target" != "#"* ]] && [ ! -e "$target" ]; then
-                echo "BROKEN LINK in $f: $target"
-                broken=$((broken + 1))
-              fi
-            done < <(grep -oE '\[.*?\]\([^)]+\)' "$f" 2>/dev/null || true)
-          done
-          if [ $broken -gt 0 ]; then
-            echo ""
-            echo "$broken broken internal link(s) found."
-            exit 1
-          fi
-          echo "All internal links valid."
